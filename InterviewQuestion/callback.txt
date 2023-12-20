@@ -1,0 +1,44 @@
+In javascript, a callback is simply a function that is passed to another function as a parameter and is invoked or executed inside the other function. Here a function needs to wait for another function to execute or return a value and this makes the chain of the functionalities (when X is completed, then Y is executed, and it goes on.). This is the reason callback is generally used in the asynchronous operation of javascript to provide the synchronous capability.
+
+
+
+code--------->
+
+function callback(src, callbackfucntion) {
+  const script = document.createElement("script");
+  script.src = src;
+  script.onload = console.log("script is loaded");
+  callbackfucntion(new Error("src is currpted"));
+}
+let callbackfucntion = (error) => {
+ return console.log(error);
+};
+
+callback("https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+,callbackfucntion);
+
+
+------------------------->
+###  problem with callback
+
+  1)  we create dependency on callback function  if it fails then it will will affect outer function as well
+  2)   callback hell or pyramid of doom --
+  if first run ,then run second then third then fourth...
+
+
+code--------------->
+  callback(
+    "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js",if(error){
+        console.log(error)
+        sendemergencyMessagetoceo()
+        return
+    }callback(
+        "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js", if(error){
+            console.log(error)
+            sendemergencyMessagetoceo()
+            return
+        }
+  );
+
+
+solution to this is PROMISE

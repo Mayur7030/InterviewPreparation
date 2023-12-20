@@ -1,0 +1,37 @@
+Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure ‘remembers’ the environment in which it was created.
+
+usecase ---
+Global variables can be made local (private) with closures.
+
+If we want to update variable ,we have to make it global like counter app but that makes variable unsafe  as it can change anyone. to solve this problem we can you Closures.
+All function have access to global scope.
+JS nested function have access to the scope above them.
+
+
+code-------------------->
+Example 1 --
+function numberGenerator() {
+  // Local “free” variable that ends up within the closure
+  var num = 1;
+  function checkNumber() { 
+    console.log(num);
+  }
+  num++;
+  return checkNumber;
+}
+
+var number = numberGenerator();
+number(); // 2
+
+
+Example2 -----
+function sayHello() {
+  var say = function() { console.log(hello); }
+  // Local variable that ends up within the closure 
+  var hello = 'Hello, world!';
+  return say;
+}
+var sayHelloClosure = sayHello(); 
+sayHelloClosure(); // ‘Hello, world!’
+
+

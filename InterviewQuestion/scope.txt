@@ -1,0 +1,15 @@
+•	Local Scope allows access to everything within the boundaries (inside the box)
+
+
+
+•	Global Scope is everything outside the boundaries (outside the box). A global scope can not access a variable defined in the local scope because it is enclosed from the outer world, except if you return it.
+
+
+•	Block Scope is everything inside the boundaries but it works only for let and const keywords. It does not work with the var keyword. 
+{
+    let a = 99
+}
+console.log(a)           
+// a is not defined
+
+* Function scope --
