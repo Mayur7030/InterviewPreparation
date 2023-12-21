@@ -1,0 +1,15 @@
+oop -
+for different things we will not code seperately 
+like in GTA ,we will not code differently for different  humans ,
+we will create Human(class) then make different objects from them( police,male, female,children)
+which having same METHODS( run, walk) and different properties(color, height)
+
+4 piller of Oop -
+1 ) inheritance - properties from parent 
+2 ) abstraction - secure the data
+3) polymorphism - one thing different format - like phone -camera, recorder 
+4) encapsulation -4 things in one
+
+
+
+#prototypes --

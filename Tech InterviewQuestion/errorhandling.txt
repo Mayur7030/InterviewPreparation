@@ -1,0 +1,56 @@
+
+when you want to handle error without stoping execution we use error handling
+
+console.log("fetching details....please wait");
+
+setTimeout(() => {
+  try {
+    console.log(rahul);
+  } catch {
+    console.log("ignored rahul");
+  }
+}, 2000);
+setTimeout(() => {
+  console.log("we got rahuls details");
+}, 2000);
+
+to handle error we have to give sync code to try ,not async code
+
+
+##Error  object --
+
+let a = 99;
+let b = 88;
+try {
+  console.log(same);
+  throw new Error("mayur is ")
+} catch (error) {
+  console.log(error);
+  console.log(error.name);
+  console.log(error.message);
+}
+
+## finally clause
+
+##promise, async await , error handling
+
+let outerfunction = () => {
+    return new Promise((res, rej) => {
+      setTimeout(() => {
+        rej(new Error("this is custom error"));
+      }, 2000);
+    });
+  };
+  
+  let awaitfunction = async () => {
+    try {
+      let awaitvariable = await outerfunction();
+      console.log("done");
+    } catch (error) {
+      console.log(error, "getting error");
+    }
+    console.log("inner waiting");
+  };
+  awaitfunction();
+  console.log("wait.....");
+  

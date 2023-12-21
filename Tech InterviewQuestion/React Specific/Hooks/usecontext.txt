@@ -1,0 +1,2 @@
+Usecontext hook – 
+The useContext hook is a React hook that allows function components to access the context value for a context object.The useContext hook is useful for sharing data between components without having to pass props down manually through each nested component

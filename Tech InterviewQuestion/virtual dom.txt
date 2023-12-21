@@ -1,0 +1,16 @@
+The Virtual DOM is a representation of the real DOM that is stored in memory. React uses the Virtual DOM to compare the current state of the UI with the desired state of the UI. If there is a difference, React will only update the parts of the real DOM that need to be updated. This makes React applications more efficient than other frameworks that update the entire DOM every time there is a change.
+
+React uses 2 virtual dom – preupdated dom and updated dom
+
+How it works:
+
+State change: When a component's state changes, React updates the Virtual DOM first.
+Diffing: React compares the updated Virtual DOM with the previous one, identifying the minimal changes needed.
+Reconciliation: React applies only those necessary changes to the real DOM, minimizing expensive re-renders.
+
+
+Benefits:
+
+Performance: Faster updates and smoother user experiences, especially for complex apps.
+Developer experience: React handles DOM manipulations for you, allowing you to focus on components and state.
+

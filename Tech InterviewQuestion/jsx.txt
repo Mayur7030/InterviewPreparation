@@ -1,0 +1,4 @@
+What is JSX?
+
+
+Jsx is syntax extension to Javascript. It is used with react to describe how user interface should look like .By using jsx, we can write HTML in same file in which javascript is written.

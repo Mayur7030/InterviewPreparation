@@ -1,0 +1,39 @@
+// to get data from internet
+// It is 2 step process
+// first one is to get status code to check we are getting data or not & convert receiving data into required format like Text, json()
+// second step we get our data
+
+// syntax --let promise = fetch(url,[option])
+// without options , a get request is sent
+let promise = fetch("https://google.com");
+promise.then((response) => {
+  console.log(response.status);
+  return response.json();
+});
+promise.then((response) => {
+  console.log(response);
+});
+
+
+const url = "https://jsonplaceholder.typicode.com/todos";
+// let date = document.getElementById("date");
+
+fetch(url)
+  .then((data) => data.json())
+  .then((json) => {
+    inital = " ";
+    // for (let key in json) {
+    //   console.log(json[key].id)
+    //   console.log(json[key].title)
+    //   inital += `id: ${json[key].id}` ;
+    // }
+    for (const element of json) {
+      // console.log(`id: ${element.id}, title: ${element.title}`);
+      inital += `id: ${element.id}, title: ${element.title}\n  <br>`;
+    }
+    // console.log(inital, "initial");
+    document.getElementById("date").innerHTML = inital;
+  });
+
+// date.innerHTML = inital
+

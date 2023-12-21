@@ -1,0 +1,7 @@
+Props drilling—
+Prop drilling is the practice of passing data down through multiple levels of a component hierarchy. This can be done by passing the data as a prop to each child component, until it reaches the component that needs it.Prop drilling can be a necessary and effective way to manage application state, but it can also become a problem when the hierarchy of components becomes too deep or complex.
+Problems – Increased code complexity: Performance problems Difficult to test
+Solution –
+Use the React Context API:
+Use composition
+Use state management libraries,redux 

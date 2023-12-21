@@ -1,0 +1,36 @@
+Inheritance in JavaScript is a mechanism that allows a new class to inherit the properties and methods of an existing class. This is a powerful feature that can be used to reduce code duplication and improve code readability.
+Use like - prototype
+
+
+
+usecase -->
+to get/share properties between different Object
+
+we can do that by copy paste but if change in first object it will not affect second one 
+thats why we use inheritance,here if change in first one it will affect second one.
+
+
+Prototype -->
+to use inheritance in JS
+Prototypes are the mechanism by which JavaScript objects inherit features from one another. Every object in JavaScript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. Prototype property enables other objects to inherit all the properties and methods of function constructor. When a certain method(or property) is called, it first checks inside the object but when it doesn’t find, then search moves on Object’s prototype.
+Example – make component and import it In app.js
+
+
+code ----->
+
+let a = {
+  name: "mayur",
+  year: 1299,
+};
+
+const firstPrototype = {
+  run: () => {
+    alert("run");
+  },
+};
+
+a.__proto__ = firstPrototype;
+
+
+console.log(a.name);
+console.log(a.run());

@@ -1,0 +1,58 @@
+features of es6
+
+* let & const keywords
+* Arrow function
+* spread Operator
+* rest Operator
+* map
+* template literals
+* destructuring 
+* Promises
+
+* multi line strings - using backticks
+
+* classes -->
+
+class UserProfile {   
+   constructor(firstName, lastName) { 
+      this.firstName = firstName;
+      this.lastName = lastName;     
+   }  
+    
+   getName() {       
+     console.log(`The Full-Name is ${this.firstName} ${this.lastName}`);    
+   } 
+}
+let obj = new UserProfile('John', 'Smith');
+obj.getName(); // output: The Full-Name is John Smith
+
+
+* Modules - 
+
+Previously, there was no native support for modules in JavaScript. ES6 introduced a new feature called modules, in which each module is represented by a separate ".js" file. We can use the "import" or "export" statement in a module to import or export variables, functions, classes or any other component from/to different files and modules.
+
+ES5 -common js
+const {hello,ahello} = require("./hello.js")
+module.exports = {hello, ahello}
+
+ES6 -
+<script type="module" src="index.js"></script>
+import{ hello} from './index2.js'
+export const hello =()=>{}
+
+
+* default parameter --->
+we can directly provides values in signature of function
+
+code------------>
+//ES6
+let calculateArea = function(height = 100, width = 50) {  
+    // logic
+}
+
+//ES5
+var calculateArea = function(height, width) {  
+   height =  height || 50;
+   width = width || 80;
+   // logic
+}

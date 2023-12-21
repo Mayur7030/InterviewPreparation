@@ -1,0 +1,94 @@
+class  = template
+
+consider a railway ragistration form , make one copy and you can use multiple times for different users.
+users can fill different data as per their requirement like 2A, location,fair etc 
+
+users -- objects
+
+constructor == 
+method that will run every time when class call ==(new RailwayForm)
+
+we can replace below fill method with constructor.
+
+extends keyword -
+ to grab all classes from parent to child component 
+ class parent extends child{}
+
+ super keyword -
+  to grab object from parent class as it is and we can ass things in this as per requirement
+  super.login()
+
+static methods -
+methods which are present in class and belongs to whole class,any funtion can use this internally but not from outside,
+we can't access that by making objects.
+
+
+
+
+
+  class Employess {
+    constructor(name) {
+      this.name1 = name;
+    }
+    login(name1) {
+      console.log(`${name1} is log in`);
+    }
+  }
+
+
+class RailwayForm extends Employess{
+
+    constructor (username, trainid, staringpoint, droppoint){
+      this.name = username
+      this.trainid = trainid
+      this.staringpoint = staringpoint
+      this.droppoint = droppoint
+    }
+    
+    login() {
+      super.login(4545)
+      console.log("my login details are 9999");
+    }
+  submit=()=>{
+    console.log(`${this.name} your form submitted with train number ${this.trainid} from ${this.staringpoint} to ${this.droppoint}`)
+  };
+  cancel=()=>{
+    console.log(`${this.name} your form submitted with train number ${this.trainid} from ${this.staringpoint} to ${this.droppoint}`)
+  }
+  pending=()=>{
+    console.log(`${this.name} your form submitted with train number ${this.trainid} from ${this.staringpoint} to ${this.droppoint}`)
+  }
+  }
+  
+  
+  const user1 = new RailwayForm("Mayur",1111,"malegaon","pune")
+  const user2 = new RailwayForm("kamelsh", 22222, "pune", "nashik")
+  const user3=new RailwayForm("rakhi", 233333, "mumbai")
+  
+  
+  user1.submit()
+  user2.cancel()
+  user3.pending()
+
+
+-----------------------**************************
+  static methods -
+methods which are present in class and belongs to whole class,any funtion can use this internally but not from outside,
+we can't access that by making objects.
+
+class school {
+  constructor(name) {
+    this.name1 = school.capitalize(name);
+  }
+  static capitalize(name1) {
+    console.log(name1);
+    return name1.toUpperCase();
+  }
+  login() {
+    console.log(`my naem is ` + this.name1);
+  }
+}
+
+const lion = new school("mayur");
+
+lion.login();

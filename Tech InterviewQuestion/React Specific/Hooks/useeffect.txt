@@ -1,0 +1,3 @@
+useeffect hook –
+The useEffect hook is a React hook that allows you to perform side effects in your functional components. Side effects are any actions that have an impact on the outside world, such as fetching data, updating the DOM, or setting up timers.
+Useeffect( function(),[dependency])

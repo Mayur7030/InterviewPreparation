@@ -1,0 +1,46 @@
+Memorization in JavaScript is an optimization technique that stores the results of function calls in a temporary data structure and then retrieves the results whenever the stored result is needed in the program. This can be used to speed up the execution of a program by avoiding the need to recompute the same results multiple times.
+
+
+Memorization
+Memoization is an optimization technique for accelerating computer programs by caching the results of heavy function calls and returning them when similar inputs are encountered repeatedly. Simply, React memoization is similar to caching.
+
+
+Usememo(), react.memo(), usecallback()
+
+
+Drawbacks - If the function being memoized is not called very often, the overhead of memoization may outweigh the benefits.
+
+
+optimazation in react ==
+
+usememo --
+agar koi state change hogi tohi render karega
+diff bet useeffect and usememo -
+usememo return value (memoize value) of function 
+use only when function return value.
+
+pure component - component which is render when its props values are change 
+impure compo - component which are changed even if its props values are not changed
+
+pure component  code –
+pass props through 3 component and add console.log to check rendering in all component.
+With useeffect change props of first component , other component will also render 
+To stop rendring add react.memo(purecompoent)
+Pure components are the components which render the same output for the same state and props. 
+
+react.memo -
+it accept component.
+in functional component we import memo function from react library to convert impure component into pure component.
+in class component there is function called 'Pure component"
+
+import {memo} from 'react'
+export default memo(todo)
+
+usecallback --
+refreential equality - whenever component is rerender , functions inside it are recreated ie. it is changed.
+it returns memoized value.
+
+usememo = function returns value
+react.memo =component making pure by passing export in memo
+usecallback = return function
+

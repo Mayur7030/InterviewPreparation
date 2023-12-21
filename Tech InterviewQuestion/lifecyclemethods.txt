@@ -1,0 +1,83 @@
+freecodecamp link -
+https://www.freecodecamp.org/news/react-component-lifecycle-methods/
+
+
+React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting. Each phase has specific lifecycle methods that are called at different points in the component's lifecycle.
+
+Understanding these lifecycle methods can help developers to control the component's behavior and perform specific actions at different stages of its lifecycle.
+
+The Mounting Phase begins when a component is first created and inserted into the DOM. The Updating Phase occurs when a component's state or props change. And the Unmounting Phase occurs when a component is removed from the DOM.
+
+
+
+Mounting:
+
+constructor(): Initializes state and binds methods.
+getDerivedStateFromProps(): Updates state based on props before rendering.
+render(): Generates the component's visual representation.
+componentDidMount(): Runs after mounting, for tasks like data fetching or setting up timers.
+
+
+
+Updating:
+
+getDerivedStateFromProps(): Updates state based on props before re-rendering.
+shouldComponentUpdate(): Determines if a re-render is needed.
+render(): Generates the updated UI.
+getSnapshotBeforeUpdate(): Captures info before the UI changes.
+componentDidUpdate(): Runs after updating, for tasks like DOM manipulation.
+
+
+Unmounting:
+
+componentWillUnmount(): Runs before removing the component from the DOM, for cleanup.
+
+
+code----
+import React from 'react';
+import ReactDOM from 'react-dom';
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritefood: "rice"};
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({favoritefood: "pizza"})
+    }, 1000)
+  }
+  static getDerivedStateFromProps(props, state) {
+    return {favoritefood: props.favfod };
+  }
+   render() {
+    return (
+      <h1>My Favorite Food is {this.state.favoritefood}</h1>
+    );
+  }
+}
+ReactDOM.render(<Header />, document.getElementById('root')); 
+
+
+
+related hooks in funcitonal component ---
+
+Mounting:
+
+constructor(): useState for initializing state and useEffect with an empty dependency array for tasks that should run only once after mounting.
+getDerivedStateFromProps(): useEffect with props in the dependency array to update state based on props changes.
+render(): This method exists in functional components as well.
+componentDidMount(): useEffect for tasks that need to happen after mounting, like data fetching or setting up timers.
+
+
+Updating:
+
+getDerivedStateFromProps(): useEffect with props in the dependency array, as mentioned above.
+shouldComponentUpdate(): React.memo for optimizing re-renders by shallow comparison of props.
+render(): This method exists in functional components as well.
+getSnapshotBeforeUpdate(): useEffect with a callback function as its second argument to capture information before update.
+componentDidUpdate(): useEffect with a dependency array that includes props or state values that trigger update-related actions.
+
+
+Unmounting:
+
+componentWillUnmount(): useEffect for cleanup tasks, returning a function that will run when the component unmounts.

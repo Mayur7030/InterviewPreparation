@@ -1,0 +1,14 @@
+Event is action trigger by user or system like button click,alert()
+
+Using jsx ,function can be use as event handler rather than string
+
+Native events - which browser creates
+
+
+Synthetic event?
+
+A synthetic event is a compatibility API that React generates around native events to normalise differences between browsers.
+
+Synthetic events combine the response of different browser's native events into one API, ensuring that the events are consistent across different browsers.
+syncthetic events - onclick() onchange()
+

@@ -1,0 +1,29 @@
+async always provide promise
+usecase  --
+to stop execution of js
+Asynchronous code is code that runs without blocking the main thread of execution. 
+It allows the UI to remain responsive while the application is performing tasks such as fetching data from a server.
+
+https://www.geeksforgeeks.org/async-await-function-in-javascript/
+
+
+code ----------->
+let temp = async () => {
+    let promise1 = new Promise((res, rej) => {
+      setTimeout(() => {
+      //   console.log(res(99));
+      res(console.log(99595))
+      }, 2000);
+    });
+    let promise2 = new Promise((res, rej) => {
+      setTimeout(() => {
+      //   console.log(rej(99));
+      rej(console.log(585858))
+      }, 4000);
+    });
+  
+    let temp1 = await promise1;
+    let temp2 = await promise2;
+  };
+  
+  temp();

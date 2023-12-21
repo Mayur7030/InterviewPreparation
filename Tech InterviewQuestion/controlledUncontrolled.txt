@@ -1,0 +1,10 @@
+Uncontrolled and controlled component
+Features	       Controlled Component	                                    Uncontrolled Component
+Value Management	Managed by React state	                                 Managed by component's own internal state
+User Interaction	Parent component updates state on user interaction    	Component updates own internal state on user interaction
+Data Flow	        Data flows from parent component to component	       Data flows within the component
+Debugging	        Easier to debug	More                                   difficult to debug
+Performance	        Generally faster as there's less state management	   Generally slower as there's more state management
+Code Complexity	    Less complex code	                                   More complex code
+Best Practices	    Considered a best practice	                            Considered an alternate approach
+

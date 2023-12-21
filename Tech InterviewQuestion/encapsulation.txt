@@ -1,0 +1,7 @@
+Encapsulation - -
+Encapsulation is one of the fundamental concepts of object-oriented programming (OOP). It refers to the bundling of data and methods that operate on that data into a single unit, called a class. Encapsulation is a way of hiding the implementation details of a class from outside access and only exposing a public interface that can be used to interact with the class.
+In object-oriented programming, data and methods are often grouped together into classes. A class is a blueprint for creating objects. When an object is created, it is said to be an instance of the class.
+The data and methods in a class are often referred to as the class's members. The data members are the variables that store the data for the object. The method members are the functions that operate on the data for the object.
+Encapsulation is achieved by declaring the data members of a class as private. This means that they can only be accessed by the methods of the class. The methods of the class are called public because they can be accessed by other classes.
+There are several benefits to encapsulation. First, it allows the data members of a class to be hidden from the outside world. This can help to protect the data from unauthorized access or modification. Second, encapsulation can help to make code more modular and reusable. Third, encapsulation can help to improve the readability and maintainability of code.
+Here is an example of encapsulation in Java:

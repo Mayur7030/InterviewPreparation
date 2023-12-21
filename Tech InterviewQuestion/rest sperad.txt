@@ -1,0 +1,3 @@
+Rest --The rest operator is used to collect the remaining arguments into an array. It is typically used when you do not know how many arguments will be passed to a function.
+Spread operator –The spread operator is used to unpack the contents of an iterable into individual elements. It is typically used to pass an array or object as a single argument to a function
+      The main difference between the rest and spread operators is that the rest operator collects the remaining arguments into an array, while the spread operator unpacks the contents of an iterable into individual elements

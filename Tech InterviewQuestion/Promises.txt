@@ -1,0 +1,127 @@
+promise is an object that represents the eventual completion (or failure) of an asynchronous operation. It is a more modern way of handling asynchronous code in JavaScript than using callbacks.
+
+"a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed."
+
+usecase - is used to parallel execution
+
+code-------------------------->
+
+let a = 666;
+const promise = new Promise(function (resolve, reject) {
+  if (a == 666) {
+    resolve("right");
+  } else {
+    reject("reject");
+  }
+});
+
+promise.then((value) => {
+  console.log(2 + value);
+});
+promise.catch((error) => {
+  console.log(error);
+});
+
+
+promise chaining --->
+
+https://www.javascripttutorial.net/es6/promise-chaining/
+
+Promise chaining is a technique for executing multiple asynchronous operations in sequence, where the result of one operation is used as the input for the next. It's essential for handling tasks that depend on each other's completion, such as fetching data from multiple APIs or performing a series of database interactions.
+
+
+
+syntax --
+step1()
+    .then(result => step2(result))
+    .then(result => step3(result))
+    ...
+
+
+
+Suppose that you want to perform the following asynchronous operations in sequence:
+
+First, get the user from the database.
+Second, get the services of the selected user.
+Third, calculate the service cost from the user’s services.
+
+code-------------->
+function getUser(userId) {
+    return new Promise((resolve, reject) => {
+        console.log('Get the user from the database.');
+        setTimeout(() => {
+            resolve({
+                userId: userId,
+                username: 'admin'
+            });
+        }, 1000);
+    })
+}
+
+function getServices(user) {
+    return new Promise((resolve, reject) => {
+        console.log(`Get the services of ${user.username} from the API.`);
+        setTimeout(() => {
+            resolve(['Email', 'VPN', 'CDN']);
+        }, 3 * 1000);
+    });
+}
+
+function getServiceCost(services) {
+    return new Promise((resolve, reject) => {
+        console.log(`Calculate the service cost of ${services}.`);
+        setTimeout(() => {
+            resolve(services.length * 100);
+        }, 2 * 1000);
+    });
+}
+
+getUser(100)
+    .then(getServices)
+    .then(getServiceCost)
+    .then(console.log);
+   
+
+output --->>>   
+Get the user from the database.
+Get the services of admin from the API.
+Calculate the service cost of Email,VPN,CDN.
+300
+
+
+--->>
+Promise API ---->
+
+1)Promise.all()-
+wait for all promises to resolve and return their result as array .If any one fails it becomes the error & all other results are ignored.
+
+2)Promise.allSettled-
+wait for all promises to resolve and return their result as array of objects
+
+3)Promise.race  -
+wait for first promise to settled and return their value whether it fails or passed.
+
+4)Promise.any -similar to race but return first resolved promise
+
+5) Promise.resolve()
+6)Promise.reject()
+
+code --->
+const promise1 = new Promise((res, rej) => {
+    //   res(6);
+      rej(new Error("error"));
+    });
+    const promise2 = new Promise((res, rej) => {
+    //   res(6);
+      rej(new Error("error"));
+    });
+    const promise3 = new Promise((res, rej) => {
+      res(666);
+      rej(new Error("error"));
+    });
+    
+    Promise.all([promise1,promise2, promise3])
+      .then((value) => {
+        return console.log(value);
+      })
+

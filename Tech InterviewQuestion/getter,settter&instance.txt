@@ -1,0 +1,27 @@
+getter & setter to get & set the computed properties.
+usecase - to change properties like parameter we gave 
+get - property changed to _name
+set - 
+
+
+
+class school {
+    constructor(name) {
+      this._name = name;
+    }
+    login() {
+      console.log(`my naem is ` + this.name);
+    }
+    get name(){
+      return this._name
+    }
+    set name(newname){
+      this._name = newname
+      
+    }
+  }
+  let a = new school("bru")
+  a.login()
+  console.log(a.name)
+  a.name = "rahul"
+  console.log(a.name)

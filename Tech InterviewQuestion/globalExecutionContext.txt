@@ -1,0 +1,3 @@
+freecode camp link--
+
+https://www.freecodecamp.org/news/how-javascript-works-behind-the-scene-javascript-execution-context/
