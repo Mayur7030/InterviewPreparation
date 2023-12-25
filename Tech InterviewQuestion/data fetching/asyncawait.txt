@@ -23,6 +23,7 @@ let temp = async () => {
     });
   
     let temp1 = await promise1;
+    console.log("this wille executes after promise1)
     let temp2 = await promise2;
   };
   

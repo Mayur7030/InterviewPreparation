@@ -1,0 +1,61 @@
+React default catching behavior
+
+Caching is an important technique for optimizing React applications. By reducing unnecessary re-renders, caching can help to improve the performance and efficiency of your application.
+
+
+
+ React uses a technique called “shallow comparison” to determine whether a component should be re-rendered. This basically means that if the props or state of a component haven’t changed, React will assume that the output of the component hasn’t changed either and won’t re-render it.
+
+ React provides a default caching behavior by using a virtual DOM to compare changes in state and props, and only updating components after a shallow comparison reflects changes. This is a great optimization technique that’s sufficient in many scenarios, but sometimes more fine-grained control is desired.
+
+
+
+ USEMEMO hook --
+
+useMemo is useful when you need to do an expensive computation to retrieve a value, and you want to ensure that the computation is only performed when necessary. By memoizing the value using useMemo, you can ensure that the value is only computed when its dependencies change.
+
+code---------------->
+import React, { useState, useMemo } from "react";
+function App() {
+  const [txt, setTxt] = useState("Some tex");
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
+  const sum = useMemo(() => {
+    console.log("Computing sum...");
+    return a + b;
+  }, [a, b]);
+  return (
+    <>
+      <div>
+        <p>Text: {txt}</p>
+        <p>a: {a}</p>
+        <p>b: {b}</p>
+        <p>sum: {sum}</p>
+        <button onClick={() => setTxt("New Text!")}>Set Text</button>
+        <button onClick={() => setA(a + 1)}>Increment a</button>
+        <button onClick={() => setB(b + 1)}>Increment b</button>
+      </div>
+    </>
+  );
+}
+
+export default App;
+----------------------
+explanation --
+
+In our Example component above, assume the sum() function performs an expensive computation. If the txt state is updated, React is going to re-render our component, but because we memoized the returned value of sum, this function will not run again at this time.
+
+The only time the sum() function will run is if either the a or b state has been mutated (changed). This is an excellent improvement upon the default behavior, which will rerun this method upon each re-render.
+
+
+
+-------------
+conclusion
+useMemo is used to memoize the results of a function call, and is useful when the function is expensive to compute and the result does not change often.
+
+
+
+
+
+
+

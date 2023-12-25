@@ -1,8 +1,0 @@
-New -- Axios –js library to make http(hypertext transfer protocol)request from browser to web server
-
-Axios is a promise-based HTTP client for JavaScript. It is a popular library used to make HTTP requests from the browser and the server. Axios is easy to use and has a lot of features, making it a great choice for making HTTP requests in JavaScript.
-Here are some of the features of Axios:
-•	Promise-based: Axios uses promises to handle the asynchronous nature of HTTP requests. This makes it easy to chain requests together and handle errors.
-•	Configurable: Axios is highly configurable. You can customize the headers, timeouts, and other settings of each request.
-•	Lightweight: Axios is a lightweight library that is easy to download and install.
-•	Cross-platform: Axios can be used in the browser and the server.

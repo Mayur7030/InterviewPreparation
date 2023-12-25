@@ -1,0 +1,42 @@
+// Sample Array
+const colors = ['Red', 'Green', 'Blue', 'Yellow'];
+
+// Sample Object
+const person = {
+  name: 'John Doe',
+  age: 30,
+  occupation: 'Developer'
+};
+
+// Using for loop with Array
+console.log('Using for loop with Array:');
+for (let i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+
+// Using for...in loop with Object
+console.log('\nUsing for...in loop with Object:');
+for (const key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+
+// Using for...of loop with Array
+console.log('\nUsing for...of loop with Array:');
+for (const color of colors) {
+  console.log(color);
+}
+
+// Using while loop with Array
+console.log('\nUsing while loop with Array:');
+let index = 0;
+while (index < colors.length) {
+  console.log(colors[index]);
+  index++;
+}
+
+// Using do...while loop with Array
+let index = 0;
+do {
+  console.log(colors[index]);
+  index++;
+} while (index < colors.length);

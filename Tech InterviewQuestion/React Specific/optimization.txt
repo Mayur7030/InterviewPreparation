@@ -1,13 +1,99 @@
 Optimization of react –
 
 Optimization of React is the process of making a React application run faster and more efficiently. There are many ways to optimize a React application, some of which are more effective than others.
+
+
 Here are some of the most common ways to optimize React applications:
-•	Use lazy loading: Lazy loading is a technique that defers the loading of components until they are needed. This can improve the performance of your application by reducing the amount of JavaScript that needs to be loaded initially.
+
+•	Use lazy loading: Lazy loading is a technique in web development that defers the loading of non-essential resources until they are actually needed. In React, lazy loading is often used for code-splitting, allowing you to load components or modules on demand, which can significantly improve the initial loading time of your application.
+
+code-------------->
+// LazyComponent.js
+import React from 'react';
+
+const LazyComponent = () => {
+  return <div>This is a lazily-loaded component!</div>;
+};
+
+export default LazyComponent;
+
+
+// App.js
+import React, { lazy, Suspense } from 'react';
+
+const LazyComponent = lazy(() => import('./LazyComponent'));
+
+function App() {
+  return (
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyComponent />
+      </Suspense>
+    </div>
+  );
+}
+
+export default App;
+
+------------------------------------------*************************8888-------------
+
 •	Use memoization: Memoization is a technique that caches the results of expensive calculations. This can improve the performance of your application by preventing the same calculation from being performed multiple times.
+
+useMemo() , useCallback(), 
+----------------------------------------------------
+*  Use Proper Keys for Lists:
+Ensure each item in a list has a unique and stable key to optimize rendering.
+
+---------------------------------------------------------------------------------
 •	Use code splitting: Code splitting is a technique that divides your application code into smaller chunks that can be loaded independently. This can improve the performance of your application by reducing the amount of JavaScript that needs to be loaded initially.
+
+code -----------
+// App.js
+import React, { useState, useEffect } from 'react';
+
+const App = () => {
+  const [view, setView] = useState(null);
+
+  useEffect(() => {
+    // Dynamically import the component based on the selected view
+    const loadView = async () => {
+      if (view === 'home') {
+        const Home = (await import('./Home')).default;
+        setView(<Home />);
+      } else if (view === 'dashboard') {
+        const Dashboard = (await import('./Dashboard')).default;
+        setView(<Dashboard />);
+      }
+    };
+
+    loadView();
+  }, [view]);
+
+  return (
+    <div>
+      <button onClick={() => setView('home')}>Load Home</button>
+      <button onClick={() => setView('dashboard')}>Load Dashboard</button>
+      {view}
+    </div>
+  );
+};
+
+export default App;
+
+
+In this example, the code for Home and Dashboard components is loaded dynamically only when the respective buttons are clicked. This way, the initial bundle remains small, and components are loaded on demand.
+
+
+-----------------------------------------------------------------
+
 •	Use functional components: Functional components are a newer type of React component that are more efficient than class components. This is because functional components do not have a state or lifecycle, which can improve the performance of your application.
+-------------------------------------
+
 •	Use performance tools: There are a number of performance tools available that can help you identify and fix performance problems in your React application. These tools can help you to optimize your application for different devices and browsers.
-Here are some additional tips for optimizing React applications:
-•	Use a profiler: A profiler is a tool that can help you to identify performance bottlenecks in your application. This can help you to focus your optimization efforts on the areas that will have the biggest impact.
-•	Use a caching mechanism: A caching mechanism can help you to store frequently used data in memory. This can improve the performance of your application by reducing the number of times that data needs to be fetched from the server.
+react dev tools
+
+--------------------------------------------
+
 •	Use a content delivery network (CDN): A CDN is a network of servers that can be used to deliver static content, such as images and JavaScript files, to users. This can improve the performance of your application by reducing the distance that content needs to travel to reach users.
+
+-----------------------------------------------------------------

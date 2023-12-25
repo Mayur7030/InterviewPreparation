@@ -1,0 +1,56 @@
+roll based access control?
+query param?
+dynamic routing?
+
+
+previoulsy we use server side rendering where when we navigate to new page it is render whole page 
+ but now we use React router for client side rendering
+
+ 
+
+React Router is a JavaScript framework that lets us handle client and server-side routing in React applications. It enables the creation of single-page web or mobile apps that allow navigating without refreshing the page. It also allows us to use browser history features while preserving the right application view.
+
+https://www.freecodecamp.org/news/react-router-in-5-minutes/
+
+
+install npm i react-router-dom
+
+App Component -->
+import BrowserRouter from 'react-router-dom'
+
+
+Navbar compoenent
+
+code ->
+
+
+import React from "react";
+import Home from "./Home";
+import Contact from "./Contact";
+import About from "./About";
+import { Route, Routes, Link } from "react-router-dom";
+
+function Navbar() {
+  const Name = () => {
+    return <h2>Name</h2>;
+  };
+  return (
+    <div>
+
+      <Routes>                           //to bind all routes as parent element,without it we                                    will get error
+        <Route exact path="/" Component={Home} />    //no need to exact keyword now            
+        <Route path="/about" Component={About} />
+        <Route path="/contact" Component={Contact} />
+        <Route path="/contact/name" Component={Name} />
+      </Routes>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">contact</Link>
+        <Link to="/contact/name">Name</Link>
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;

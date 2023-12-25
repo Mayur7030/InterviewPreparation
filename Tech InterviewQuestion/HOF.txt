@@ -1,5 +1,9 @@
 A higher-order function (HOF)
 
+why?
+where?
+how?
+when?
 
  is a function that does at least one of the following:
 •	Takes one or more functions as arguments.

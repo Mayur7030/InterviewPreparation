@@ -1,0 +1,10 @@
+Hello sir, I'm Mayur. I graduated in Mechanical Engineering from Pune University in 2021. For the past two years, I have been working as a Frontend Developer at TCS, where I've gained expertise in technologies such as React, TypeScript, JavaScript, and Redux. My current focus is on expanding my skill set to become a full-stack developer. Outside of work, I am actively learning backend technologies like Node.js, Express.js, and MongoDB. I am passionate about staying at the forefront of technological advancements and leveraging my cross-disciplinary skills to contribute effectively in the dynamic field of software development."
+
+Recently I've increased the revenue of
+my company by 30% by optimizing and
+modernizing existing web applications I
+have applied my extensive knowledge in
+ JavaScript React and other
+Technologies to add new features that
+significantly improved the user
+experience and increased Revenue.

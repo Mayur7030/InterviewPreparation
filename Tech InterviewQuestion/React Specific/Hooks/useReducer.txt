@@ -1,0 +1,72 @@
+
+useReducer is a React Hook that is used for state management in functional components. It is particularly useful when dealing with complex state logic that involves multiple sub-values or when the next state depends on the previous state. It is an alternative to using the useState hook and is especially handy for managing state in a more predictable and maintainable way.
+
+benefits -
+centralized logic
+avoid prop drilling
+predictable state change
+
+its parts -
+ reducer method -
+
+ reducer is a pure function responsible for specifying how the application's state changes in response to actions. It takes the current state and an action as arguments and returns the new state. The function signature typically looks like this:
+
+(state, action) => newState
+
+dispatch --
+The dispatch function is a way to send actions to the reducer. When you call dispatch with an action, it triggers the execution of the reducer, which then determines how the state should be updated. The dispatch function is typically used like this:
+
+dispatch({ type: 'INCREMENT' });
+
+
+Actions:
+Actions are plain JavaScript objects that describe what kind of state change should occur. They must have a type property indicating the type of action and can include additional data (payload) needed for the state update. Here's an example of actions used in the counter reducer:
+
+// Action creators
+const incrementAction = { type: 'INCREMENT' };
+const decrementAction = { type: 'DECREMENT' };
+
+// Dispatching actions
+dispatch(incrementAction);
+dispatch(decrementAction);
+
+
+
+
+code ------->
+import React from "react";
+import { useReducer } from "react";
+
+function App() {
+  const reducerMethod = (state, action) => {
+    switch (action.type) {
+      case "increment":
+        return { count: state.count + 1 };
+      case "decrement":
+        return { count: state.count - 1 };
+      default:
+        return state;
+    }
+  };
+  const initialValue = { count: 0 };
+  const [newstate, dispatch] = useReducer(reducerMethod, initialValue);
+
+  const increment = () => {
+    dispatch({ type: "increment" });
+  };
+  const decrement = () => {
+    dispatch({ type: "decrement" });
+  };
+
+  return (
+    <>
+      <div>
+        <p>Count : {newstate.count}</p>
+        <button onClick={increment}>Increment</button>
+        <button onClick={decrement}>Decrement</button>
+      </div>
+    </>
+  );
+}
+
+export default App;

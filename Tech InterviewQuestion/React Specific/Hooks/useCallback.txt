@@ -1,0 +1,47 @@
+useCallback is useful when you need to pass a function as a prop to a child component, and you want to ensure that the function reference does not change unnecessarily. By memoizing the function using useCallback, you can ensure that the function reference remains the same as long as its dependencies do not change.
+
+Without getting too heavy into JavaScript function references, let’s just take a look at how they can affect the rendering of your React app. When a function reference changes, any child components that receive the function as a prop will re-render, even if the function logic itself has not changed.
+
+This is because, as we already mentioned, React does a shallow comparison of prop values to determine whether a component should re-render, and a new function reference will always be considered a different value than the previous one.
+
+In other words, the simple act of redeclaring a function (even the same exact function), causes the reference to change, and will cause the child component that receives the function as a prop to unnecessarily re-render.
+
+Here’s an example code block reflecting a basic useCallback implementation:
+
+react
+import React, { useState, useCallback } from 'react';
+function ChildComponent({ onClick }) {
+console.log('ChildComponent is rendered');
+return (
+<button onClick={onClick}>Click me</button>
+);
+}
+function Example() {
+const [count, setCount] = useState(0);
+const [txt, setTxt] = useState(“Some text…”);
+const incrementCount = useCallback(() => {
+setCount(prevCount => prevCount + 1);
+}, [setCount]);
+return (
+<div>
+<p>Text: {txt}</p>
+<p>Count: {count}</p>
+<button onClick={setTxt}>Set Text</button>
+<button onClick={setCount}>Increment</button>
+<ChildComponent onClick={incrementCount} />
+</div>
+);
+}
+
+
+
+As you can see in the above example, we pass the incrementCount method instead of the setCount method to the child component. This is because incrementCount is memoized, and when we run our setTxt method, it won’t cause the child component to unnecessarily re-render.
+
+The only way our child component will re-render in this example is if the setCount method runs, because we passed it as a dependency parameter to our useCallback memoization.
+
+
+
+--------------
+conclusion
+useCallback is used to memoize the actual reference of a function rather than the returned value, and is used when the function is passed as a prop to child components that might cause unnecessary re-renders.
+

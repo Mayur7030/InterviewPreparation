@@ -1,5 +1,0 @@
-Return  
-The return statement is a useful tool for controlling the flow of execution of a JavaScript function. It can be used to stop the execution of a function early, to return a value from a function, and to avoid errors. The return statement in JavaScript is used to return a value from a function. The function will stop executing when the return statement is called and the value will be returned to the caller of the function
-This –
-In JavaScript, the this keyword refers to an object.
-Which object depends on how this is being invoked (used or called). 

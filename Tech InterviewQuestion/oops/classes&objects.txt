@@ -1,7 +1,7 @@
 class  = template
 
 consider a railway ragistration form , make one copy and you can use multiple times for different users.
-users can fill different data as per their requirement like 2A, location,fair etc 
+users can fill different data as per their requirement like seat, location,fair etc 
 
 users -- objects
 
@@ -15,7 +15,9 @@ extends keyword -
  class parent extends child{}
 
  super keyword -
-  to grab object from parent class as it is and we can ass things in this as per requirement
+ without super - it will override parent class method
+ if we want add things in parent class method 
+  to grab object from parent class as it is and we can access things in this as per requirement
   super.login()
 
 static methods -

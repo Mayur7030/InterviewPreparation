@@ -1,0 +1,25 @@
+oop -
+oop is programming paradigm(namuna) that uses concept of objects to structure and organize code.
+
+
+for different application of similar type we will not code seperately 
+like in GTA ,we will not code differently for different  humans ,
+we will create Human(class) then make different objects from them( police,male, female,children)
+which having same METHODS( run, walk) and different properties(color, height)
+
+4 piller of Oop -
+
+1 ) inheritance - properties from parent 
+Inhertiace is mechanism that allows a class to inherit properties and behavior from another class.
+
+2 ) abstraction - secure the data
+It hides the implementation details,focusing on what an object does rather than how it achieves its functionality.
+
+3) polymorphism - one thing different format - like phone -camera, recorder 
+polymorphism allows objects to be treated as instances of their parent class ,enabling flexibility in method invocation .It include method overloading(having multiple methods with same name but different parameter) and overriding.
+
+4) encapsulation -4 things in one
+encapsulation is bundling of data (attributes) and the methods that operates on the data into single unit calles class.
+It restrict direct access to some of an objects components and can prevents uninteded interference.
+
+

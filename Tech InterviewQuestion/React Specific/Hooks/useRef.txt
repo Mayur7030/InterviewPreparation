@@ -1,0 +1,80 @@
+
+The useRef hook is a React Hook that provides a way to create a mutable object that persists across renders and can be used to access and interact with a DOM element or to persist values between renders without causing re-renders.
+
+1 )creating  a ref 
+
+const myRef = useRef(initialValue);
+
+
+2)accessign DOM element
+
+code -------->
+  const focus = useRef(null);
+  const handleclick = () => {
+    focus.current.focus();
+    focus.current.style.color = "red";
+  };
+  return (
+    <div>
+      <input type="text" name="" id="" ref={focus} />
+      <p ref={focus}>Lorem ipsum dolor sit amet consectetur</p>
+      <button onClick={handleclick}> focus</button>
+    </div>
+
+3) Preserving Values Between Renders:
+4)Storing Mutable Values Without Causing Re-renders:
+
+code -------------->
+import React, { useRef } from "react";
+
+function App() {
+  const value = useRef(0);
+  const handleClick = () => {
+    value.current++;
+    console.log(`useref value is ${value.current}`);
+  };
+  console.log(`${value.current}`);
+  console.log("i render");
+  return (
+    <>
+      <button onClick={handleClick}>clicked</button>
+    </>
+  );
+}
+
+export default App;
+
+
+
+5) Keeping track of a mutable variable through re-renders
+
+
+import React, { useEffect, useRef, useState } from 'react';
+
+const MutableVariableExample = () => {
+  // Using state to trigger re-renders
+  const [count, setCount] = useState(0);
+
+  // Creating a ref to keep track of a mutable variable
+  const mutableVariableRef = useRef(0);
+
+  // useEffect to log the mutable variable on each render
+  useEffect(() => {
+    console.log('Mutable Variable:', mutableVariableRef.current);
+  });
+
+  // Function to increment the mutable variable
+  const incrementMutableVariable = () => {
+    mutableVariableRef.current += 1;
+    setCount(count + 1); // Triggering a re-render with state change
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={incrementMutableVariable}>Increment Mutable Variable</button>
+    </div>
+  );
+};
+
+export default MutableVariableExample;

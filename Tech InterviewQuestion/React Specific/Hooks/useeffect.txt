@@ -1,3 +1,108 @@
-useeffect hook –
-The useEffect hook is a React hook that allows you to perform side effects in your functional components. Side effects are any actions that have an impact on the outside world, such as fetching data, updating the DOM, or setting up timers.
-Useeffect( function(),[dependency])
+"useEffect is a React Hook introduced to handle side effects in functional components. Side effects are actions that involve interactions with the external world, such as making API calls, to interact with browser,using unpredictable time out function like settimeout. In React, most components are designed to be pure functions, ensuring predictability and ease of testing.
+
+However, when dealing with side effects, predictability is compromised. useEffect provides a way to manage these side effects in a controlled manner. It takes two arguments: a callback function and an array of dependencies.
+
+If we perform a side effect directly in our component body, it gets in the way of our React component's rendering.
+
+Side effects should be separated from the rendering process. If we need to perform a side effect, it should strictly be done after our component renders.
+
+This is what useEffect gives us.
+
+
+
+The callback function within useEffect contains the code for the side effect. This function is executed after the component renders. The array of dependencies specifies the values from the component's scope that the side effect relies on. If any of these dependencies change between renders, the useEffect callback is re-executed.
+
+For instance, if we want to update the document title based on a prop called name, we use useEffect like this:
+
+
+ code
+import { useEffect } from 'react';
+
+function User({ name }) {
+  useEffect(() => {
+    document.title = name;
+  }, [name]);
+  
+  return <h1>{name}</h1>;   
+}
+In this example, the useEffect hook ensures that updating the document title happens after the component renders and only if the name prop has changed, preventing unnecessary side effects and maintaining component purity."
+
+
+Interview Questions--------------------------->
+
+Q) what is cleanUp function in useeffect?
+
+Ans -->
+Certainly! Let's go into more detail on cleaning up side effects in useEffect with an example. Cleaning up is important to avoid memory leaks and unexpected behavior when components are unmounted or dependencies change.
+
+Consider a scenario where you have a component that subscribes to an external resource, such as a data stream, and you want to ensure that the subscription is properly closed when the component is unmounted or when a dependency changes.
+
+javascript
+Copy code
+import React, { useEffect, useState } from 'react';
+
+const ExampleComponent = ({ userId }) => {
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    // Subscribe to a data stream or perform some asynchronous operation
+    const subscription = subscribeToUserData(userId);
+
+    // Update state with fetched data
+    subscription.then(data => {
+      setUserData(data);
+    });
+
+    // Cleanup function
+    return () => {
+      // Unsubscribe or perform cleanup when the component is unmounted or
+      // when the userId changes (if userId is in the dependency array)
+      unsubscribeFromUserData(subscription);
+    };
+  }, [userId]); // Dependency array includes userId
+
+  return (
+    <div>
+      {/* Render component based on userData */}
+      {userData && (
+        <div>
+          <h1>User Data</h1>
+          <p>{userData.name}</p>
+          {/* ...other data */}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ExampleComponent;
+
+// Helper functions for illustration purposes
+const subscribeToUserData = (userId) => {
+  // Simulating a subscription to user data (e.g., from a WebSocket)
+  console.log(`Subscribed to user data for user ID: ${userId}`);
+  return new Promise(resolve => {
+    // Simulating asynchronous data fetching
+    setTimeout(() => {
+      resolve({ id: userId, name: `User ${userId}` });
+    }, 2000);
+  });
+};
+
+const unsubscribeFromUserData = (subscription) => {
+  // Simulating unsubscribing or cleanup
+  console.log('Unsubscribed or performed cleanup');
+  // In a real scenario, you might have logic to close a WebSocket connection or
+  // clear up other resources associated with the subscription.
+};
+In this example:
+
+The useEffect hook subscribes to user data when the component mounts or when the userId prop changes.
+The cleanup function returned by useEffect unsubscribes from the user data when the component is unmounted or when the userId changes.
+The subscribeToUserData and unsubscribeFromUserData functions are placeholder functions for illustration purposes. In a real application, these would be functions associated with the data source you are working with, such as a WebSocket subscription.
+By including the cleanup function in the useEffect, you ensure that resources are properly released when they are no longer needed, preventing memory leaks and ensuring the correctness of your application.
+
+
+
+
+

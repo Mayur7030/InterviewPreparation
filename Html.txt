@@ -1,1 +1,1 @@
-Semantic tags – which has some meaning in their name for browser and user understanding like p, imag
+Semantic tags – which has some meaning in their name for browser and user understanding like p, img 

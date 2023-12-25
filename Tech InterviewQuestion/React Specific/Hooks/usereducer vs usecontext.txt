@@ -1,0 +1,12 @@
+useContext Hook:
+
+Purpose: Used for accessing the value of a React context.
+Typical Use Case: When you have a global state or some values that need to be shared across components without prop drilling.
+
+
+useReducer Hook:
+
+Purpose: Used for managing complex state logic in a more predictable and centralized way.
+Typical Use Case: When the state transitions depend on the previous state or when there are multiple sub-values in the state.
+
+In summary, useContext is primarily for accessing values from a context, while useReducer is for managing state transitions, especially in scenarios involving complex state logic
