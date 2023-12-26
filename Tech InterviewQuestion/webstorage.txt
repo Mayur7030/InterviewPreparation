@@ -1,2 +1,5 @@
 local storage
 session storage
+
+
+Both localStorage and sessionStorage are web storage options in browsers. The main difference is that localStorage persists even after the browser is closed, while sessionStorage is cleared when the session ends (when the browser is closed).

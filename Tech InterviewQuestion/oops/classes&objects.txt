@@ -1,4 +1,4 @@
-class  = template
+class  = template - a blueprint for creating objects
 
 consider a railway ragistration form , make one copy and you can use multiple times for different users.
 users can fill different data as per their requirement like seat, location,fair etc 

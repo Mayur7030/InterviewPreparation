@@ -1,5 +1,6 @@
 An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. 
 
+ syntax --- ()()
 (function () {
   // …
 })();
@@ -11,8 +12,7 @@ An IIFE (Immediately Invoked Function Expression) is a JavaScript function that 
 It is a design pattern which is also known as a Self-Executing Anonymous Function and contains two major parts:
 
 The first is the anonymous function with lexical scope enclosed within the Grouping Operator (). This prevents accessing variables within the IIFE idiom as well as polluting the global scope.
-The second part creates the immediately invoked function expression () through which the JavaScript engine will directly interpret the function.
-
+This set of parentheses is used to invoke (call) the function immediately after its declaration
 
 USECASE --
 
@@ -30,17 +30,71 @@ Because our application could include many functions and global variables from d
 
 2 ) Execute an async function
 
-const getFileStream = async (url) => {
-  // implementation
-};
-
 (async () => {
-  const stream = await getFileStream("https://domain.name/path/file.ext");
-  for await (const chunk of stream) {
-    console.log({ chunk });
+  try {
+    const outer = async () => {
+      return new Promise((res) => {
+        setTimeout(() => {
+          console.log("done");
+          res();
+        }, 2000);
+      });
+    };
+    console.log("start");
+    await outer();
+    console.log("end");
+    // console.log(res, "res");
+  } catch (error) {
+    console.log(error);
   }
 })();
+
 
 3)
 The module pattern
 We would also use IIFE to create private and public variables and methods. 
+
+
+real life scenerio -
+
+
+In an e-commerce website scenario, Immediately Invoked Function Expressions (IIFE) can be used to encapsulate code that needs to be executed immediately and to create private scopes for variables. Let's consider a real-life example within the context of an e-commerce website:
+
+javascript
+Copy code
+(function() {
+  // IIFE to handle product-related functionality
+
+  // Private variables
+  var cart = []; // Represents the user's shopping cart
+
+  // Private functions
+  function addToCart(product) {
+    // Logic to add a product to the cart
+    cart.push(product);
+    console.log(product.name + " added to the cart.");
+  }
+
+  function checkout() {
+    // Logic to process the checkout
+    console.log("Checkout completed. Thank you for your purchase!");
+    cart = []; // Clear the cart after checkout
+  }
+
+  // Public API (exposed methods)
+  window.ecommerce = {
+    addToCart: addToCart,
+    checkout: checkout
+  };
+})();
+
+// Example usage
+ecommerce.addToCart({ name: "Product 1", price: 29.99 });
+ecommerce.addToCart({ name: "Product 2", price: 49.99 });
+ecommerce.checkout();
+In this example:
+
+The IIFE encapsulates the e-commerce functionality, creating a private scope for variables like cart.
+Private functions like addToCart and checkout are defined within the IIFE, making them inaccessible from outside.
+The public API (ecommerce) exposes specific methods (addToCart and checkout) that can be used by other parts of the application.
+This approach helps in organizing code related to the shopping cart, maintaining the privacy of internal details, and preventing global variable pollution. It's a common pattern to ensure that the e-commerce functionality operates independently and does not interfere with other parts of the website.

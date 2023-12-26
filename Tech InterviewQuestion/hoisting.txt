@@ -1,6 +1,29 @@
 Link - https://www.freecodecamp.org/news/javascript-let-and-const-hoisting
 
-Hoisting is a JavaScript feature that moves all variable and function declarations to the top of their scope, even if they are declared later in the code. This means that you can refer to a variable or function before it is declared, but the value will be undefined.
+Hoisting is a JavaScript feature that moves all variable and function declarations to the top of their scope before the code is executed, even if they are declared later in the code. This means that you can refer to a variable or function before it is declared, but the value will be undefined.
 
-Hoisting is for var only.
-Let and const can not access before initialization.
+Var Declarations vs. Let and Const:
+
+ var declarations are hoisted to the top of their scope, but let and const declarations are hoisted as well, but not initialized until the actual declaration.
+
+temprol dead zone -
+A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the computer completely initializes it with a value.
+
+
+Function Declarations vs. Function Expressions vs arraow function: 
+
+Function declarations are hoisted entirely, while function expressions are not.
+
+// Function Declaration (hoisted entirely)
+hoistedFunction(); // Output: "I'm hoisted!"
+function hoistedFunction() {
+  console.log("I'm hoisted!");
+}
+
+// Function Expression (not hoisted entirely)
+// unHoistedFunction(); // Error: unHoistedFunction is not a function
+var unHoistedFunction = function() {
+  console.log("I'm not hoisted!");
+};
+
+//arrow function does not support hoisting

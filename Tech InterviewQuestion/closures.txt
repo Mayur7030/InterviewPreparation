@@ -7,6 +7,35 @@ If we want to update variable ,we have to make it global like counter app but th
 All function have access to global scope.
 JS nested function have access to the scope above them.
 
+------------
+In JavaScript, closures play a crucial role in the scenario you described, where inner functions have access to variables from their outer (enclosing) functions even after the outer function has completed its execution and its call stack has been cleared.
+
+Here's a breakdown of what happens:
+
+Outer Function Execution:
+
+When the outer function is executed, its local variables are stored in the call stack.
+Once the outer function completes, its call stack frame is popped, and the variables are technically out of scope.
+Inner Function and Closure:
+
+The inner function, being a closure, retains a reference to the scope (including variables) in which it was created, even after the outer function has finished executing.
+This reference to the outer function's scope is part of what makes closures powerful.
+Accessing Variables:
+
+When the inner function tries to access a variable from the outer function, it looks up the scope chain to find that variable.
+If the variable is not found in the local scope of the inner function, it looks in the scope where the inner function was created, which is the scope of the outer function.
+Retrieving from Heap:
+
+Although the call stack for the outer function has been cleared, the variables it defined are still accessible because the inner function maintains a reference to the scope of the outer function.
+This reference is stored in the heap memory, not in the call stack.
+----------------------------------
+
+Defination -->
+
+A closure is a feature in JavaScript where a function has access to variables from its outer (enclosing) scope, even after the outer function has finished execution. It allows a function to "remember" and access its lexical scope, capturing variables and maintaining their values.
+
+In simpler terms, a closure occurs when a function is defined inside another function, creating a scope chain that enables access to the outer function's variables even after the outer function has completed execution.
+
 
 code-------------------->
 Example 1 --

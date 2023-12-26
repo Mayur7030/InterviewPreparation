@@ -1,1 +1,16 @@
-Semantic tags – which has some meaning in their name for browser and user understanding like p, img 
+
+What is HTML?
+
+HTML stands for HyperText Markup Language. It is the standard markup language used to create the structure of web pages.
+
+Semantic tags – which has some meaning in their name for browser and user understanding like p, img, header, footer aside 
+
+What is the purpose of the DOCTYPE declaration in HTML?
+
+The DOCTYPE declaration defines the document type and version of HTML used in a web page. It helps browsers to render the page correctly.
+Explain the difference between HTML and HTML5.
+
+HTML5 is the latest version of HTML and introduces new elements, attributes, and APIs for better multimedia support, improved semantics, and enhanced user experience.
+What is the purpose of the <meta> tag in HTML?
+
+The <meta> tag is used to provide metadata about the HTML document. It includes information like character set, viewport settings, and other metadata that browsers may use.

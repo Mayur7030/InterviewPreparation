@@ -11,4 +11,5 @@ A synthetic event is a compatibility API that React generates around native even
 
 Synthetic events combine the response of different browser's native events into one API, ensuring that the events are consistent across different browsers.
 syncthetic events - onclick() onchange()
-
+-----------
+a synthetic event is a cross-browser wrapper around the native browser event. React uses synthetic events to abstract away the differences in event handling between different browsers and provide a consistent interface for handling events in a React application.

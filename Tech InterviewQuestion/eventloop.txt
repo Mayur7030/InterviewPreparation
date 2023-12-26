@@ -1,4 +1,6 @@
-The event loop is a crucial part of JavaScript's concurrency model, allowing it to handle asynchronous operations efficiently. Let's walk through the event loop process step by step with an example:
+The event loop is a constantly running process that monitors both the callback queue and the call stack.
+
+If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack. If the callback queue is empty, nothing will happen:
 
 step 1 )Global Execution Context:
 
@@ -89,6 +91,4 @@ Promise resolved
 Timeout function
 
 
-In this example, the microtask queue (Promise) has higher priority than the callback queue (setTimeout). Therefore, the Promise is resolved first before the setTimeout callback is executed.
-
-Understanding the event loop is crucial for writing efficient and responsive asynchronous JavaScript code.
+In this example, the microtask queue (Promise,fetch api) has higher priority than the callback queue (setTimeout). Therefore, the Promise is resolved first before the setTimeout callback is executed.

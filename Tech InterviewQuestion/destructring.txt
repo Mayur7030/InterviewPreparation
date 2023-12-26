@@ -1,0 +1,72 @@
+
+Destructuring is a feature in JavaScript that allows you to extract values from objects or arrays and assign them to variables in a more concise and convenient way. It provides a way to unpack values from complex data structures, making code cleaner and more readable.
+
+Destructuring Objects:
+Basic Object Destructuring:
+code------------------>
+// Original Object
+
+const person = { name: "John", age: 30, city: "New York" };
+
+// Destructuring
+const { name, age, city } = person;
+
+// Values assigned to variables
+console.log(name); // "John"
+console.log(age);  // 30
+console.log(city); // "New York"
+Default Values:
+code------------------>
+// Original Object
+const person = { name: "John", age: 30 };
+
+// Destructuring with default value for city
+const { name, age, city = "Unknown" } = person;
+
+// Values assigned to variables
+console.log(name); // "John"
+console.log(age);  // 30
+console.log(city); // "Unknown"
+
+
+Destructuring Arrays:
+Basic Array Destructuring:
+code------------------>
+// Original Array
+const colors = ["red", "green", "blue"];
+
+// Destructuring
+const [firstColor, secondColor, thirdColor] = colors;
+
+// Values assigned to variables
+console.log(firstColor);  // "red"
+console.log(secondColor); // "green"
+console.log(thirdColor);  // "blue"
+Skipping Elements:
+code------------------>
+// Original Array
+const numbers = [1, 2, 3, 4, 5];
+
+
+
+// Destructuring with skipping elements
+const [first, , third, , fifth] = numbers;
+
+// Values assigned to variables
+console.log(first);  // 1
+console.log(third);  // 3
+console.log(fifth);  // 5
+Destructuring Function Parameters:
+code------------------>
+// Original Object
+const user = { id: 101, name: "Alice", age: 25 };
+
+
+
+// Destructuring in function parameters
+function displayUserInfo({ id, name, age }) {
+  console.log(`User ID: ${id}, Name: ${name}, Age: ${age}`);
+}
+
+// Function call
+displayUserInfo(user); // Output: User ID: 101, Name: Alice, Age:

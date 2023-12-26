@@ -54,8 +54,8 @@ fetchingdata(url, handledata);
 -------------------------------------->
 ###  problem with callback
 
-  1)  we create dependency on callback function  if it fails then it will will affect outer function as well
-  2)   callback hell or pyramid of doom --
+  1)we create dependency on callback function  if it fails then it will will affect outer function as well
+  2)callback hell or pyramid of doom --
   if first run ,then run second then third then fourth...
 
 

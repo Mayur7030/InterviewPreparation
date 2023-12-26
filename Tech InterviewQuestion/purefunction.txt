@@ -1,0 +1,50 @@
+Pure Function:
+A pure function is a function that, given the same input, will always return the same output and has no side effects. It operates solely on its input parameters and does not modify external state or rely on external factors.
+
+Example of a Pure Function:
+code------------------>
+// Pure function
+function add(a, b) {
+  return a + b;
+}
+
+// Usage
+const result1 = add(3, 5); // Output: 8
+const result2 = add(3, 5); // Output: 8
+In this example, the add function takes two parameters and returns their sum. It has no side effects and will consistently produce the same output for the same input.
+
+Impure Function:
+An impure function is a function that may produce different results for the same input or has side effects, such as modifying external state or relying on external factors.
+
+Example of an Impure Function:
+code------------------>
+// Impure function
+let externalState = 0;
+
+function impureAdd(a) {
+  externalState += a;   //addition assignment operator
+  return externalState;
+}
+
+// Usage
+const result1 = impureAdd(3); // Output: 3
+const result2 = impureAdd(3); // Output: 6 (different result)
+In this example, the impureAdd function not only returns a result based on its input but also modifies the externalState, leading to different results for the same input. Additionally, it has a side effect of changing external state.
+
+Key Differences:
+Predictability: Pure functions are predictable, as they produce the same output for the same input every time. Impure functions may have varying results for the same input, making them less predictable.
+
+Side Effects: Pure functions have no side effects; they don't modify external state or rely on external factors. Impure functions may modify external state, which can lead to unexpected behavior.
+
+Testing: Pure functions are easier to test since they don't have dependencies on external state. Impure functions, especially those with side effects, may require more complex testing setups.
+
+Debugging: Debugging pure functions is straightforward because their behavior is isolated. Impure functions, with external dependencies, can be harder to debug due to their reliance on external factors.
+
+In functional programming, the emphasis is often on writing pure functions to promote code clarity, maintainability, and predictability. Pure functions are easier to reason about and are less prone to bugs caused by unexpected side effects.
+
+
+
+
+
+
+

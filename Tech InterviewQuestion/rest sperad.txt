@@ -1,3 +1,24 @@
-Rest --The rest operator is used to collect the remaining arguments into an array. It is typically used when you do not know how many arguments will be passed to a function.
-Spread operator –The spread operator is used to unpack the contents of an iterable into individual elements. It is typically used to pass an array or object as a single argument to a function
-      The main difference between the rest and spread operators is that the rest operator collects the remaining arguments into an array, while the spread operator unpacks the contents of an iterable into individual elements
+Rest --The rest parameter is used to COLLECT the remaining arguments into an array. It is typically used when you do not know how many arguments will be passed to a function.
+
+
+
+Spread operator –The spread operator is used to UNPACK the contents of an iterable into individual elements. It is typically used to pass an array or object as a single argument to a function
+      The main difference between the rest and spread operators is that the rest parameter collects the remaining arguments into an array, while the spread operator unpacks the contents of an iterable into individual elements
+
+
+
+
+      const a = [23, 445, 56, 76.44];
+const b = [99, 88, ...a]; //rest operatior
+const c = [...a]; //spread operator
+
+const person = { name: "Alice", age: 30 };
+const rest = { a: 33, g: 99, ...person };
+const spread = { ...person };
+
+console.log(spread); //{name: 'Alice', age: 30}
+console.log(rest); //{a: 33, g: 99, name: 'Alice', age: 30}
+
+console.log(b); //[99, 88, 23, 445, 56, 76.44]
+
+console.log(c); //[23, 445, 56, 76.44]

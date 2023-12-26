@@ -53,7 +53,3 @@ console.log(result); // Output: undefined
 In summary, the return statement is crucial for functions to produce outputs, exit early based on conditions, and control the flow of a program. It is the mechanism by which functions communicate results back to the code that called them.
 
 
-
-This –
-In JavaScript, the this keyword refers to an object.
-Which object depends on how this is being invoked (used or called). 

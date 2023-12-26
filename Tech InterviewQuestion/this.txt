@@ -1,4 +1,4 @@
-In JavaScript, the this keyword refers to the context in which a function is executed. The value of this is determined by how a function is called, and it can vary depending on the way the function is invoked.
+In JavaScript, the this keyword refers to the context/object in which a function is executed. The value of this is determined by how a function is called, and it can vary depending on the way the function is invoked.
 
 Example 1: Global Context
 When used outside of any function, in the global scope, this refers to the global object. In a browser environment, the global object is window.
@@ -32,10 +32,10 @@ person.sayHello(); // Output: Hello, my name is John
 2.3. Event Handler
 In an event handler, this often refers to the element that triggered the event.
 
-html
-Copy code
+
 <button onclick="console.log(this)">Click me</button>
 <!-- Output: <button> element -->
+
 Example 3: Constructor Function
 In a constructor function (a function used with the new keyword to create objects), this refers to the newly created instance.
 
@@ -46,6 +46,8 @@ function Person(name) {
 
 const john = new Person('John');
 console.log(john.name); // Output: John
+
+
 Example 4: Arrow Function
 Arrow functions do not have their own this. They inherit the this value from the enclosing scope.
 
@@ -55,6 +57,7 @@ const showThisArrow = () => {
 };
 
 showThisArrow(); // Output: [object Window] (or the enclosing scope's this)
+
 Conclusion:
 The value of this is dynamic and depends on how a function is invoked.
 For regular functions, this is determined at runtime.

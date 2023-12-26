@@ -3,13 +3,13 @@ features of es6
 * let & const keywords
 * Arrow function
 * spread Operator
-* rest Operator
+* rest parameter
 * map
 * template literals
 * destructuring 
 * Promises
 
-* multi line strings - using backticks
+* multi line strings - using backticks ,\n
 
 * classes -->
 

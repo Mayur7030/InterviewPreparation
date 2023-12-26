@@ -38,10 +38,10 @@ function Navbar() {
     <div>
 
       <Routes>                           //to bind all routes as parent element,without it we                                    will get error
-        <Route exact path="/" Component={Home} />    //no need to exact keyword now            
-        <Route path="/about" Component={About} />
-        <Route path="/contact" Component={Contact} />
-        <Route path="/contact/name" Component={Name} />
+        <Route exact path="/" Component={<Home/>} />    //no need to exact keyword now            
+        <Route path="/about" Component={<About/>} />
+        <Route path="/contact" Component={<Contact/>} />
+        <Route path="/contact/name" Component={<Name/>} />
       </Routes>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <Link to="/">Home</Link>

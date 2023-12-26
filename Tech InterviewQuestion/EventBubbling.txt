@@ -1,19 +1,59 @@
 Event bubbling and event capturing –
 *   When elements receive events, such events propagate to their parents and ancestors upward in the DOM tree.
 •	Event capturing means propagation of event is done from parent elements to child element in the DOM 
-*    event bubbling means propagation is done from child element to parent elements in the DOM.
+* event bubbling means propagation is done from child element to parent elements in the DOM.
 •	The event capturing happens before event bubbling.
 •	If {capture: true} ,event capturing will occur else event bubbling will occur.
 •	Both can be prevented by using the stopPropagation() method.
 
 
-Event capturing -->
 
 
 
 
+event capturing ------------->
 
 
+Event capturing (also known as trickling or capturing phase) is one of the three phases of event propagation in the DOM (Document Object Model). The three phases are:
+
+Capturing Phase: The event travels down from the root to the target element.
+Target Phase: The event reaches the target element.
+Bubbling Phase: The event bubbles up from the target element to the root.
+Here's an example of event capturing in JavaScript:
+
+
+
+  <div id="outer">
+    <p id="inner">Click me!</p>
+  </div>
+
+  <script>
+    // Get the elements
+    const outer = document.getElementById('outer');
+    const inner = document.getElementById('inner');
+
+    // Add event listener for the capturing phase
+    outer.addEventListener('click', function() {
+      console.log('Capturing Phase: Outer Div');
+    }, true);
+
+    // Add event listener for the capturing phase
+    inner.addEventListener('click', function() {
+      console.log('Capturing Phase: Inner Paragraph');
+    }, true);
+  </script>
+
+//output
+Capturing Phase: Outer Div
+Capturing Phase: Inner Paragraph
+
+
+
+Even though the click event is registered on the inner paragraph, the capturing phase ensures that the event is captured at the outer div first and then at the inner paragraph. This is the essence of event capturing, where the event travels down from the root to the target element during the capturing phase.
+
+
+
+Event bubbling ----------------->
 code------------------------->
 document.getElementById('body').addEventListener('click',()=>{
     console.log("body is clicked")
@@ -33,3 +73,8 @@ button.addEventListener('click',(e)=>{
 // span is click
 // div is click
 // body is clicked
+
+
+
+
+
