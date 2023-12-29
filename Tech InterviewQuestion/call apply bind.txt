@@ -1,0 +1,65 @@
+call() Method:
+//funciton borrowing from another object 
+
+The call() method is used to invoke a function immediately. It allows you to explicitly set the value of this inside the function.
+When you call a function using call(), you pass the context (i.e., the value of this) as the first argument, followed by any other arguments the function expects.
+syntax --
+person.greet.call(borrowed function, other argument)
+Example:
+JavaScript
+
+const person = {
+  name: "Tony",
+  greet: function() {
+    console.log(this.name);
+  }
+};
+
+const anotherPerson = {
+  name: "Steve"
+};
+
+person.greet.call(anotherPerson); // Output: Steve
+
+In this example, call(anotherPerson) sets this inside the greet function to anotherPerson.
+
+
+apply() Method:
+
+Similar to call(), the apply() method also invokes a function immediately.
+However, instead of passing individual arguments, you provide an array of arguments.
+
+
+function sum(a, b) {
+  return a + b;
+}
+
+const numbers = [5, 3];
+const result = sum.apply(null, numbers); // Output: 8
+
+Here, apply(null, numbers) calls the sum function with 5 and 3 as arguments.
+
+
+bind() Method:
+
+Unlike call() and apply(), the bind() method returns a new function.
+This new function has the correct context (this) set for calling the original function later.
+It’s useful when you want to maintain context in asynchronous callbacks or events.
+Example:
+JavaScript
+
+const printer = {
+  message: "Hello!",
+  print: function() {
+    console.log(this.message);
+  }
+};
+
+const boundPrint = printer.print.bind(printer);
+boundPrint(); // Output: Hello!
+
+In this example, bind(printer) creates a new function that always has printer as its context.
+Remember:
+
+Use call() or apply() when you want to invoke the function immediately and modify the context.
+Use bind() when you need a bound function to be called later with the correct context12345.

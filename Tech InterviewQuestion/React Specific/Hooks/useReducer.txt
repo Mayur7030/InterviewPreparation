@@ -6,7 +6,7 @@ centralized logic
 avoid prop drilling
 predictable state change
 
-its parts -
+its component-
  reducer method -
 
  reducer is a pure function responsible for specifying how the application's state changes in response to actions. It takes the current state and an action as arguments and returns the new state. The function signature typically looks like this:

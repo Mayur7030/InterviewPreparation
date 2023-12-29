@@ -1,4 +1,5 @@
 React default catching behavior
+It will render first time afte mounting like useeffect
 
 Caching is an important technique for optimizing React applications. By reducing unnecessary re-renders, caching can help to improve the performance and efficiency of your application.
 

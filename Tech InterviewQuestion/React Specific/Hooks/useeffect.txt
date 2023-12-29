@@ -32,13 +32,11 @@ Interview Questions--------------------------->
 
 Q) what is cleanUp function in useeffect?
 
-Ans -->
-Certainly! Let's go into more detail on cleaning up side effects in useEffect with an example. Cleaning up is important to avoid memory leaks and unexpected behavior when components are unmounted or dependencies change.
+Ans --> Cleaning up is important to avoid memory leaks and unexpected behavior when components are unmounted or dependencies change.
 
 Consider a scenario where you have a component that subscribes to an external resource, such as a data stream, and you want to ensure that the subscription is properly closed when the component is unmounted or when a dependency changes.
 
-javascript
-Copy code
+
 import React, { useEffect, useState } from 'react';
 
 const ExampleComponent = ({ userId }) => {
@@ -78,6 +76,7 @@ const ExampleComponent = ({ userId }) => {
 export default ExampleComponent;
 
 // Helper functions for illustration purposes
+
 const subscribeToUserData = (userId) => {
   // Simulating a subscription to user data (e.g., from a WebSocket)
   console.log(`Subscribed to user data for user ID: ${userId}`);
@@ -100,6 +99,7 @@ In this example:
 The useEffect hook subscribes to user data when the component mounts or when the userId prop changes.
 The cleanup function returned by useEffect unsubscribes from the user data when the component is unmounted or when the userId changes.
 The subscribeToUserData and unsubscribeFromUserData functions are placeholder functions for illustration purposes. In a real application, these would be functions associated with the data source you are working with, such as a WebSocket subscription.
+
 By including the cleanup function in the useEffect, you ensure that resources are properly released when they are no longer needed, preventing memory leaks and ensuring the correctness of your application.
 
 

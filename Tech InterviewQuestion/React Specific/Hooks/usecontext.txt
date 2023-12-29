@@ -50,6 +50,7 @@ function Header({ theme }) {
     </>
   );
 }
+
 What is the issue with this example?
 
 The issue is that we are drilling the theme prop through multiple components that don't immediately need it.
