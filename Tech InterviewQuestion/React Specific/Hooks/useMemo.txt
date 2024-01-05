@@ -1,9 +1,10 @@
-React default catching behavior
+
 It will render first time afte mounting like useeffect
 
 Caching is an important technique for optimizing React applications. By reducing unnecessary re-renders, caching can help to improve the performance and efficiency of your application.
 
 
+React default catching behavior
 
  React uses a technique called “shallow comparison” to determine whether a component should be re-rendered. This basically means that if the props or state of a component haven’t changed, React will assume that the output of the component hasn’t changed either and won’t re-render it.
 

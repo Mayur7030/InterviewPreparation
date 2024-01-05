@@ -37,7 +37,7 @@ function Navbar() {
   return (
     <div>
 
-      <Routes>                           //to bind all routes as parent element,without it we                                    will get error
+      <Routes>                     //to bind all routes as parent element,without it we will get error
         <Route exact path="/" Component={<Home/>} />    //no need to exact keyword now            
         <Route path="/about" Component={<About/>} />
         <Route path="/contact" Component={<Contact/>} />

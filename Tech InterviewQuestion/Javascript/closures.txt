@@ -16,14 +16,17 @@ Outer Function Execution:
 
 When the outer function is executed, its local variables are stored in the call stack.
 Once the outer function completes, its call stack frame is popped, and the variables are technically out of scope.
+
 Inner Function and Closure:
 
 The inner function, being a closure, retains a reference to the scope (including variables) in which it was created, even after the outer function has finished executing.
 This reference to the outer function's scope is part of what makes closures powerful.
+
 Accessing Variables:
 
 When the inner function tries to access a variable from the outer function, it looks up the scope chain to find that variable.
 If the variable is not found in the local scope of the inner function, it looks in the scope where the inner function was created, which is the scope of the outer function.
+
 Retrieving from Heap:
 
 Although the call stack for the outer function has been cleared, the variables it defined are still accessible because the inner function maintains a reference to the scope of the outer function.

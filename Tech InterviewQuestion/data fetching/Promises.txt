@@ -37,8 +37,6 @@ step1()
     .then(result => step3(result))
     ...
 
-
-
 Suppose that you want to perform the following asynchronous operations in sequence:
 
 First, get the user from the database.

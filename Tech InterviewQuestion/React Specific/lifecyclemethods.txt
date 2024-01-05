@@ -2,11 +2,13 @@ freecodecamp link -
 https://www.freecodecamp.org/news/react-component-lifecycle-methods/
 
 
-React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting. Each phase has specific lifecycle methods that are called at different points in the component's lifecycle.
+React  components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting. Each phase has specific lifecycle methods that are called at different points in the component's lifecycle.
 
 Understanding these lifecycle methods can help developers to control the component's behavior and perform specific actions at different stages of its lifecycle.
 
-The Mounting Phase begins when a component is first created and inserted into the DOM. The Updating Phase occurs when a component's state or props change. And the Unmounting Phase occurs when a component is removed from the DOM.
+The Mounting Phase begins when a component is first created and inserted into the DOM. T
+he Updating Phase occurs when a component's state or props change. 
+the Unmounting Phase occurs when a component is removed from the DOM.
 
 
 
@@ -34,6 +36,7 @@ componentWillUnmount(): Runs before removing the component from the DOM, for cle
 
 
 code----
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 class Header extends React.Component {

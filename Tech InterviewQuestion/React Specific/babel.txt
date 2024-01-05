@@ -1,1 +1,2 @@
-to conver modern js(babel) into browser understanding old js
+Babel is a JavaScript compiler that allows developers to write code using the latest ECMAScript standards (or even future proposals) and transform it into a version of JavaScript that is compatible with most browsers or environments. It is a tool used in the process of transpiling, which is the conversion of source code written in one programming language to another.
+

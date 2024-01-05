@@ -1,12 +1,13 @@
 call() Method:
 //funciton borrowing from another object 
 
-The call() method is used to invoke a function immediately. It allows you to explicitly set the value of this inside the function.
+The call() method is used to invoke a function immediately. It allows us to explicitly set the value of this inside the function.
 When you call a function using call(), you pass the context (i.e., the value of this) as the first argument, followed by any other arguments the function expects.
+
 syntax --
 person.greet.call(borrowed function, other argument)
 Example:
-JavaScript
+
 
 const person = {
   name: "Tony",
@@ -23,6 +24,18 @@ person.greet.call(anotherPerson); // Output: Steve
 
 In this example, call(anotherPerson) sets this inside the greet function to anotherPerson.
 
+Example 2 -
+function greet() {
+  console.log(this.animal, "typically sleep between", this.sleepDuration);
+}
+
+const obj = {
+  animal: "cats",
+  sleepDuration: "12 and 16 hours",
+};
+
+greet.call(obj); // cats typically sleep between 12 and 16 hours
+------------------------------
 
 apply() Method:
 

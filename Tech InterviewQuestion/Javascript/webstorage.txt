@@ -1,0 +1,20 @@
+local storage
+session storage
+
+
+Both localStorage and sessionStorage are web storage options in browsers. The main difference is that localStorage persists even after the browser is closed, while sessionStorage is cleared when the session ends (when the browser is closed).
+
+
+// Storing data
+localStorage.setItem('theme', 'dark');
+localStorage.setItem('user', JSON.stringify({ name: 'John', age: 25 }));
+
+// Retrieving data
+const theme = localStorage.getItem('theme');
+const user = JSON.parse(localStorage.getItem('user'));
+
+// Removing data
+localStorage.removeItem('theme');
+
+// Clearing all data
+localStorage.clear();

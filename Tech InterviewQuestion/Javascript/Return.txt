@@ -3,7 +3,7 @@ Return
 
 In JavaScript, the return statement is used in a function to specify the value that the function should output or "return" when it is called. It serves several purposes:
 
-Outputting a Value:
+1)Outputting a Value:
 
 When a function is called, it might perform some operations and then produce a result. The return statement allows the function to send that result back to the caller.
 code------------------>
@@ -15,7 +15,7 @@ const sum = add(3, 5);
 console.log(sum); // Output: 8
 Ending Function Execution:
 
-The return statement also terminates the execution of a function. Once a return statement is encountered, the function exits, and no more code within that function is executed.
+2)The return statement also terminates the execution of a function. Once a return statement is encountered, the function exits, and no more code within that function is executed.
 code------------------>
 function greet(name) {
   if (!name) {
@@ -28,7 +28,7 @@ console.log(greet('John')); // Output: Hello, John!
 console.log(greet());       // Output: Please provide a name.
 Returning Early:
 
-return allows for early termination of a function. If a condition is met, the function can return a value and stop further execution.
+3)return allows for early termination of a function. If a condition is met, the function can return a value and stop further execution.
 code------------------>
 function checkNumber(value) {
   if (typeof value !== 'number') {
@@ -42,7 +42,7 @@ console.log(checkNumber(42));       // Output: Valid number
 console.log(checkNumber('Hello'));  // Output: Not a valid number
 No Explicit Return:
 
-If a function does not include a return statement, it implicitly returns undefined. For example, if there's no return statement in a function, the function call evaluates to undefined.
+4)If a function does not include a return statement, it implicitly returns undefined. For example, if there's no return statement in a function, the function call evaluates to undefined.
 code------------------>
 function noReturn() {
   // No explicit return

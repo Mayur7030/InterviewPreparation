@@ -42,6 +42,7 @@ fetch(url)
 
 
 fetch methods ==>
+
 Post - Used to submit data to be processed to a specified resource. It can also be used to create a new resource.
 
 

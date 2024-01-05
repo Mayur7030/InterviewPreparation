@@ -9,9 +9,11 @@ Flexibility: Higher-order functions make your code more flexible by allowing you
 
 
 const result = add(5, 3);
-// 5 and 3 are arguments
+// 5 and 3 are arguments --when function is call
+
+
 function add(a, b) {
-  // 'a' and 'b' are parameters
+  // 'a' and 'b' are parameters      -when function is created
   return a + b;
 }
 

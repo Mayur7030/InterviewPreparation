@@ -17,6 +17,8 @@ function showThis() {
 }
 
 showThis(); // Output: [object Window] or undefined (in strict mode)
+
+
 2.2. Method
 When a function is a method of an object, this refers to the object that owns the method.
 
@@ -29,6 +31,8 @@ const person = {
 };
 
 person.sayHello(); // Output: Hello, my name is John
+
+
 2.3. Event Handler
 In an event handler, this often refers to the element that triggered the event.
 
@@ -37,6 +41,7 @@ In an event handler, this often refers to the element that triggered the event.
 <!-- Output: <button> element -->
 
 Example 3: Constructor Function
+
 In a constructor function (a function used with the new keyword to create objects), this refers to the newly created instance.
 
 code------------------>
@@ -49,6 +54,7 @@ console.log(john.name); // Output: John
 
 
 Example 4: Arrow Function
+
 Arrow functions do not have their own this. They inherit the this value from the enclosing scope.
 
 code------------------>
@@ -59,6 +65,7 @@ const showThisArrow = () => {
 showThisArrow(); // Output: [object Window] (or the enclosing scope's this)
 
 Conclusion:
+
 The value of this is dynamic and depends on how a function is invoked.
 For regular functions, this is determined at runtime.
 Arrow functions inherit this from their enclosing scope.

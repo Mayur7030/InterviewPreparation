@@ -7,7 +7,7 @@ Var Declarations vs. Let and Const:
  var declarations are hoisted to the top of their scope, but let and const declarations are hoisted as well, but not initialized until the actual declaration.
 
 temprol dead zone -
-A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the computer completely initializes it with a value.
+A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the  user completely initializes it with a value.
 
 
 Function Declarations vs. Function Expressions vs arraow function: 

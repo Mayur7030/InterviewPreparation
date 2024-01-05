@@ -5,7 +5,8 @@ Optimization of React is the process of making a React application run faster an
 
 Here are some of the most common ways to optimize React applications:
 
-•	Use lazy loading: Lazy loading is a technique in web development that defers the loading of non-essential resources until they are actually needed. In React, lazy loading is often used for code-splitting, allowing you to load components or modules on demand, which can significantly improve the initial loading time of your application.
+•	Use lazy loading:
+ Lazy loading is a technique in web development that defers the loading of non-essential resources until they are actually needed. In React, lazy loading is often used for code-splitting, allowing you to load components or modules on demand, which can significantly improve the initial loading time of your application.
 
 code-------------->
 // LazyComponent.js
@@ -39,13 +40,14 @@ export default App;
 
 •	Use memoization: Memoization is a technique that caches the results of expensive calculations. This can improve the performance of your application by preventing the same calculation from being performed multiple times.
 
-useMemo() , useCallback(), 
+useMemo() , useCallback(),  react.memo
 ----------------------------------------------------
 *  Use Proper Keys for Lists:
 Ensure each item in a list has a unique and stable key to optimize rendering.
 
 ---------------------------------------------------------------------------------
-•	Use code splitting: Code splitting is a technique that divides your application code into smaller chunks that can be loaded independently. This can improve the performance of your application by reducing the amount of JavaScript that needs to be loaded initially.
+•	Use code splitting: 
+Code splitting is a technique that divides your application code into smaller chunks that can be loaded independently. This can improve the performance of your application by reducing the amount of JavaScript that needs to be loaded initially.
 
 code -----------
 // App.js
@@ -86,7 +88,8 @@ In this example, the code for Home and Dashboard components is loaded dynamicall
 
 -----------------------------------------------------------------
 
-•	Use functional components: Functional components are a newer type of React component that are more efficient than class components. This is because functional components do not have a state or lifecycle, which can improve the performance of your application.
+•	Use functional components: 
+Functional components are a newer type of React component that are more efficient than class components. This is because functional components do not have a state or lifecycle, which can improve the performance of your application.
 -------------------------------------
 
 •	Use performance tools: There are a number of performance tools available that can help you identify and fix performance problems in your React application. These tools can help you to optimize your application for different devices and browsers.

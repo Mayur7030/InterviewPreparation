@@ -1,5 +1,3 @@
-let a =99
-
-(function(){
-  
-})()
+axios.get(apiurl)
+.then(res=>res.data)
+.catch(error=>error)

@@ -1,10 +1,8 @@
-Hello sir, I'm Mayur. I graduated in Mechanical Engineering from Pune University in 2021. For the past two years, I have been working as a Frontend Developer at TCS, where I've gained expertise in technologies such as React, TypeScript, JavaScript, and Redux. My current focus is on expanding my skill set to become a full-stack developer. Outside of work, I am actively learning backend technologies like Node.js, Express.js, and MongoDB. I am passionate about staying at the forefront of technological advancements and leveraging my cross-disciplinary skills to contribute effectively in the dynamic field of software development."
+Hello sir, I'm Mayur. I am graduated in Mechanical Engineering from Pune University in 2021. For the past two years, I have been working as a Frontend Developer at TCS, where I've gained expertise in technologies such as React, TypeScript, JavaScript, and Redux.
 
-Recently I've increased the revenue of
-my company by 30% by optimizing and
-modernizing existing web applications I
-have applied my extensive knowledge in
- JavaScript React and other
-Technologies to add new features that
-significantly improved the user
-experience and increased Revenue.
+During my time at TCS, I've had the opportunity to work on two significant e-commerce projects. In the first project, I was part of a large development team, providing me with invaluable experience in collaboration and communication across diverse teams. This exposure taught me how to navigate various challenges within a team setting.
+
+In my second project, I had the opportunity to contribute from the very start, actively participating in the creation of a website from scratch. This hands-on experience allowed me to understand the intricacies involved in initiating a project and apply my skills in frontend technologies to lay the foundation of the website.
+
+
+While excelling in frontend technologies, including React and Redux, I'm currently dedicated to broadening my expertise as a full-stack developer. My focus extends to backend technologies such as Node.js, Express.js, and MongoDB. 

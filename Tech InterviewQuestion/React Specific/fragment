@@ -1,0 +1,6 @@
+Why fragments are better than container divs?
+Below are the list of reasons to prefer fragments over container DOM elements,
+
+Fragments are a bit faster and use less memory by not creating an extra DOM node. This only has a real benefit on very large and deep trees.
+Some CSS mechanisms like Flexbox and CSS Grid have a special parent-child relationships, and adding divs in the middle makes it hard to keep the desired layout.
+The DOM Inspector is less cluttered.

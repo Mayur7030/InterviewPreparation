@@ -1,4 +1,8 @@
 DOM, BOM, Windows -->
+Windows-->
+
+windows is global object which provides many properties/Methods including DOM , BOM.
+console.log(window)
 
 DOM -->
 
@@ -6,14 +10,12 @@ DOM stands for ‘Document Object Model’. In simple terms, it is a structured 
 document.body()
 
 
-Windows-->
 
-windows is global object which provides many properties/Methods including DOM , BOM.
-console.log(window)
 
 
 
 BOM - Browser Object Methods
 
-represents additional objects provided by the Browser(host environment like mobile)for working with everything except the document like alert, prompt, confirm, setTimeout, setinterval
+represents additional objects provided by the Browser(host environment like mobile)for working with everything  like alert, prompt, confirm, setTimeout, setinterval
+
 window.location.href= "https://codewithharry.com"

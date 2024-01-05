@@ -1,6 +1,9 @@
 features of es6
 
 * let & const keywords
+let -reassign
+const -redecalre
+
 * Arrow function
 * spread Operator
 * rest parameter
