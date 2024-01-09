@@ -1,16 +1,96 @@
 
 What is HTML?
-
 HTML stands for HyperText Markup Language. It is the standard markup language used to create the structure of web pages.
-
+--------------*---------------*-------------*--------------*---------
 Semantic tags – which has some meaning in their name for browser and user understanding like p, img, header, footer aside 
+<form>, <table>, <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>,
+
+Non-semantic elements: <div> and <span> tells nothing about its content.
+--------------*---------------*-------------*--------------*---------
+
+The HTML <main> element represents the dominant content of the <body> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+--------------*---------------*-------------*--------------*---------
+
+What is an iframe and how it works?
+An iframe is an HTML document which can be embedded inside another HTML page *Example:
+--------------*---------------*-------------*--------------*---------
 
 What is the purpose of the DOCTYPE declaration in HTML?
-
 The DOCTYPE declaration defines the document type and version of HTML used in a web page. It helps browsers to render the page correctly.
+
+What happens when DOCTYPE is not given?
+The web page is rendered in quirks mode. The web browsers engines use quirks mode to support older browsers which does not follow the W3C specifications. In quirks mode CSS class and id names are case insensitive. In standards mode they are case sensitive.
+--------------*---------------*-------------*--------------*---------
+
+What is the difference between a <span> and a <div>?
+<div> is a block level element which means it will render it on it's own line with a width of a 100% of the parent element.
+<span> is an inline element which means it will render on the same line as the previous element, if it is also an inline element, and it's width will be determined by it's content.
+--------------*---------------*-------------*--------------*---------
+
 Explain the difference between HTML and HTML5.
-
 HTML5 is the latest version of HTML and introduces new elements, attributes, and APIs for better multimedia support, improved semantics, and enhanced user experience.
-What is the purpose of the <meta> tag in HTML?
+--------------*---------------*-------------*--------------*---------
 
+What is the purpose of the <meta> tag in HTML?
 The <meta> tag is used to provide metadata about the HTML document. It includes information like character set, viewport settings, and other metadata that browsers may use.
+--------------*---------------*-------------*--------------*---------
+
+What does async and defer refer in script tag? Describe the difference between <script>, <script async> and <script defer>
+Async: Downloads the script file during HTML parsing and will pause the HTML parser to execute it when it has finished downloading.
+
+Defer: Defer downloads the script file during HTML parsing and will only execute it after the HTML parser has completed. Not all browsers support this.
+
+The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing.
+
+The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed.
+--------------*---------------*-------------*--------------*---------
+
+What is Character Encoding?
+Character encoding is a method of converting bytes into characters. To validate or display an HTML document properly, a program must choose a proper character encoding. This is specified in the tag:
+--------------*---------------*-------------*--------------*---------
+
+<header> is used to contain introductory and navigational information about a section of the page. This can include the section heading, the author’s name, time and date of publication, table of contents, or other navigational information.
+
+<article> is meant to house a self-contained composition that can logically be independently recreated outside of the page without losing it’s meaining. Individual blog posts or news stories are good examples.
+
+<section> is a flexible container for holding content that shares a common informational theme or purpose.
+
+<footer> is used to hold information that should appear at the end of a section of content and contain additional information about the section. Author’s name, copyright information, and related links are typical examples of such content.
+--------------*---------------*-------------*--------------*---------
+
+Ways to improve website performance
+Minimize HTTP Requests
+
+Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
+combined files: js to a file, css to a file
+CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. Combine your background images into a single image and use the CSS background-image and background-position properties to display the desired image segment.
+Use a Content Delivery Network CDN
+
+A CDN is essentially many optimized servers around the world that deliver web content to users based on their geographic location. This means big performance improvements for site users. Because, say, if a person accessing your site in India, they will be retrieving web content from a server nearby
+Optimize Images:
+
+image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
+Changing the resolution: reducing the “quality” of the image (and thereby the file size)
+Compressing the picture: increasing the efficiency of image data storage
+Cropping the picture: when cropping, you are cutting out unneeded areas and thus making the image smaller in size
+Put Scripts at the Bottom:
+
+Javascript files can load after the rest of your page. The simplest solution is to place your external Javascript files at the bottom of your page, just before the close of your body tag. Now more of your site can load before your scripts. Another method that allows even more control is to use the defer or async attributes when placing external .js files on your site.
+
+Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.
+
+The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.
+Put Stylesheets at the Top:
+
+This is because putting stylesheets in the HEAD allows the page to render progressively.
+Avoid CSS Expressions
+
+Use GET for AJAX Requests:
+
+Ajax is that it provides instantaneous feedback to the user because it requests information asynchronously from the backend web server
+Make JavaScript and CSS External:
+
+Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.
+Use get to ajax request:
+
+POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).

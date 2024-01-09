@@ -1,8 +1,13 @@
 local storage
 session storage
 
+localStorage: localStorage is a way to store data on the client’s computer. It allows the saving of key/value pairs in a web browser and it stores data with no expiration date. localStorage can only be accessed via JavaScript, and HTML5. However, the user has the ability to clear the browser data/cache to erase all localStorage data.
 
-Both localStorage and sessionStorage are web storage options in browsers. The main difference is that localStorage persists even after the browser is closed, while sessionStorage is cleared when the session ends (when the browser is closed).
+SessionStorage: stores data only for a session, meaning that the data is stored until the browser (or tab) is closed.
+
+cookie: Stores data that has to be sent back to the server with subsequent XHR requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side .
+
+Capacity (per domain)	4kb	5MB	5MB
 
 
 // Storing data

@@ -34,7 +34,8 @@ const firstPrototype = {
   },
 };
 
-a.__proto__ = firstPrototype;                    //syntax
+a.__proto__ = firstPrototype;   
+child.__proto__ = parent                 //syntax
 
 
 console.log(a.name);

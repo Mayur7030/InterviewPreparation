@@ -1,5 +1,6 @@
 1.	Why you choose iT job?
 
+Although studying mechanical engineering in college, I have always had an interest in computer science and coding. In my final year of college, during the pandemic, I took a few computer science courses, some of which were in web development. I got fascinated with this field and decided to switch to it, which is why I joined TCS. After joining TCs, I joined a web development project where I had the opportunity to gain expertise in web development.
 
 
-I've always been interested in computer science and coding, even though I studied mechanical engineering in college. I took a few computer science courses in college, and I also taught myself to code in my free time. I've always enjoyed the problem-solving and creative aspects of coding, and I'm excited to use my skills to build user-facing interfaces.
+

@@ -1,5 +1,5 @@
 call() Method:
-//funciton borrowing from another object 
+//funciton borrowing methods from another object 
 
 The call() method is used to invoke a function immediately. It allows us to explicitly set the value of this inside the function.
 When you call a function using call(), you pass the context (i.e., the value of this) as the first argument, followed by any other arguments the function expects.
@@ -75,4 +75,4 @@ In this example, bind(printer) creates a new function that always has printer as
 Remember:
 
 Use call() or apply() when you want to invoke the function immediately and modify the context.
-Use bind() when you need a bound function to be called later with the correct context12345.
+Use bind() when you need a bound function to be called later with the correct context.

@@ -1,4 +1,6 @@
 DOM, BOM, Windows -->
+
+
 Windows-->
 
 windows is global object which provides many properties/Methods including DOM , BOM.

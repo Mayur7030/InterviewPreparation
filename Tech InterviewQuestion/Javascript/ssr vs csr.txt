@@ -1,0 +1,29 @@
+Rendering Location:
+
+SSR: The rendering of the web page occurs on the server. The server sends fully rendered HTML to the client.
+CSR: The rendering happens on the client side (browser). The server sends minimal HTML, and the browser loads JavaScript to render the content.
+Initial Page Load:
+
+SSR: The initial page load is typically slower because the server needs to generate the fully rendered HTML before sending it to the client.
+CSR: The initial page load can be faster since the server sends a lightweight HTML file, and additional content is loaded dynamically using JavaScript.
+Performance:
+
+SSR: Offers better performance for search engine optimization (SEO) as search engines can crawl the fully rendered HTML. However, subsequent interactions might require additional server requests.
+CSR: May have slower initial rendering, but subsequent interactions can be faster as only data is fetched from the server, not the entire HTML.
+User Experience:
+
+SSR: Provides a faster perceived page load time, especially on slower network connections.
+CSR: Offers a smoother user experience after the initial load as interactions are handled on the client side without full-page reloads.
+Example:
+
+SSR: A news website where content changes infrequently. Server renders HTML with the latest news, and users get the most up-to-date content with each request.
+CSR: A single-page application (SPA) like Gmail, where the initial page load is quick, and subsequent interactions load new content dynamically.
+
+
+We are using server side rendering for two reasons:
+
+performance benefit for our customers
+Consistent SEO performance
+The main difference is that for SSR your server’s response to the browser is the HTML of your page that is ready to be rendered, while for CSR the browser gets a pretty empty document with links to your javascript. That means for SSR your browser will start rendering the HTML from your server without having to wait for all the JavaScript to be downloaded and executed.
+
+for SSR, the user can start viewing the page while all of that is happening. For the CSR world, you need to wait for all of the above to happen and then have the virtual dom moved to the browser dom for the page to be viewable.

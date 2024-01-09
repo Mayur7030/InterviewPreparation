@@ -1,5 +1,6 @@
-"In my most recent project, I played a crucial role in developing various components for an e-commerce website. Leveraging my proficiency in React, TypeScript, and JavaScript, I crafted the cart page, payment page, and the landing page, ensuring a seamless and enjoyable shopping experience for users.
+"In my most recent project, I played a crucial role in developing various components for an e-commerce website. Leveraging my proficiency in React, TypeScript, and JavaScript, I crafted the cart page, and the landing page, ensuring a seamless and enjoyable shopping experience for users.
 
-For the cart page, I implemented dynamic product rendering and real-time cart updates using React components. On the payment page, I integrated a secure payment gateway, enhancing the website's reliability and security. The landing page, designed with a focus on user engagement, showcased my skills in creating visually appealing and responsive interfaces.
+For the cart page, I implemented dynamic product rendering and real-time cart updates using React components. The landing page, designed with a focus on user engagement, showcased my skills in creating visually appealing and responsive interfaces.
 
-Throughout the project, I utilized Redux for state management, ensuring efficient data flow between components. For responsive design, I employed CSS and Bootstrap to guarantee a consistent user experience across various devices. Additionally, I applied my knowledge of asynchronous programming with JavaScript to handle dynamic content loading and data fetching.
+Throughout the project, I utilized Redux for state management, ensuring efficient data flow between components. For responsive design, I employed 
+ Bootstrap to guarantee a consistent user experience across various devices. Additionally, I applied my knowledge of asynchronous programming with JavaScript to handle dynamic content loading and data fetching.

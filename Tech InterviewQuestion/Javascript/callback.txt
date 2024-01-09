@@ -54,7 +54,8 @@ fetchingdata(url, handledata);
 -------------------------------------->
 ###  problem with callback
 
-  1)we create dependency on callback function  if it fails then it will will affect outer function as well
+  1)Inversion of controls -When your main function invokes the callback function, it basically hands over the program execution to the callback function. In essence, the entire program's flow depends on the response of the callback function, and then it proceeds from there onward.
+  
   2)callback hell or pyramid of doom --
   if first run ,then run second then third then fourth...
 
