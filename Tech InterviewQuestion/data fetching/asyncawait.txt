@@ -1,4 +1,5 @@
 async always provide promise
+The await keyword makes the function pause the execution and wait for a resolved promise before it continues
 usecase  --
 to stop execution of js
 Asynchronous code is code that runs without blocking the main thread of execution. 

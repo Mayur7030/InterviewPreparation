@@ -21,6 +21,28 @@ promise.then((value) => {
 promise.catch((error) => {
   console.log(error);
 });
+------------------------------
+// const { getLineAndCharacterOfPosition } = require("typescript");
+const url = "https://jsonplaceholder.typicode.com/todos/1";
+
+const fetchingfunc = (url) => {
+  return new Promise((res, rej) => {
+    fetch(url)
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+      })
+      .then((data) => res(data.id))
+      .catch((error) => rej(error, "error"));
+    // .then((data) => console.log(data));
+  });
+};
+
+fetchingfunc(url)
+  .then((res) => console.log(res))
+  .catch((rej) => console.log(rej));
+----------------------------
 
 
 promise chaining --->

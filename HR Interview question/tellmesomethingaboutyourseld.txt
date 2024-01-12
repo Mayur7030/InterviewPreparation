@@ -1,6 +1,6 @@
 Hello Akshay, I am graduated in Mechanical Engineering from Pune University in 2021. For the past two years, I have been working as a Frontend Developer at TCS, where I've gained expertise in frontend technologies such as React, TypeScript, JavaScript.
 
-During my time at TCS, I've had the opportunity to work on two significant e-commerce projects. In the first project,our client was General electric healthcare domain I was part of a large development team, providing me with invaluable experience in collaboration and communication across diverse teams. This exposure taught me how to navigate various challenges within a team setting.
+During my time at TCS, I've had the opportunity to work on two significant e-commerce projects. In the first project,our client was General electric healthcare domain I was part of a large development team, providing me with invaluable experience in collaboration and communication across diverse teams. This exposure taught mec how to navigate various challenges within a team setting.
 
 In my current project, I had the opportunity to contribute from the very start, actively participating in the creation of a website from scratch. This hands-on experience allowed me to understand the intricacies involved in initiating a project and apply my skills in frontend technologies to lay the foundation of the website.
 

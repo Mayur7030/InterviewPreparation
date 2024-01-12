@@ -1,0 +1,62 @@
+github link--->
+https://github.com/Devinterview-io/css-interview-questions?tab=readme-ov-file
+
+What does CSS stand for and what is its primary use?
+Cascading Style Sheets (CSS) is primarily designed to separate web page content from its visual presentation. This allows for a consistent and adaptable design across multiple web pages.
+
+--------------*---------------*-------------*--------------*---------
+What are pseudo-classes in CSS?
+Pseudo-classes are special keywords in CSS that allow you to apply styles to elements based not only on their state or position in the document tree but also on user interaction.
+such as :hover, :checked, :first-child
+--------------*---------------*-------------*--------------*---------
+
+
+Describe how to implement a CSS reset and why it is useful.
+A CSS reset is a set of styles intended to reduce browser inconsistencies in elements such as margins, paddings, and various typical style defaults.
+
+--------------*---------------*-------------*--------------*---------
+
+How do you select elements by attribute in CSS?
+[class="important"] {}
+[href^="https"] {}
+[alt="home" i] {}
+
+--------------*---------------*-------------*--------------*---------
+ What is a pseudo-element, and what are they used for?
+Pseudo-elements are virtual elements that give developers the power to style parts of an HTML document that don't correspond to actual HTML elements. Essentially, they let you apply styles to specific parts of an element without the need for extra HTML markup.
+::before, ::after ,  ::
+Practical Applications::
+Indicating External Links
+Responsive Backgrounds
+--------------*---------------*-------------*--------------*---------
+Explain the difference between the child combinator and the descendant combinator.
+Child Combinator >: Selects an HTML element that is a direct child of another element.
+Descendant Combinator ~: Matches an HTML element that is a descendant (direct or indirect child) of another specified element.
+--------------*---------------*-------------*--------------*---------
+What is the CSS Box Model?
+The Box Model is the foundational concept in CSS that describes the structure of an HTML element. It encompasses four key components: content, padding, border, and margin.
+--------------*---------------*-------------*--------------*---------
+Explain margin collapsing.
+Margin collapsing can occur when there are adjacent vertical margins between elements. In such cases, the larger of the two margins becomes the "collapsed margin."
+Horizontal margin collapse does not occur:
+--------------*---------------*-------------*--------------*---------
+Preventing Margin Collapsing
+Padding or Borders: 
+Inline-Block or Floats: 
+--------------*---------------*-------------*--------------*---------
+What are the different values for the box-sizing property and what do they do?
+Content-Box: Box dimensions are calculated by adding the width and height to the content only.
+Border-Box: The width and height of the box are calculated by including both the content and padding within the specified values.
+Initial: This value sets the box-sizing property to its default value, which is typically content-box.
+--------------*---------------*-------------*--------------*---------
+
+ How do you center a block element with CSS?
+ Auto margins: 
+ Flexbox: placing the block in a flex container and setting justify-content: center.
+ vertical -- align items
+--------------*---------------*-------------*--------------*---------
+ What is the difference between block, inline, and inline-block elements?
+Block elements, by default, stack vertically, while inline elements sit next to each other on the same line.
+
+Inline-block elements combine characteristics of both, stacking vertically and allowing for adjustments in height, margin, and padding.
+--------------*---------------*-------------*--------------*---------

@@ -1,0 +1,1 @@
+Js is lightweight, cressplatform, singlethreaded and interpreted compiled programming language.
