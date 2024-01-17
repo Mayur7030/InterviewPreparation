@@ -22,7 +22,7 @@ promise.catch((error) => {
   console.log(error);
 });
 ------------------------------
-// const { getLineAndCharacterOfPosition } = require("typescript");
+
 const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 const fetchingfunc = (url) => {
@@ -144,4 +144,84 @@ const promise1 = new Promise((res, rej) => {
       .then((value) => {
         return console.log(value);
       })
+
+-------------------------------------------------------
+comparison between callback and promise --
+Callback Hell (Callback Pyramids) - Promise Chaining:
+
+Callback hell, also known as "pyramid of doom," occurred when multiple asynchronous operations were nested inside callback functions, leading to deep and hard-to-read code. Promises introduced a chaining mechanism that allows developers to attach multiple asynchronous operations in a more readable and sequential manner, reducing the nesting levels.
+Example:
+
+javascript
+Copy code
+// Callbacks
+doSomething((result1) => {
+  doSomethingElse(result1, (result2) => {
+    doAnotherThing(result2, (result3) => {
+      // ...
+    });
+  });
+});
+
+// Promises
+doSomething()
+  .then(result1 => doSomethingElse(result1))
+  .then(result2 => doAnotherThing(result2))
+  .then(result3 => {
+    // ...
+  });
+Error Handling - catch Method:
+
+Handling errors in callback-based code often required additional nesting or passing error parameters. Promises introduced a dedicated catch method that allows for more centralized and cleaner error handling.
+Example:
+
+javascript
+Copy code
+// Callbacks
+doSomething((error, result) => {
+  if (error) {
+    handleError(error);
+  } else {
+    // Handle result
+  }
+});
+
+// Promises
+doSomething()
+  .then(result => {
+    // Handle result
+  })
+  .catch(error => {
+    handleError(error);
+  });
+Avoiding Callback Hell - Readability:
+
+Promises improve code readability by providing a more linear and sequential flow of asynchronous operations. This makes it easier to understand the logic of the code, especially when dealing with multiple asynchronous tasks.
+Easier Composition of Asynchronous Operations:
+
+Promises facilitate the composition of asynchronous operations. They allow developers to combine multiple promises using methods like Promise.all or Promise.race, making it easier to manage concurrency and dependencies.
+Example:
+
+javascript
+Copy code
+// Promise.all
+Promise.all([doTask1(), doTask2(), doTask3()])
+  .then(results => {
+    // Handle results
+  })
+  .catch(error => {
+    // Handle error
+  });
+
+// Promise.race
+Promise.race([timeout(5000), fetchData()])
+  .then(result => {
+    // Handle result
+  })
+  .catch(error => {
+    // Handle error
+  });
+More Standardized Approach:
+
+Promises provide a standardized way of dealing with asynchronous code. They have become a widely adopted and accepted pattern, making it easier for developers to collaborate and share code.
 

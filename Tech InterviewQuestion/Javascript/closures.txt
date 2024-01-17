@@ -3,12 +3,12 @@ Closures are functions that refer to independent (free) variables. In other word
 usecase ---
 Global variables can be made local (private) with closures.
 
-If we want to update variable ,we have to make it global like counter app but that makes variable unsafe  as it can change anyone. to solve this problem we can you Closures.
-All function have access to global scope.
+If we want to update variable ,we have to make it global like counter app but that makes variable unsecure  as it can change by anyone. to solve this problem we can you Closures.
+
 JS nested function have access to the scope above them.
 
 ------------
-In JavaScript, closures play a crucial role in the scenario you described, where inner functions have access to variables from their outer (enclosing) functions even after the outer function has completed its execution and its call stack has been cleared.
+inner functions have access to variables from their outer (enclosing) functions even after the outer function has completed its execution and its call stack has been cleared.
 
 Here's a breakdown of what happens:
 

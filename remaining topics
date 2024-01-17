@@ -3,3 +3,30 @@ react mixin
 lazy loading
 redux
 react fiber
+
+
+
+Explain the event loop in JavaScript.
+How does asynchronous programming work in JavaScript?
+Describe closures and how they are used.
+What is the purpose of promises in JavaScript?
+How does hoisting work in JavaScript?
+Explain the concept of callbacks.
+Describe the differences between let, const, and var.
+How does prototypal inheritance work in JavaScript?
+What are the benefits of using arrow functions?
+Explain the role of this keyword in JavaScript.
+Project Experience:
+
+<!-- Can you describe a challenging problem you encountered in your recent project and how you solved it? -->
+<!-- How do you ensure code quality and maintainability in your projects? -->
+<!-- Have you worked on optimizing the performance of a web application? If yes, how? -->
+<!-- Can you share an example of a feature you implemented that improved user experience?
+How do you approach debugging and troubleshooting issues in your code? -->
+Managerial Questions:
+
+<!-- How do you handle tight deadlines and ensure project delivery on time?
+Describe a situation where you had to collaborate with a cross-functional team. How did you ensure effective communication? -->
+How do you stay updated with the latest trends and technologies in the JavaScript ecosystem?
+Can you share an experience where you had to mentor or assist a junior team member?
+How do you handle disagreements within the team and ensure a positive working environment?

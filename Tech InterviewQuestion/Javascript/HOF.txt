@@ -85,6 +85,8 @@ const productPrice = 100;
 
 console.log(applyHolidayDiscount(productPrice)); // Output: 90
 console.log(applyLoyaltyDiscount(productPrice)); // Output: 80
+
+
 In this example, the createDiscountFunction is a higher-order function that generates different discount functions based on criteria. This provides flexibility in applying discounts dynamically and promotes code reuse.
 
 Higher-order functions contribute to code modularity, maintainability, and the creation of flexible and reusable code components. They are a key concept in functional programming paradigms and can be found in many modern JavaScript libraries and frameworks.

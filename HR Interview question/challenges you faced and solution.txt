@@ -1,0 +1,25 @@
+we face mulitple challneges as we started working from scarch on ecommerce website.One of the main issue we faced is laoding of images  in website.we have product grid displaying numerous items with images.loading all the images at once lead to slower page loading times and suboptimal user experience. we decided to implememnt lazy loading for the images so that they are only loaded when they come into user's viewport.
+
+solution -
+after researching we got two ways to solve this issue 
+1. to add loading attribute to html element
+2. to use third  party library such as intersection observer 
+we goes with intersection observer api, ehich allows asynchronously observe changes in the intersection of a target elemetn with an ancestor element.
+
+outcomes -
+after implementing this, we achieve faster page laoding and enhanced user interactivity.
+our load times goes from 5 sec to 3 sec, which increased coversion rate by 20%
+
+-----------------------------------
+Challenge:
+When starting from scratch on our e-commerce website, one of the primary challenges we encountered was the slow loading of images in the product grid. Loading all the images simultaneously resulted in slower page loading times, adversely affecting the user experience.
+
+Solution:
+To address this issue, we researched and identified two potential solutions. The first option was to add the loading attribute to HTML elements. The second option involved utilizing the Intersection Observer API, a third-party library, to asynchronously observe changes in the intersection of a target element with an ancestor element. After careful consideration, we opted for the Intersection Observer API.
+
+Outcomes:
+Implementing the Intersection Observer API led to significant improvements in our website's performance and user interaction:
+
+Our page loading times decreased by 30%.
+This improvement resulted in a noteworthy 20% increase in the conversion rate.
+By efficiently loading images only when they come into the user's viewport, we achieved faster page loading, enhancing overall user satisfaction and positively impacting our conversion rates. This optimization contributes to a smoother and more responsive user experience on our e-commerce platform.

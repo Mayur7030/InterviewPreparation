@@ -8,6 +8,15 @@ Cascading Style Sheets (CSS) is primarily designed to separate web page content 
 What are pseudo-classes in CSS?
 Pseudo-classes are special keywords in CSS that allow you to apply styles to elements based not only on their state or position in the document tree but also on user interaction.
 such as :hover, :checked, :first-child
+
+
+--------------*---------------*-------------*--------------*---------
+ What is a pseudo-element, and what are they used for?
+Pseudo-elements are virtual elements that give developers the power to style parts of an HTML document that don't correspond to actual HTML elements. Essentially, they let you apply styles to specific parts of an element without the need for extra HTML markup.
+::before, ::after ,  ::
+Practical Applications::
+Indicating External Links
+Responsive Backgrounds
 --------------*---------------*-------------*--------------*---------
 
 
@@ -21,13 +30,7 @@ How do you select elements by attribute in CSS?
 [href^="https"] {}
 [alt="home" i] {}
 
---------------*---------------*-------------*--------------*---------
- What is a pseudo-element, and what are they used for?
-Pseudo-elements are virtual elements that give developers the power to style parts of an HTML document that don't correspond to actual HTML elements. Essentially, they let you apply styles to specific parts of an element without the need for extra HTML markup.
-::before, ::after ,  ::
-Practical Applications::
-Indicating External Links
-Responsive Backgrounds
+
 --------------*---------------*-------------*--------------*---------
 Explain the difference between the child combinator and the descendant combinator.
 Child Combinator >: Selects an HTML element that is a direct child of another element.

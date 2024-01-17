@@ -1,0 +1,36 @@
+To ensure code quality and maintainability we use several best practices and strategies such as
+
+1 following code standards -
+adhering to coding standards and guidelines set by our organisation we use eslint which is tool that can help to enforce coding standards.
+
+2. use framwork or kibrary -
+we use react js for our project which provides certain structure,which encourages to follow best practices
+
+3.resposive design- we make our website to be respossive this only not help us to improve user experience but also helps in mmaintaining s single codebase for diffetent devices
+
+4 code comments and documentation -
+we strictly add meaningful  comments for complex changes we have done on codebase to make code easy to understand for other devleopers in team.also we maintain a proper documentation on confulence which includes about project structure, components and depenedecies
+
+5 we use git as version control system 
+we add every small changes with proper meassage to keep track of development
+
+6 unit  testing -
+in my last project based on react we implement React testing library to perform unit testing which ensure bug free coding 
+
+7 code review 
+my team lead arrange code review meeting on every last friday of month to review code and take suggestion from all developer and trying to implement them from next month
+
+
+
+------------------------------------------
+In our development process, we prioritize code quality and maintainability through a series of best practices and strategies. To ensure consistency and readability, we strictly adhere to coding standards and guidelines established by our organization. Leveraging tools such as ESLint, we enforce these standards, contributing to a well-structured codebase.
+
+Our project is built on React.js, a framework that not only streamlines development but also encourages the adoption of best practices. This choice facilitates maintainability and scalability, aligning with modern web development principles. Additionally, we place a strong emphasis on responsive design, enhancing user experience and enabling us to maintain a single, adaptable codebase for various devices.
+
+Meaningful comments are an integral part of our coding approach, particularly for complex changes. These comments serve as valuable documentation, aiding other developers in understanding the intricacies of the codebase. Moreover, we maintain comprehensive documentation on Confluence, covering project structure, components, and dependencies.
+
+In terms of version control, we use Git, committing changes with clear messages for a well-documented development history. This not only aids collaboration but also provides a structured approach to tracking modifications.
+
+To ensure code reliability, we implement unit testing using tools like the React Testing Library. This practice helps identify and address potential bugs during the development phase, contributing to the overall robustness of our code.
+
+Regular code review meetings, organized monthly on the last Friday, play a pivotal role in our collaborative approach. Led by our team lead, these sessions provide an opportunity for constructive feedback and suggestions from all developers. Implementing feedback in subsequent months ensures continuous improvement in our coding practices and fosters a culture of shared learning.

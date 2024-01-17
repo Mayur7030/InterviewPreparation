@@ -15,6 +15,7 @@ optimazation in react ==
 
 usememo --
 agar koi state change hogi tohi render karega
+
 diff bet useeffect and usememo -
 usememo return value (memoize value) of function 
 use only when function return value.

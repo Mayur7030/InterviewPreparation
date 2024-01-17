@@ -1,4 +1,4 @@
-In javascript, a callback is simply a function that is passed to another function as a parameter and is invoked or executed inside the other function. Here a function needs to wait for another function to execute or return a value and this makes the chain of the functionalities (when X is completed, then Y is executed, and it goes on.). This is the reason callback is generally used in the asynchronous operation of javascript to provide the synchronous capability.
+In javascript, a callback is simply a function that is passed to another function as a parameter and is invoked or executed inside the other function. Here a function needs to wait for another function to execute or return a value and this makes the chain of the functionalities (when X is completed, then Y is executed, and it goes on.). This is the reason callback is generally used in the asynchronous operation of javascript to provide the asynchronous capability.
 
 
 
@@ -57,6 +57,7 @@ fetchingdata(url, handledata);
   1)Inversion of controls -When your main function invokes the callback function, it basically hands over the program execution to the callback function. In essence, the entire program's flow depends on the response of the callback function, and then it proceeds from there onward.
   
   2)callback hell or pyramid of doom --
+  in callback function chain of functionalities is created like when x is created then y should execute and so on ,this creates pyramid like structure.
   if first run ,then run second then third then fourth...
 
 
