@@ -1,0 +1,7 @@
+Jest is a JavaScript testing framework that helps developers ensure that their code works as expected. In simple terms, it's a tool that allows you to write and run tests for your JavaScript code. These tests help you catch and fix bugs or errors in your code, making sure that your software behaves the way it's supposed to.
+
+Jest provides a simple and intuitive way to write test cases, execute them, and check if the actual results match the expected outcomes. It's commonly used in web development, particularly for testing applications built with frameworks like React, but it can be used for testing any JavaScript code. Overall, Jest makes the process of testing your code more efficient and reliable.
+
+
+
+

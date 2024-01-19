@@ -1,0 +1,31 @@
+Shallow copy and deep copy refer to different methods of copying data structures, such as objects or arrays, in programming. The distinction lies in how nested objects or arrays are treated during the copying process.
+
+Shallow Copy:
+
+Definition: A shallow copy creates a new object or array and copies the elements of the original structure to the new one. However, if the original structure contains references to other objects (nested objects), the shallow copy only copies the references to those objects, not the objects themselves.
+Result: The top-level structure is copied, but changes made to nested objects in the copy will affect the original and vice versa.
+Pros: Shallow copies are usually faster and require less memory compared to deep copies.
+Cons: It can lead to unintended side effects if changes to nested objects are not expected.
+javascript
+Copy code
+// Example of shallow copy in JavaScript
+const originalArray = [1, 2, {a: 3, b: 4}];
+const shallowCopy = [...originalArray];
+shallowCopy[2].a = 99;
+
+console.log(originalArray[2].a); // Output: 99
+Deep Copy:
+
+Definition: A deep copy creates a new object or array and recursively copies all the elements of the original structure, including any nested objects. This results in completely independent copies of the original structure, and changes made to the copy do not affect the original.
+Result: Both the top-level and nested structures are copied, creating a fully independent copy.
+Pros: Changes made to the copy do not affect the original, preventing unintended side effects.
+Cons: Deep copies can be slower and may require more memory, especially for deeply nested structures.
+javascript
+Copy code
+// Example of deep copy in JavaScript using JSON.stringify and JSON.parse
+const originalArray = [1, 2, {a: 3, b: 4}];
+const deepCopy = JSON.parse(JSON.stringify(originalArray));
+deepCopy[2].a = 99;
+
+console.log(originalArray[2].a); // Output: 3
+Choosing between shallow and deep copy depends on the specific requirements of the application and the structure of the data being copied. Shallow copies are often sufficient when the nested structures don't need to be completely independent, while deep copies are necessary when true independence is required.

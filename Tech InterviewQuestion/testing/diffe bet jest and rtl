@@ -1,0 +1,26 @@
+Jest and React Testing Library (RTL) are often used together to test React applications, and they complement each other in the testing ecosystem.
+
+Testing Frameworks:
+
+Jest: Jest is a JavaScript testing framework developed by Facebook. It is a comprehensive testing solution that includes test runners, assertion libraries, and mocking capabilities. Jest is commonly used for unit testing and integration testing in JavaScript applications, including React.
+
+React Testing Library (RTL): RTL is not a testing framework on its own but a testing utility focused on testing React components. It is often used in conjunction with testing frameworks like Jest. RTL provides a set of tools and guidelines for testing React components in a user-centric way.
+
+Integration:
+
+Jest and RTL Integration: Jest provides the testing environment and runs the tests, while RTL provides utilities for querying and interacting with React components in a way that aligns with user behavior. Developers often use Jest as the overall testing framework and leverage RTL for testing React components within that framework.
+User-Centric Testing:
+
+RTL Philosophy: RTL is designed to encourage writing tests that simulate user interactions and focus on the external behavior of components. It promotes writing tests that closely resemble how users interact with the application.
+Queries and Assertions:
+
+RTL Queries: RTL provides a set of queries (e.g., getByText, getByTestId) for selecting elements from the rendered React components. These queries are designed to be expressive and make it easy to interact with and assert on elements in the DOM.
+
+Jest Assertions: Jest provides a wide range of assertions for validating different conditions in your code. Jest assertions are often used in conjunction with RTL queries to make assertions about the state and behavior of React components.
+
+In summary, Jest and React Testing Library serve different purposes in the testing ecosystem. Jest is a comprehensive testing framework, while React Testing Library is a utility specifically tailored for testing React components. Many developers choose to use them together to create effective and user-centric tests for their React applications.
+
+
+
+
+
