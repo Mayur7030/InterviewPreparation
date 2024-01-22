@@ -29,6 +29,11 @@ What is the difference between a <span> and a <div>?
 
 Explain the difference between HTML and HTML5.
 HTML5 is the latest version of HTML and introduces new elements, attributes, and APIs for better multimedia support, improved semantics, and enhanced user experience.
+semantic tags -header, footer, nav, main, 
+multimedia support - audio,video
+storage capabilities - local storage,session storage
+device optimization - responsive web designs for phone as well
+
 --------------*---------------*-------------*--------------*---------
 
 What is the purpose of the <meta> tag in HTML?
