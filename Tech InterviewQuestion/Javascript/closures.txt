@@ -1,13 +1,21 @@
 Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure ‘remembers’ the environment in which it was created.
 
+
+Defination -->
+
+A closure is a feature in JavaScript where a function has access to variables from its outer (enclosing) scope, even after the outer function has finished execution. It allows a function to "remember" and access its lexical scope, capturing variables and maintaining their values.
+
+In simpler terms, a closure occurs when a function is defined inside another function, creating a scope chain that enables access to the outer function's variables even after the outer function has completed execution.
+
+
 usecase ---
 Global variables can be made local (private) with closures.
 
 If we want to update variable ,we have to make it global like counter app but that makes variable unsecure  as it can change by anyone. to solve this problem we can you Closures.
 
-JS nested function have access to the scope above them.
 
 ------------
+
 inner functions have access to variables from their outer (enclosing) functions even after the outer function has completed its execution and its call stack has been cleared.
 
 Here's a breakdown of what happens:
@@ -33,11 +41,6 @@ Although the call stack for the outer function has been cleared, the variables i
 This reference is stored in the heap memory, not in the call stack.
 ----------------------------------
 
-Defination -->
-
-A closure is a feature in JavaScript where a function has access to variables from its outer (enclosing) scope, even after the outer function has finished execution. It allows a function to "remember" and access its lexical scope, capturing variables and maintaining their values.
-
-In simpler terms, a closure occurs when a function is defined inside another function, creating a scope chain that enables access to the outer function's variables even after the outer function has completed execution.
 
 
 code-------------------->

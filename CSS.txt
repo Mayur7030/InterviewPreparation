@@ -13,9 +13,8 @@ such as :hover, :checked, :first-child
 --------------*---------------*-------------*--------------*---------
  What is a pseudo-element, and what are they used for?
 Pseudo-elements are virtual elements that give developers the power to style parts of an HTML document that don't correspond to actual HTML elements. Essentially, they let you apply styles to specific parts of an element without the need for extra HTML markup.
-::before, ::after ,  ::
-Practical Applications::
-Indicating External Links
+::before, ::after
+Practical Applications::Indicating External Links
 Responsive Backgrounds
 --------------*---------------*-------------*--------------*---------
 
@@ -41,13 +40,14 @@ The Box Model is the foundational concept in CSS that describes the structure of
 --------------*---------------*-------------*--------------*---------
 Explain margin collapsing.
 Margin collapsing can occur when there are adjacent vertical margins between elements. In such cases, the larger of the two margins becomes the "collapsed margin."
-Horizontal margin collapse does not occur:
+Horizontal margin collapse does not occur
 --------------*---------------*-------------*--------------*---------
 Preventing Margin Collapsing
 Padding or Borders: 
 Inline-Block or Floats: 
 --------------*---------------*-------------*--------------*---------
 What are the different values for the box-sizing property and what do they do?
+
 Content-Box: Box dimensions are calculated by adding the width and height to the content only.
 Border-Box: The width and height of the box are calculated by including both the content and padding within the specified values.
 Initial: This value sets the box-sizing property to its default value, which is typically content-box.
@@ -57,9 +57,43 @@ Initial: This value sets the box-sizing property to its default value, which is 
  Auto margins: 
  Flexbox: placing the block in a flex container and setting justify-content: center.
  vertical -- align items
+
+ ---------------------------------------------------------------
+ Both CSS Grid and Flexbox are layout models in CSS that help you design and structure the layout of web pages. However, they have different use cases and work in different ways.
+
+CSS Grid:
+
+Two-Dimensional Layout: Grid is a two-dimensional layout system, meaning you can define both rows and columns. This allows you to create complex layouts with rows and columns intersecting each other.
+
+Item Placement: Grid allows you to place items anywhere in the grid, and you have control over both rows and columns for each item. You can define the size of rows and columns explicitly or let the browser handle it automatically.
+
+Grid Lines: You can define grid lines and use them to position items. This provides precise control over the placement of elements in the layout.
+
+Parent-Child Relationship: Grid is applied to the parent container, and child elements are placed within the grid cells.
+
+
+Flexbox:
+
+One-Dimensional Layout: Flexbox is a one-dimensional layout system, which means it deals with either rows or columns, but not both at the same time. It is designed to distribute space along a single axis.
+
+Item Order: Flexbox allows you to change the order of items regardless of their source order in the HTML. This provides more flexibility in arranging elements.
+
+Alignment and Justification: Flexbox provides properties for alignment and justification along the main axis and cross axis, making it easy to center items and distribute space.
+
+Parent-Child Relationship: Flexbox is applied to the parent container, and child elements become flex items.
+
 --------------*---------------*-------------*--------------*---------
  What is the difference between block, inline, and inline-block elements?
 Block elements, by default, stack vertically, while inline elements sit next to each other on the same line.
 
 Inline-block elements combine characteristics of both, stacking vertically and allowing for adjustments in height, margin, and padding.
+
+Inline-block elements:
+
+Usage: Combines features of both block-level and inline elements.
+Behavior:
+Takes up only as much width as necessary like inline elements.
+Allows setting width, height, margin, and padding like block-level elements.
+Does not start on a new line, and multiple inline-block elements can appear on the same line.
+Examples: <img>, <button>
 --------------*---------------*-------------*--------------*---------

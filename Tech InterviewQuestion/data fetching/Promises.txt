@@ -170,7 +170,9 @@ doSomething()
   .then(result3 => {
     // ...
   });
-Error Handling - catch Method:
+
+
+2)Error Handling - catch Method:
 
 Handling errors in callback-based code often required additional nesting or passing error parameters. Promises introduced a dedicated catch method that allows for more centralized and cleaner error handling.
 Example:
@@ -194,10 +196,13 @@ doSomething()
   .catch(error => {
     handleError(error);
   });
-Avoiding Callback Hell - Readability:
+
+
+3)Avoiding Callback Hell - Readability:
 
 Promises improve code readability by providing a more linear and sequential flow of asynchronous operations. This makes it easier to understand the logic of the code, especially when dealing with multiple asynchronous tasks.
-Easier Composition of Asynchronous Operations:
+
+4)Easier Composition of Asynchronous Operations:
 
 Promises facilitate the composition of asynchronous operations. They allow developers to combine multiple promises using methods like Promise.all or Promise.race, making it easier to manage concurrency and dependencies.
 Example:
