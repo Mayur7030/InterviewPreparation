@@ -1,1 +1,5 @@
+what is redux?
+
+
+redux saga
 redux thunk 

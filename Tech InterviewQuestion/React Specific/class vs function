@@ -11,3 +11,6 @@ In older versions, If the component needs state or lifecycle methods then you ne
 Error boundaries are components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.
 
 A class component becomes an error boundary if it defines a new lifecycle method called componentDidCatch(error, info) or static getDerivedStateFromError() :
+
+
+benefits of functional compoenent over class component--
