@@ -50,6 +50,7 @@ function noReturn() {
 
 const result = noReturn();
 console.log(result); // Output: undefined
+
 In summary, the return statement is crucial for functions to produce outputs, exit early based on conditions, and control the flow of a program. It is the mechanism by which functions communicate results back to the code that called them.
 
 

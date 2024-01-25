@@ -1,0 +1,46 @@
+HTTP status codes are three-digit numbers returned by a server in response to a client's request made to the server. They provide information about the status of the request and can be helpful in troubleshooting or handling responses programmatically. Here are some common HTTP status codes along with examples:
+
+2xx Success:
+
+These codes indicate that the client's request was successfully received, understood, and accepted.
+
+Example:
+
+200 OK: The request was successful, and the server returned the requested data.
+
+3xx Redirection:
+
+These codes indicate that further action is needed to complete the request. The client may need to follow a redirect.
+
+Example:
+
+301 Moved Permanently: The requested resource has been permanently moved to a new location.
+
+4xx Client Error:
+
+These codes indicate that the client seems to have made an error. The request cannot be processed.
+
+Example:
+
+404 Not Found: The server could not find the requested resource.
+5xx Server Error:
+
+These codes indicate that the server failed to fulfill a valid request.
+
+Example:
+
+500 Internal Server Error: A generic error message indicating that something went wrong on the server.
+201 Created:
+
+Indicates that the request has been fulfilled, resulting in the creation of a new resource.
+
+Example:
+
+201 Created: The server has successfully created a new resource.
+401 Unauthorized:
+
+Indicates that the request has not been applied because it lacks valid authentication credentials.
+
+Example:
+
+401 Unauthorized: The client must authenticate itself to get the requested response.

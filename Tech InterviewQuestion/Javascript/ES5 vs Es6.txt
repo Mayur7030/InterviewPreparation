@@ -11,8 +11,9 @@ let -reassign
 * template literals
 * destructuring 
 * Promises
-
 * multi line strings - using backticks ,\n
+* modules
+* default parameter
 
 * classes -->
 

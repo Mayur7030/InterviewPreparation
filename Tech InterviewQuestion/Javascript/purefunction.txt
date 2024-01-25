@@ -29,9 +29,11 @@ function impureAdd(a) {
 // Usage
 const result1 = impureAdd(3); // Output: 3
 const result2 = impureAdd(3); // Output: 6 (different result)
+
 In this example, the impureAdd function not only returns a result based on its input but also modifies the externalState, leading to different results for the same input. Additionally, it has a side effect of changing external state.
 
 Key Differences:
+
 Predictability: Pure functions are predictable, as they produce the same output for the same input every time. Impure functions may have varying results for the same input, making them less predictable.
 
 Side Effects: Pure functions have no side effects; they don't modify external state or rely on external factors. Impure functions may modify external state, which can lead to unexpected behavior.

@@ -13,11 +13,15 @@ Capacity (per domain)	4kb	5MB	5MB
 // Storing data
 localStorage.setItem('theme', 'dark');
 localStorage.setItem('user', JSON.stringify({ name: 'John', age: 25 }));
+JSON.stringify-
+The JavaScript object or value to be converted to a JSON string.
 
 // Retrieving data
 const theme = localStorage.getItem('theme');
 const user = JSON.parse(localStorage.getItem('user'));
 
+JSON.parse-
+ Parses a JSON string, constructing the JavaScript object or value described by the string.
 // Removing data
 localStorage.removeItem('theme');
 

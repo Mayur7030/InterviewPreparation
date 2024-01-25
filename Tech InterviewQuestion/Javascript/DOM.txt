@@ -14,10 +14,13 @@ document.body()
 
 
 
+BOM --
 
+The Browser Object Model (BOM) is a term used to describe the set of objects provided by web browsers to interact with and control the browser itself. It represents a collection of objects that expose the functionality of the browser window, allowing developers to manipulate the browser's behavior, handle events, and retrieve information about the browser and the device.
 
-BOM - Browser Object Methods
-
-represents additional objects provided by the Browser(host environment like mobile)for working with everything  like alert, prompt, confirm, setTimeout, setinterval
-
-window.location.href= "https://codewithharry.com"
+window.alert("Hello, World!"); // Display an alert in the browser window
+document.getElementById("myElement"); // Get an element by its ID
+console.log(navigator.userAgent); // Get the user agent string
+window.history.back(); // Go back one page in the browser history
+console.log(window.location.href); // Get the current URL
+console.log(window.screen.width); // Get the screen width

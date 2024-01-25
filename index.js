@@ -105,3 +105,8 @@ const closure =()=>{
 }
 
 closure()
+
+window.document.getElementById(
+)
+
+window.alert()

@@ -2,8 +2,6 @@
 
 •	Local Scope allows access to everything within the boundaries (inside the box)
 
-
-
 •	Global Scope is everything outside the boundaries (outside the box). A global scope can not access a variable defined in the local scope because it is enclosed from the outer world, except if you return it.
 
 
@@ -13,5 +11,3 @@
 }
 console.log(a)           
 // a is not defined
-
-* Function scope --

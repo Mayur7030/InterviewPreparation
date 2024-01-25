@@ -10,6 +10,8 @@ Code is executed line by line by an interpreter at runtime.
 More portable, as source code can run on any system with the interpreter.
 Better support for debugging at runtime.
 Examples: JavaScript, Python, Ruby, PHP.
+
+
 Compiled Languages:
 
 Code is translated into machine code or bytecode by a compiler before execution.

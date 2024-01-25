@@ -50,8 +50,7 @@ Because our application could include many functions and global variables from d
 })();
 
 
-3)
-The module pattern
+3)The module pattern
 We would also use IIFE to create private and public variables and methods. 
 
 

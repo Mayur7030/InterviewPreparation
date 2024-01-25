@@ -12,8 +12,12 @@ Copy code
 const originalArray = [1, 2, {a: 3, b: 4}];
 const shallowCopy = [...originalArray];
 shallowCopy[2].a = 99;
+shallowCopy[1] = 88;
 
 console.log(originalArray[2].a); // Output: 99
+console.log(originalArray[1]);     //output 2
+
+
 Deep Copy:
 
 Definition: A deep copy creates a new object or array and recursively copies all the elements of the original structure, including any nested objects. This results in completely independent copies of the original structure, and changes made to the copy do not affect the original.
@@ -28,4 +32,6 @@ const deepCopy = JSON.parse(JSON.stringify(originalArray));
 deepCopy[2].a = 99;
 
 console.log(originalArray[2].a); // Output: 3
+
+
 Choosing between shallow and deep copy depends on the specific requirements of the application and the structure of the data being copied. Shallow copies are often sufficient when the nested structures don't need to be completely independent, while deep copies are necessary when true independence is required.
