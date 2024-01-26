@@ -15,7 +15,6 @@ The callback function within useEffect contains the code for the side effect. Th
 For instance, if we want to update the document title based on a prop called name, we use useEffect like this:
 
 
- code
 import { useEffect } from 'react';
 
 function User({ name }) {

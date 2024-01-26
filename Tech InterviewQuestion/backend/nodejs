@@ -5,15 +5,19 @@ Here's a breakdown of the key aspects:
 JavaScript on the Server:
 
 Traditionally, JavaScript was mainly used for client-side scripting in web browsers. Node.js extends the use of JavaScript to server-side development.
+
 Event-Driven and Asynchronous:
 
 Node.js is designed to be event-driven and asynchronous, making it suitable for handling multiple concurrent operations without blocking the execution of code.
+
 Single-Threaded and Non-Blocking I/O:
 
 Node.js uses a single-threaded event loop to handle requests, which allows it to efficiently manage a large number of simultaneous connections. It doesn't block on I/O operations, allowing it to handle many requests concurrently.
+
 NPM (Node Package Manager):
 
 Node.js comes with NPM, a package manager that allows you to easily install and manage third-party libraries (packages) to use in your applications.
+
 Example:
 Let's create a simple example of a Node.js server that responds with "Hello, World!" when accessed:
 

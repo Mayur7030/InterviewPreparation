@@ -5,15 +5,19 @@ Here's a breakdown of key aspects:
 Routing:
 
 Express simplifies defining routes for handling different HTTP requests (GET, POST, etc.). You can specify how your application should respond to different URLs.
+
 Middleware:
 
 Middleware functions in Express are functions that have access to the request and response objects. They can perform tasks such as modifying the request or response, executing code, or terminating the request-response cycle.
+
 HTTP Utility Methods:
 
 Express provides utility methods for common HTTP operations. For example, sending responses, handling errors, and setting HTTP headers are made easier with Express.
+
 Templating Engines:
 
 Express can be integrated with various templating engines like EJS or Pug, allowing you to dynamically generate HTML pages based on data.
+
 Example:
 Let's create a simple Express.js application that responds with "Hello, Express!" when accessed:
 

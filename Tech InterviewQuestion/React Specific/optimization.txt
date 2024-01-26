@@ -92,11 +92,27 @@ In this example, the code for Home and Dashboard components is loaded dynamicall
 Functional components are a newer type of React component that are more efficient than class components. This is because functional components do not have a state or lifecycle, which can improve the performance of your application.
 -------------------------------------
 
-•	Use performance tools: There are a number of performance tools available that can help you identify and fix performance problems in your React application. These tools can help you to optimize your application for different devices and browsers.
+•	Use performance tools:
+ There are a number of performance tools available that can help you identify and fix performance problems in your React application. These tools can help you to optimize your application for different devices and browsers.
 react dev tools
 
 --------------------------------------------
 
-•	Use a content delivery network (CDN): A CDN is a network of servers that can be used to deliver static content, such as images and JavaScript files, to users. This can improve the performance of your application by reducing the distance that content needs to travel to reach users.
+•	Use a content delivery network (CDN):
+ A CDN is a network of servers that can be used to deliver static content, such as images and JavaScript files, to users. This can improve the performance of your application by reducing the distance that content needs to travel to reach users.
 
 -----------------------------------------------------------------
+* use Types
+using static typing with tools like Typescript can help catch errors early, improve code quality and provide better documentation for your component's expected data and props.
+------------------------------
+*use helper/utils
+helper or utility functions can encapsulate ,common ,reusable logic in your code application making your compoenent cleaner and more focused ontheir core functionlity
+
+//helper.js
+export function formatName(fname,lname){
+  return `${fname}${lname`}
+}
+
+//compoenent.js
+import {formatName} from './helper.js'
+const fullname = formatName("mayur","pawar")

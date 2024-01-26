@@ -1,0 +1,40 @@
+js engine is not machine, it  is just code return in low language like python
+
+jit compilation -
+aot compilation -
+
+google v8-
+interpretator - ignition
+compiler - turbo fan
+
+garbage collecter - mark and  sweeep algorithm
+
+code - parsing- compilation- execution
+
+----------------------------------------------------------------
+A JavaScript engine is a program or a part of a web browser that interprets and executes JavaScript code. JavaScript engines are crucial components for running JavaScript applications on the web. They take the human-readable JavaScript code and translate it into machine-readable instructions that the computer can understand and execute.
+
+Here's a simple breakdown of how a JavaScript engine works:
+
+Parsing:
+
+When a web page loads, the browser's JavaScript engine starts by parsing the JavaScript code. Parsing involves breaking down the code into smaller pieces and creating a data structure called an Abstract Syntax Tree (AST).
+The AST represents the syntactic structure of the code, making it easier for the engine to understand and process.
+Compilation:
+
+Once the parsing is complete, the JavaScript engine may use various optimization techniques to convert the code into an intermediate form or bytecode.
+Some engines, like V8 (used in Chrome), perform a further step called just-in-time (JIT) compilation. This involves translating the bytecode into machine code just before it is executed, which can improve performance.
+Execution:
+
+The engine executes the compiled code, performing the actions specified by the JavaScript program.
+During execution, the engine interacts with other components of the browser, such as the Document Object Model (DOM) for handling HTML structure and the CSS Object Model (CSSOM) for handling styles.
+Memory Management:
+
+The engine manages memory to store variables, objects, and other data structures created during the execution of the program.
+Memory is allocated when new variables or objects are created, and it is deallocated when they are no longer needed (garbage collection).
+Popular JavaScript engines include:
+
+V8 (Google Chrome, Node.js): Developed by Google, V8 is known for its high performance and is used in both the Chrome browser and Node.js runtime.
+SpiderMonkey (Mozilla Firefox): Developed by Mozilla, SpiderMonkey is the JavaScript engine used in Firefox.
+JavaScriptCore (WebKit, Safari): Developed by Apple, JavaScriptCore (also known as Nitro) is the engine used in the Safari browser.
+In summary, a JavaScript engine plays a crucial role in interpreting, optimizing, and executing JavaScript code, making it possible for web browsers to run dynamic and interactive web applications.

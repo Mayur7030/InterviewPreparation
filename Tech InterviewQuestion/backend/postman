@@ -3,24 +3,31 @@ Postman is a popular collaboration platform for API development. It provides a u
 API Testing:
 
 Postman is primarily known for API testing. It allows developers to create and send HTTP requests to test the functionality of an API. This includes sending various types of requests such as GET, POST, PUT, DELETE, etc., and examining the responses.
+
 User-Friendly Interface:
 
 Postman provides a graphical user interface (GUI) that simplifies the process of working with APIs. Users can easily create requests, organize them into collections, and manage different environments.
+
 Request Building:
 
 Users can create and customize HTTP requests using the Postman interface. This includes specifying headers, parameters, authentication details, and request bodies. It's a convenient tool for exploring and testing API endpoints.
+
 Collections:
 
 Postman allows users to organize their API requests into collections. Collections help in grouping related requests together, making it easier to manage and share sets of API calls.
+
 Automated Testing:
 
 Postman supports the creation of automated test scripts. Test scripts can be written using JavaScript, and they enable users to validate the responses received from API calls automatically. This is useful for running regression tests and ensuring that changes to the API do not introduce bugs.
+
 Environment Variables:
 
 Postman supports the use of environment variables, allowing users to manage different sets of data (such as API endpoints, authentication details, etc.) for different testing environments (e.g., development, testing, production).
+
 Collaboration:
 
 Postman facilitates collaboration among team members. Collections, environments, and test scripts can be shared, making it easier for teams to work together on API development and testing.
+
 Monitoring and Mocking:
 
 Postman also offers features for API monitoring and mocking. API monitoring helps track the performance of APIs over time, while mocking allows developers to simulate API responses for testing purposes.

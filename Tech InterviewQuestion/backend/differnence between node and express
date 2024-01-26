@@ -13,6 +13,8 @@ Node.js is event-driven and asynchronous, allowing it to handle many concurrent 
 Low-Level:
 
 Node.js is relatively low-level and doesn't come with built-in features for handling web applications, routing, or middleware.
+
+
 Express.js:
 Web Application Framework:
 
@@ -26,6 +28,7 @@ Express.js provides utility methods for common HTTP operations, such as setting 
 Templating Engines:
 
 Express.js can be integrated with various templating engines (like EJS, Pug, or Handlebars) to dynamically generate HTML pages based on data.
+
 Higher-Level Abstractions:
 
 Express.js abstracts away many of the lower-level complexities of Node.js, making it easier for developers to build scalable and efficient web applications.

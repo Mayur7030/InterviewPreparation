@@ -17,22 +17,28 @@ Middleware often supports distributed architectures, helping applications scale 
 Security:
 
 Middleware can enhance security by providing authentication, authorization, and encryption mechanisms for data transmission.
+
 Types of Middleware:
 Message-Oriented Middleware (MOM):
 
 Facilitates communication between distributed systems through the exchange of messages. Examples include RabbitMQ and Apache Kafka.
+
 Remote Procedure Call (RPC) Middleware:
 
 Allows programs to execute procedures or functions on remote systems as if they were local. Examples include gRPC and Apache Thrift.
+
 Database Middleware:
 
 Sits between an application and a database, providing services such as connection pooling, caching, and query optimization. Examples include Hibernate and Sequelize.
+
 Object Request Broker (ORB):
 
 Manages communication between objects in distributed object-oriented systems. Examples include CORBA and Java RMI.
+
 Web Middleware:
 
 Enables communication between web applications and provides services like load balancing, caching, and security. Examples include Nginx and Apache HTTP Server.
+
 Example of Middleware in Web Development:
 In the context of web development, middleware is often used in frameworks like Express.js for Node.js. Consider the following example:
 

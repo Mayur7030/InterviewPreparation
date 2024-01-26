@@ -19,12 +19,15 @@ Benefits:
 Enhanced User Experience:
 
 Users could scroll through products continuously without having to navigate between pages, providing a more fluid and enjoyable experience.
+
 Reduced Load Time:
 
 By loading products dynamically as needed, the initial page load time was reduced, and users could start exploring products more quickly.
+
 Increased Engagement:
 
 The infinite scrolling feature encouraged users to explore more products, increasing engagement and potentially leading to more interactions and conversions.
+
 Simplified Navigation:
 
 Users no longer needed to click through pagination links, simplifying the navigation and making it more intuitive.

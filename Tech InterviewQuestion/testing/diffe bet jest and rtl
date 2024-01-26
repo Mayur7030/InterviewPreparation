@@ -9,9 +9,11 @@ React Testing Library (RTL): RTL is not a testing framework on its own but a tes
 Integration:
 
 Jest and RTL Integration: Jest provides the testing environment and runs the tests, while RTL provides utilities for querying and interacting with React components in a way that aligns with user behavior. Developers often use Jest as the overall testing framework and leverage RTL for testing React components within that framework.
+
 User-Centric Testing:
 
 RTL Philosophy: RTL is designed to encourage writing tests that simulate user interactions and focus on the external behavior of components. It promotes writing tests that closely resemble how users interact with the application.
+
 Queries and Assertions:
 
 RTL Queries: RTL provides a set of queries (e.g., getByText, getByTestId) for selecting elements from the rendered React components. These queries are designed to be expressive and make it easy to interact with and assert on elements in the DOM.

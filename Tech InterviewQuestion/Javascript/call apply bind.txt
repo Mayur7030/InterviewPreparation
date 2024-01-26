@@ -1,3 +1,17 @@
+Implicit binding -
+When a function is called as a method of an object, 
+
+const person = {
+  name: 'John',
+  sayHello: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+
+--------------------------------------------->>
+Explicit bind --
+
+
 call() Method:
 //funciton borrowing methods from another object 
 

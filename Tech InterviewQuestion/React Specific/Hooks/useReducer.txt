@@ -11,7 +11,10 @@ its component-
 
  reducer is a pure function responsible for specifying how the application's state changes in response to actions. It takes the current state and an action as arguments and returns the new state. The function signature typically looks like this:
 
-(state, action) => newState
+const [newState,dispatch] =useReducer(reducerfunction,initialValue)
+
+reducerfunction//
+const reducerfunction =(state,action)=>{switch(action.type){case 'increment:return state +1}}
 
 dispatch --
 The dispatch function is a way to send actions to the reducer. When you call dispatch with an action, it triggers the execution of the reducer, which then determines how the state should be updated. The dispatch function is typically used like this:

@@ -8,7 +8,7 @@ In other words, the simple act of redeclaring a function (even the same exact fu
 
 Here’s an example code block reflecting a basic useCallback implementation:
 
-react
+
 import React, { useState, useCallback } from 'react';
 function ChildComponent({ onClick }) {
 console.log('ChildComponent is rendered');

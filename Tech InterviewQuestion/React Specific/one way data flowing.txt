@@ -1,0 +1,64 @@
+can we share from child to parent
+
+one way data flow -
+
+1) props - from parent to child
+2) context api
+3) callback - child to parent
+Callback Functions:
+
+To allow child components to communicate changes back to their parent components, callback functions can be passed down as props.
+jsx
+Copy code
+// Parent Component
+const ParentComponent = () => {
+  const handleChildClick = (message) => {
+    console.log(`Message from child: ${message}`);
+  };
+
+  return <ChildComponent onClick={handleChildClick} />;
+};
+
+// Child Component
+const ChildComponent = (props) => {
+  const handleClick = () => {
+    props.onClick("Hello from child!");
+  };
+
+  return <button onClick={handleClick}>Click Me</button>;
+};
+
+
+Drawbacks of two way data binding -
+
+Two-way data flow, often associated with frameworks like Angular, is an approach where data can be modified in both the parent and child components, allowing changes in one to affect the other. While this approach has its benefits, it also comes with some drawbacks, which is why React, another popular JavaScript library, opts for a unidirectional data flow. Here are some drawbacks of two-way data binding:
+
+Complexity and Understanding:
+
+Two-way data binding can make the code more complex and harder to understand, especially for large applications. Tracking changes in both parent and child components can become challenging, leading to potential bugs and maintenance issues.
+Implicit Behavior:
+
+Two-way data binding relies on implicit connections between components, which can make it less clear how and when data changes. This implicit behavior might lead to unexpected results, especially for developers who are not familiar with the intricacies of the data flow.
+Performance Concerns:
+
+Constantly monitoring changes in both directions can introduce performance concerns. The framework needs to perform additional work to keep data in sync, potentially affecting the application's speed and responsiveness.
+Debugging Complexity:
+
+Debugging can be more challenging because changes in one component can have a cascading effect on others. Identifying the source of an issue and understanding the flow of data can be time-consuming.
+Potential for Infinite Loops:
+
+If not implemented carefully, two-way data binding systems can lead to situations where updates in one component trigger updates in another, resulting in an infinite loop of updates. This can be difficult to troubleshoot and fix.
+Global State Management:
+
+Two-way data binding might encourage the use of a shared global state, which can lead to challenges in managing and maintaining the state of the application. Unpredictable state changes can make it difficult to reason about the behavior of the application.
+Limited Control:
+
+Developers might have less control over when and how data changes occur. In a large application, understanding and managing these changes can become a significant challenge.
+React, with its unidirectional data flow and one-way data binding, seeks to address many of these concerns. By clearly defining the flow of data from parent to child components, React provides a more predictable and understandable structure, making it easier to reason about the application's state and behavior. Additionally, the introduction of React Hooks provides a way to manage component state and lifecycle events in functional components, reducing the need for class components and further simplifying the data flow.
+
+
+
+
+
+
+

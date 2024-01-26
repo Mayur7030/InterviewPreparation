@@ -94,3 +94,14 @@ const validateArgs = curry((arg1, arg2) => {
   return arg1 + arg2;
 });
 In summary, currying promotes a more modular, flexible, and reusable approach to writing functions, offering benefits in terms of partial application, code organization, and composability. These advantages make it a valuable technique, particularly in functional programming paradigms.
+
+
+Infinite currying -
+ 
+function add(a){
+  return function(b){
+    if(b) return add(a +b);
+    return a
+  }
+}
+console.log(add(2)(4)(6)())  //output --12 
