@@ -7,6 +7,20 @@ It allows the UI to remain responsive while the application is performing tasks 
 
 https://www.geeksforgeeks.org/async-await-function-in-javascript/
 
+fetch api -
+const asynfunc = async () => {
+  let p = new Promise((res) => {
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+      .then((data) => data.json())
+      .then((value) => res(value));
+  }).then((res) => console.log(res));
+  let q = await p;
+  console.log("q");
+};
+
+asynfunc();
+---------------------------------------------------------
+
 
 code ----------->
 let temp = async () => {

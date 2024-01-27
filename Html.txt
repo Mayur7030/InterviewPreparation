@@ -2,8 +2,7 @@
 What is HTML?
 HTML stands for HyperText Markup Language. It is the standard markup language used to create the structure of web pages.
 --------------*---------------*-------------*--------------*---------
-Semantic tags – which has some meaning in their name for browser and user understanding like p, img, header, footer aside 
-<form>, <table>, <article>, <main>, <mark>,
+Semantic tags – which has some meaning in their name for browser and user understanding like p, img, header, footer aside <form>, <table>, <article>, <main>, <mark>,
 
 Non-semantic elements: <div> and <span> tells nothing about its content.
 --------------*---------------*-------------*--------------*---------
@@ -12,7 +11,7 @@ The HTML <main> element represents the dominant content of the <body> of a docum
 --------------*---------------*-------------*--------------*---------
 
 What is an iframe and how it works?
-An iframe is an HTML document which can be embedded inside another HTML page *Example:
+An iframe is an HTML document which can be embedded inside another HTML page 
 --------------*---------------*-------------*--------------*---------
 
 What is the purpose of the DOCTYPE declaration in HTML?
@@ -41,6 +40,8 @@ The <meta> tag is used to provide metadata about the HTML document. It includes 
 --------------*---------------*-------------*--------------*---------
 
 What does async and defer refer in script tag? Describe the difference between <script>, <script async> and <script defer>
+
+By default, when a <script> tag is encountered, it blocks the parsing of the HTML document until the script is fetched, executed, and returned.
 
 Async: Downloads the script file during HTML parsing and will pause the HTML parser to execute it when it has finished downloading.
 

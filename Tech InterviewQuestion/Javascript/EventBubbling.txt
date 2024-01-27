@@ -1,10 +1,13 @@
+bydefault event bubbling happens
+
+
 Event bubbling and event capturing –
 
 
 * When elements receive events, such events propagate to their parents and ancestors upward in the DOM tree.
 •	Event capturing means propagation of event is done from parent elements to child element in the DOM 
 * event bubbling means propagation is done from child element to parent elements in the DOM.
-•	The event capturing happens before event bubbling.
+
 •	If {capture: true} ,event capturing will occur else event bubbling will occur.
 •	Both can be prevented by using the stopPropagation() method.
 

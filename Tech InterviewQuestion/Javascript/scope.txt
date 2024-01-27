@@ -1,6 +1,6 @@
 "scope" refers to the context in which variables and functions are declared and accessed. The scope determines the visibility and lifetime of these entities.
 
-•	Local Scope allows access to everything within the boundaries (inside the box)
+•	Local Scope/functional scope - allows access to everything within the boundaries (inside the box)
 
 •	Global Scope is everything outside the boundaries (outside the box). A global scope can not access a variable defined in the local scope because it is enclosed from the outer world, except if you return it.
 
