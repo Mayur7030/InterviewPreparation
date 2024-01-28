@@ -1,8 +1,8 @@
 useCallback is useful when you need to pass a function as a prop to a child component, and you want to ensure that the function reference does not change unnecessarily. By memoizing the function using useCallback, you can ensure that the function reference remains the same as long as its dependencies do not change.
 
-Without getting too heavy into JavaScript function references, let’s just take a look at how they can affect the rendering of your React app. When a function reference changes, any child components that receive the function as a prop will re-render, even if the function logic itself has not changed.
+When a function reference changes, any child components that receive the function as a prop will re-render, even if the function logic itself has not changed.
 
-This is because, as we already mentioned, React does a shallow comparison of prop values to determine whether a component should re-render, and a new function reference will always be considered a different value than the previous one.
+React does a shallow comparison of prop values to determine whether a component should re-render, and a new function reference will always be considered a different value than the previous one.
 
 In other words, the simple act of redeclaring a function (even the same exact function), causes the reference to change, and will cause the child component that receives the function as a prop to unnecessarily re-render.
 

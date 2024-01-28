@@ -1,0 +1,34 @@
+1) tell me something about yourself technical things
+2)optimization of react - gave lazyloading code 
+3)generators in javascript
+4)redux
+5)jest
+6)custom hooks vs hof
+3)one react code to do - 
+import { useState } from "react";
+
+const App = () => {
+  const [value, setValue] = useState("");
+  const [submit, setSubmit] = useState("");
+  const handleClick = (e) => {
+    setValue(e.target.value);
+  };
+  let arr = Array.from(value.split(" "));
+
+  let firstLetter = arr.map((item) => {
+    return item[0];
+  });
+  const handleSubmit = () => {
+    setSubmit(firstLetter);
+  };
+
+  return (
+    <>
+      <input type="text" value={value} onChange={handleClick} />
+      <button onClick={handleSubmit}>Submit</button>
+      <h1>{submit}</h1>
+    </>
+  );
+};
+
+export default App;

@@ -1,0 +1,24 @@
+
+In JavaScript, generators are a special type of function that can be paused and resumed. They are defined using a function* declaration or by using the function* expression. The main feature of generators is their ability to yield values one at a time, allowing the calling code to control the iteration manually.
+
+Generators use the yield keyword to produce a value and pause the execution of the generator function. When the generator is called again, it resumes execution from where it was paused, retaining its internal state.
+
+Here's a simple example of a generator function:
+
+javascript
+Copy code
+function* myGenerator() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+// Using the generator
+const gen = myGenerator();
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // 3
+console.log(gen.next().value); // undefined
+In this example, each call to gen.next() returns an object with a value property representing the yielded value. The generator function produces values in a sequential manner, and calling next() resumes the function until the next yield statement.
+
+Generators are often used for asynchronous programming with the help of libraries like co or with the async/await syntax introduced in newer versions of JavaScript. They provide a way to write asynchronous code in a more synchronous-looking style.

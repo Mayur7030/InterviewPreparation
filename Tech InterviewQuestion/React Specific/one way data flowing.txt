@@ -5,6 +5,7 @@ one way data flow -
 1) props - from parent to child
 2) context api
 3) callback - child to parent
+
 Callback Functions:
 
 To allow child components to communicate changes back to their parent components, callback functions can be passed down as props.
