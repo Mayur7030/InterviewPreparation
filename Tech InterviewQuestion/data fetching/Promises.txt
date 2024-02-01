@@ -3,6 +3,10 @@ promise is an object that represents the eventual completion (or failure) of an 
 "a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed."
 
 usecase - is used to parallel execution
+feature -
+1)alternate to callback hell
+2) execution of multiple async function with methods like promise.all
+3)error handling using catch()
 
 code-------------------------->
 
@@ -147,8 +151,9 @@ const promise1 = new Promise((res, rej) => {
 
 -------------------------------------------------------
 comparison between callback and promise --
-Callback Hell (Callback Pyramids) - Promise Chaining:
 
+
+Callback Hell (Callback Pyramids) - Promise Chaining:
 Callback hell, also known as "pyramid of doom," occurred when multiple asynchronous operations were nested inside callback functions, leading to deep and hard-to-read code. Promises introduced a chaining mechanism that allows developers to attach multiple asynchronous operations in a more readable and sequential manner, reducing the nesting levels.
 Example:
 

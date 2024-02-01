@@ -3,17 +3,104 @@ Bouncing and throttling are techniques used to control the frequency of function
 
 Throttling:
 
-Purpose: Throttling ensures that a function is not executed more often than a specified time interval, regardless of how frequently an event is triggered.
+Purpose: Throttling is useful when you want to ensure that a function is called at a limited rate or frequency without missing any important inputs or events.
+
 How it works: If a function is called more frequently than the specified interval, throttling will ignore some of those calls until the time interval has passed.
+
 Use Case: Throttling is often used for performance optimization in scenarios where continuous or frequent triggering of an event (like scrolling or mousemove) might lead to resource-intensive operations.
-Implementation: Throttling typically involves setting a timer, and if the function is called before the timer expires, the function call is ignored until the timer resets.
+
+imagine real time data processing appliation that receives a high volume of incoimg data streams . If data is processed too quickly it may cause the appliation to overwhlem and unresoinsive . In this case throttling the processing function to a specific fequncy can help manage the load and maintain the performance of the application.
+
 ex - scroll event, button click, mouse move event
 
 Debouncing:
 
-Purpose: Debouncing ensures that a function is not executed until after a certain amount of time has passed since the last time the function was invoked.
+Purpose:Debouncing is useful when you want to ensure that a function is only executed once after a series of rapid inputs. This  is particularly helpful when dealin g with user input events that may trigger multiple times in a short period such as search bar or a button click .
+Deboucing can help prevent unnecessary or redundant processing of these events.
+    Debouncing delays the exection of a function until after a certain amount of time has passed without the input being triggered again.
+
 How it works: If the function is called multiple times within a short period, debouncing will reset a timer each time it is called. The function is only executed when the timer expires without further function calls.
+
 Use Case: Debouncing is often used to improve performance and reduce unnecessary processing in scenarios where you want to wait for a pause in user input before taking action.
+
 Implementation: Debouncing typically involves using a timer and clearing the timer each time the function is called within a specified time frame.
 
 ex - resize text, search input, autosave in text editors
+
+
+
+example - scrolling
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 200vh;
+      }
+      section {
+        position: fixed;
+      }
+      p {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body onscroll="showCount()">
+    <section>
+      <p class="ncount">Normal Count</p>
+      <p class="tcount">Throttle Count</p>
+      <p class="dcount">Debouncing Count</p>
+    </section>
+
+    <script>
+      const normaldiv = document.querySelector(".ncount");
+      const throttlediv = document.querySelector(".tcount");
+      const debouncingdiv = document.querySelector(".dcount");
+
+
+
+      let ncount = 0;
+      let tcount = 0;
+      let dcount = 0;
+
+      
+      const showCount = () => {
+        normalCount();
+        throttlecount();
+        debouncecount();
+      };
+
+      const normalCount = () => {
+        ncount++;
+        normaldiv.innerHTML = `Normal Count : ${ncount}`;
+      };
+
+      let isScrolling = true;
+      const throttlecount = () => {
+        if (isScrolling) {
+          tcount++;
+          throttlediv.innerHTML = `Throttle Count : ${tcount}`;
+          isScrolling = false;
+          setTimeout(() => {
+            isScrolling = true;
+          }, 1000);
+        }
+      };
+
+      let interval;
+      const debouncecount = () => {
+        clearTimeout(interval);
+        interval = setTimeout(() => {
+          dcount++;
+          debouncingdiv.innerHTML = `Debounce Count: ${dcount}`;
+        }, 1000);
+      };
+
+    </script>
+  </body>
+</html>
+

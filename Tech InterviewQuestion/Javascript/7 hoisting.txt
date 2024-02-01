@@ -2,12 +2,13 @@ Link - https://www.freecodecamp.org/news/javascript-let-and-const-hoisting
 
 Hoisting is a JavaScript feature that moves all variable and function declarations to the top of their scope before the code is executed, even if they are declared later in the code. This means that you can refer to a variable or function before it is declared, but the value will be undefined.
 
-Var Declarations vs. Let and Const:
+Var  vs. Let and Const:
 
- var declarations are hoisted to the top of their scope, but let and const declarations are hoisted as well, but not initialized until the actual declaration.
+ var declarations are hoisted to the top of their scope, but let and const declarations are hoisted as well, but they are in TDZ and not initialized until the actual declaration.
 
 temprol dead zone -
 A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the  user completely initializes it with a value.
+they are in the scope but not decalre it.
 
 
 Function Declarations vs. Function Expressions vs arraow function: 

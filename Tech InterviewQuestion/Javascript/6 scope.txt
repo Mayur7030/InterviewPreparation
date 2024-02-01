@@ -4,10 +4,21 @@
 
 •	Global Scope is everything outside the boundaries (outside the box). A global scope can not access a variable defined in the local scope because it is enclosed from the outer world, except if you return it.
 
+function localVarFunction() {
+  let localVar = "I am local!";
+  return localVar; // Returning the local variable
+}
+
+let globalVar = localVarFunction();
+console.log(globalVar); // Output: I am local!
+
 
 •	Block Scope is everything inside the boundaries but it works only for let and const keywords. It does not work with the var keyword. 
-{
-    let a = 99
-}
-console.log(a)           
-// a is not defined
+---------------------
+shadowing- redeclaring a global varible inside a function as local variable
+legal shodwing - declaring var ->let;  let->let -will overlap above value
+illegal shadowing - declaring let->var
+
+----------------
+re-initialzation -let, var
+re declaration - var

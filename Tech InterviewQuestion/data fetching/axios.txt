@@ -14,6 +14,7 @@ Request and Response Interceptors:
 Interceptors allow you to run your code or modify requests and responses globally before they are sent or after they are received.
 
 •	Configurable: Axios is highly configurable. You can customize the headers, timeouts, and other settings of each request.
+
 •	Lightweight: Axios is a lightweight library that is easy to download and install.
 •	Cross-platform: Axios can be used in the browser and the server.
 

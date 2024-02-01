@@ -1,0 +1,48 @@
+JavaScript is a high-level, interpreted programming language that is primarily used for web development.JavaScript is commonly used to create dynamic content, handle events, manipulate the Document Object Model (DOM), and interact with servers through asynchronous requests.
+
+Js is lightweight, crossplatform, singlethreaded and interpreted programming language.
+
+
+
+Interpreted Languages:
+
+Code is executed line by line by an interpreter at runtime.
+Explanation: In an interpreted language, a program is executed line by line by another program called an interpreter. The interpreter reads and translates the code into machine language or an intermediate code on-the-fly.
+More portable, as source code can run on any system with the interpreter.
+Better support for debugging at runtime.
+Examples: JavaScript, Python, Ruby, PHP.
+
+
+Compiled Languages:
+
+Code is translated into machine code or bytecode by a compiler before execution.
+Explanation: In a compiled language, the entire program is translated into machine code or an intermediate code before it is run. This results in the creation of a separate executable file that can be directly executed by the computer's operating system.
+Generally offers better performance.
+May be less portable as compiled code is platform-specific.
+Debugging can be more challenging.
+Examples: C, C++, Java, Rust.
+
+
+JavaScript
+Interpretation and Compilation in JavaScript:
+
+Initially, JavaScript was mainly interpreted by web browsers. The browser's JavaScript engine would read and execute the code line by line.
+With advancements in JavaScript engines (like V8 in Chrome, SpiderMonkey in Firefox, and others), a compilation step was introduced. JavaScript code is first parsed and then translated into an intermediate representation or bytecode.
+This intermediate representation allows for optimizations before the final machine code is generated.
+
+Just-in-Time Compilation (JIT):
+
+In JIT compilation, the intermediate representation or bytecode is not translated into machine code ahead of time (as in traditional compilation). Instead, it happens "just in time" during execution.
+When the JavaScript code is run, the JavaScript engine analyzes the code's execution patterns and identifies hot paths (frequently executed code paths). These hot paths are then compiled into optimized machine code for faster execution.
+This adaptive compilation allows JavaScript to achieve a balance between the flexibility of interpretation and the performance benefits of compilation.
+
+
+Advantages of JIT Compilation in JavaScript:
+
+Improved performance: By dynamically compiling frequently executed code, JavaScript engines can generate highly optimized machine code tailored to the specific runtime conditions.
+Flexibility: Developers can modify and run JavaScript code without a separate compilation step, making development and debugging more agile.
+In summary, JavaScript's JIT compilation combines elements of both interpretation and compilation. It leverages the benefits of dynamic translation and optimization to achieve a good balance between performance and flexibility, which is crucial for its role as a language running in web browsers.
+
+
+
+

@@ -1,3 +1,17 @@
 freecode camp link--
 
+js engine scans file then this happens
+
+
+global execution context
+function execution context
+
+two phases - 
+1) creation phases
+2) execution phases
+
+two component-
+memory
+code
+
 https://www.freecodecamp.org/news/how-javascript-works-behind-the-scene-javascript-execution-context/

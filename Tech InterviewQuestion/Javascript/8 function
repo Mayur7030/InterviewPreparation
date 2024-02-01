@@ -1,0 +1,39 @@
+No, callback functions and first-class functions are related concepts in JavaScript, but they are not the same thing.
+
+First-Class Functions:
+
+This concept refers to the ability of a programming language to treat functions as first-class citizens. In JavaScript, functions are first-class citizens, meaning they can be:
+Assigned to variables.
+Passed as arguments to other functions.
+Returned from other functions.
+Stored in data structures like arrays or objects.
+// Example of first-class functions
+const myFunction = function() {
+  console.log("Hello, world!");
+};
+
+// Assigning a function to a variable
+const anotherFunction = myFunction;
+
+// Passing a function as an argument
+function executeFunction(func) {
+  func();
+}
+executeFunction(myFunction);
+
+Callback Functions:
+
+A callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. Callbacks are often used in asynchronous programming, event handling, and other scenarios where we want to specify what should happen after a certain task is finished.
+// Example of a callback function
+function fetchData(callback) {
+  // Simulating an asynchronous operation
+  setTimeout(function() {
+    const data = "Fetched data";
+    callback(data);
+  }, 1000);
+}
+
+// Using the callback function
+fetchData(function(result) {
+  console.log(result);
+});

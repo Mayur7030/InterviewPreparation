@@ -1,7 +1,7 @@
 async always provide promise
-The await keyword makes the function pause the execution and wait for a resolved promise before it continues
-usecase  --
-to stop execution of js
+Async/await is a syntactic feature in JavaScript that allows you to write asynchronous code in a synchronous manner. It provides a way to work with asynchronous operations in a more readable and intuitive way compared to traditional callback-based or promise-based approaches.
+
+
 Asynchronous code is code that runs without blocking the main thread of execution. 
 It allows the UI to remain responsive while the application is performing tasks such as fetching data from a server.
 

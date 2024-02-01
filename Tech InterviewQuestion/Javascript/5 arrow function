@@ -1,0 +1,18 @@
+tell me something about arrow function -
+
+
+features of arrow function -
+
+1)Concise Syntax:
+
+2)Implicit Return:
+
+Arrow functions automatically return the result of the expression without the need for an explicit return statement if the function body is a single statement. 
+
+3)No Binding of this:
+
+Arrow functions do not bind their own this value. Instead, they inherit the this value from the enclosing scope.
+
+4)Shorter Syntax for Single-Parameter Functions:
+
+

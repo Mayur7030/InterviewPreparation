@@ -4,6 +4,7 @@
 4)redux
 5)jest
 6)custom hooks vs hof
+7)middleware
 3)one react code to do - 
 import { useState } from "react";
 

@@ -23,3 +23,5 @@ Minimize the number of HTTP requests by combining CSS and JavaScript files. Cons
 6)Responsive Design:
 
 Ensure your website is responsive and optimized for different devices. Use media queries to deliver appropriately sized images and stylesheets based on the user's device.
+
+7)Throttling and debouncing

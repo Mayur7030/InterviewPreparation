@@ -1,6 +1,7 @@
 Custom hooks are JavaScript functions that follow the naming convention of starting with the word "use" and can leverage React's built-in hooks to encapsulate and reuse logic in functional components. They provide a way to extract and share stateful logic between components without introducing render props or higher-order components.
 
 Benefits of Custom Hooks:
+
 Code Reusability: Custom hooks allow you to reuse and share stateful logic across different components. This promotes code reusability and helps in keeping your codebase DRY (Don't Repeat Yourself).
 
 Separation of Concerns: Custom hooks enable you to separate concerns within your components. By encapsulating logic in a custom hook, your component code remains focused on the presentation and UI aspects, while the custom hook handles the underlying logic.
@@ -8,3 +9,9 @@ Separation of Concerns: Custom hooks enable you to separate concerns within your
 Easier Testing: Custom hooks can be tested independently, making it easier to write unit tests for the logic they encapsulate. This can improve the overall testability of your React components.
 
 Improved Readability: Extracting complex logic into a custom hook can lead to cleaner and more readable component code. Components become more declarative and focused on rendering, making it easier for others (or yourself) to understand the component's behavior.
+
+
+why use over higher order component?
+1) react features such as state, lifecycle methods ,hooks
+2) flexibility
+3) adherance to react functional structure.

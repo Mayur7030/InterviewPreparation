@@ -10,41 +10,9 @@ step 2) Execution of Synchronous Code:
 
 The engine starts executing the synchronous code line by line, pushing functions onto the call stack and executing them.
 
- code ----------------->
-console.log("Start");
-
-function syncFunction() {
-  console.log("Sync function");
-}
-
-syncFunction();
-
-console.log("End");
-
-//Output:
-
-Start
-Sync function
-End
-
 step 3) Asynchronous Operation Encounter:
 
 When an asynchronous operation, such as a setTimeout function, is encountered, it is moved to the Web APIs environment. The Web APIs environment includes the browser's APIs like setTimeout, fetch, and others.
-
- code----------->
-console.log("Start");
-
-setTimeout(() => {
-  console.log("Timeout function");
-}, 2000);
-
-console.log("End");
-//Output:
-
-Start
-End
-Timeout function
-
 
 step 4) Callback Queue and Event Loop:
 
@@ -58,37 +26,5 @@ The event loop constantly checks if the call stack is empty. If it is, it takes 
 step 6) Execution of Asynchronous Code:
 
 The callback function from the callback queue is executed.
-
-
-//Output:
-
-Start
-End
-Timeout function
-
-
-Here's a more complex example involving both a microtask (Promise) and a macrotask (setTimeout):
-
-code -------------->
-console.log("Start");
-
-setTimeout(() => {
-  console.log("Timeout function");
-}, 0);
-
-Promise.resolve().then(() => {
-  console.log("Promise resolved");
-});
-
-console.log("End");
-
-
-//Output:
-
-Start
-End
-Promise resolved
-Timeout function
-
 
 In this example, the microtask queue (Promise,fetch api) has higher priority than the callback queue (setTimeout). Therefore, the Promise is resolved first before the setTimeout callback is executed.

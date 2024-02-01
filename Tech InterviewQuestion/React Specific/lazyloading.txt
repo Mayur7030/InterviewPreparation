@@ -1,3 +1,49 @@
-what?
-where?
-suspense?
+Lazy loading is a technique used in both React and JavaScript to defer the loading of non-essential resources until they are actually needed. This can help improve performance by reducing initial page load times and minimizing the amount of data transferred over the network.
+
+Lazy Loading in React:
+
+In React, lazy loading refers to the dynamic import of components or other assets only when they are needed, typically triggered by user interaction or when certain conditions are met.
+
+React provides a React.lazy() function and a Suspense component to enable lazy loading of components. Here's how it works:
+
+React.lazy() Function:
+
+React.lazy() allows you to dynamically import a component.
+It takes a function that calls a import() statement, which returns a Promise that resolves to the module containing the component.
+The component imported using React.lazy() must be wrapped in a Suspense component.
+Suspense Component:
+
+Suspense is a special component provided by React to handle components that are loaded lazily.
+It allows you to specify a fallback component or loading indicator to display while the lazily loaded component is being fetched.
+This ensures that the user experience remains smooth and responsive during the loading process.
+Example of lazy loading a component in React:
+
+javascript
+Copy code
+import React, { Suspense } from 'react';
+
+const LazyComponent = React.lazy(() => import('./LazyComponent'));
+
+function App() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LazyComponent />
+    </Suspense>
+  );
+}
+
+export default App;
+---------------------------------------
+Lazy Loading in JavaScript:
+In JavaScript, lazy loading refers to the deferred loading of resources such as images, scripts, or other assets until they are needed or until specific conditions are met. This can be achieved using various techniques, including:
+
+Lazy Loading Images:
+
+You can defer the loading of images until they come into the viewport by setting the src attribute to a placeholder initially, and then replacing it with the actual image source when the image is about to enter the viewport.
+Lazy Loading Scripts:
+
+JavaScript libraries or scripts that are not immediately needed can be loaded asynchronously using the defer or async attributes in the script tag, or by dynamically creating script elements.
+Intersection Observer API:
+
+The Intersection Observer API can be used to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.
+Lazy loading in JavaScript helps optimize performance by deferring the loading of non-critical resources, which can result in faster initial page loads and improved user experience.

@@ -15,11 +15,6 @@ If we want to update variable ,we have to make it global like counter app but th
 
 
 ------------
-
-inner functions have access to variables from their outer (enclosing) functions even after the outer function has completed its execution and its call stack has been cleared.
-
-Here's a breakdown of what happens:
-
 Outer Function Execution:
 
 When the outer function is executed, its local variables are stored in the call stack.
