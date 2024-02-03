@@ -1,4 +1,4 @@
-ex map(), reduce(), filter()
+
 
 A higher-order function (HOF) is a function that either takes one or more functions as arguments or returns a function as its result.
 

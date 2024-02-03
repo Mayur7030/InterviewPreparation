@@ -1,8 +1,9 @@
-No, callback functions and first-class functions are related concepts in JavaScript, but they are not the same thing.
+params == parameter
+
+callback functions and first-class functions are related concepts in JavaScript, but they are not the same thing.
 
 First-Class Functions:
 
-This concept refers to the ability of a programming language to treat functions as first-class citizens. In JavaScript, functions are first-class citizens, meaning they can be:
 Assigned to variables.
 Passed as arguments to other functions.
 Returned from other functions.

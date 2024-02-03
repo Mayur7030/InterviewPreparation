@@ -47,6 +47,7 @@ console.log(john.name); // Output: John
 Example 4: Arrow Function
 
 Arrow functions do not have their own this. They inherit the this value from the enclosing scope.
+global object
 
 code------------------>
 const showThisArrow = () => {

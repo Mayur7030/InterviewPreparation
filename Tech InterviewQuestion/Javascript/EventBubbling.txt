@@ -1,5 +1,9 @@
 bydefault event bubbling happens
+event which are not bubbles -blur focus
 
+Q)event.target -will target root element only every time
+ | this.tagName - same as default bubbling
+  | event.currentTarget - same as event bubbling
 
 Event bubbling and event capturing –
 

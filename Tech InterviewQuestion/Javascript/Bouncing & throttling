@@ -16,6 +16,7 @@ ex - scroll event, button click, mouse move event
 Debouncing:
 
 Purpose:Debouncing is useful when you want to ensure that a function is only executed once after a series of rapid inputs. This  is particularly helpful when dealin g with user input events that may trigger multiple times in a short period such as search bar or a button click .
+
 Deboucing can help prevent unnecessary or redundant processing of these events.
     Debouncing delays the exection of a function until after a certain amount of time has passed without the input being triggered again.
 

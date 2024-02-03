@@ -33,7 +33,9 @@ This intermediate representation allows for optimizations before the final machi
 Just-in-Time Compilation (JIT):
 
 In JIT compilation, the intermediate representation or bytecode is not translated into machine code ahead of time (as in traditional compilation). Instead, it happens "just in time" during execution.
+
 When the JavaScript code is run, the JavaScript engine analyzes the code's execution patterns and identifies hot paths (frequently executed code paths). These hot paths are then compiled into optimized machine code for faster execution.
+
 This adaptive compilation allows JavaScript to achieve a balance between the flexibility of interpretation and the performance benefits of compilation.
 
 

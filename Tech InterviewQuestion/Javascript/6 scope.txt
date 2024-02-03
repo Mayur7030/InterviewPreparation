@@ -1,4 +1,4 @@
-"scope" refers to the context in which variables and functions are declared and accessed. The scope determines the visibility and lifetime of these entities.
+"scope" refers to the context in which variables and functions are declared not created and accessed. The scope determines the visibility and lifetime of these entities.
 
 •	Local Scope/functional scope - allows access to everything within the boundaries (inside the box)
 
