@@ -1,0 +1,26 @@
+Components are the reusable building block for creating user interfaces.
+
+compoenent of compoenent -
+import export return 
+
+Types of components -
+
+1)Functional component -
+a) it is declared as javascript function
+b) they are stateless but with the help of hooks they can now manage state
+
+2)Class component:-
+a)it is declared as js classes
+b) they are stateful component by using lifecycle methods
+c)render method in class componenet is responsible for returning jsx.
+----------------------------------
+data pass in class -
+this.props used in child to access props eg, this.props.message
+------------------------------------
+difference-
+syntax -1)js function      2)class
+state 2) without hooks stateless    2)statful
+lifecycle methods -3) no             3) yes
+readability   4)more                 4)complex
+this keyword  5) No                    5)yes
+render method 6) no                     6)yes

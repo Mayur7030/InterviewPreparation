@@ -1,0 +1,30 @@
+NPM is used to manage the depenedencies for your React Project, including the react library itself.
+
+Node modules contains folder containes all the dependecies of the project , including the react
+
+----------------------
+Public folder -
+it  contains static assets that are served directly to the user's brosers such as images ,fonts,index.html
+
+----------------------------
+src folder -
+src means source
+Is used to store all the source code of the application which is then responsible for the dynamic changes in you web app.
+---------
+index.html
+spa
+
+---------
+ReactDOM
+it is js library that renders compo to the DOM or browser.
+
+-----
+index.js
+it replaces root ele of index.html file with newly renderd compo.
+
+------------------
+App.js
+container for other component
+it defines structure,layout and routing in the app
+-----
+

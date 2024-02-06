@@ -1,19 +1,40 @@
 Uncontrolled and controlled component
-Features	       Controlled Component	                                    Uncontrolled Component
-Value Management	Managed by React state	                                 Managed by component's own internal state
-User Interaction	Parent component updates state on user interaction    	Component updates own internal state on user interaction
-Data Flow	        Data flows from parent component to component	       Data flows within the component
-Debugging	        Easier to debug	More                                   difficult to debug
-Performance	        Generally faster as there's less state management	   Generally slower as there's more state management
-Code Complexity	    Less complex code	                                   More complex code
-Best Practices	    Considered a best practice	                            Considered an alternate approach
+	       Controlled Component	                                    Uncontrolled Component
+Managed by React state	                                 Managed by component's own internal state
+evnet handlers update React state                       Not explicit state update, values directly taken from DOM
+don't depends on usered()                               commonally useref()
+re-renders on state changes
+Parent component updates state on user interaction    	Component updates own internal state on user interaction
+Data flows from parent component to component	       Data flows within the component
+Easier to debug	More                                   difficult to debug
+Generally faster as there's less state management	   Generally slower as there's more state management
+Less complex code	                                   More complex code
+Considered a best practice	                            Considered an alternate approach
 
 
+A controlled compoenent is a compoenent whose form element (like inout field or checkbox ) are controlled by the state of the application.
 
 Controlled and uncontrolled components are terms commonly used in the context of form elements in React. They describe different approaches to managing and handling the state of form elements.
 
 Controlled Components:
 In a controlled component, the form element's value is controlled by the state of the React component. This means that the component maintains the state of the input elements, and any changes to the input values are handled by the React component through state and event handlers.
+
+
+Characteristic of controlled
+1)state control
+2)event handling
+3)state update
+4)re-rendering
+
+Advantages of controlled -
+1)form elements have their own value managed by React state, single source of Truth
+2)predictable implement feature such as form validation,dynamic rendering
+3)better control and maintainability
+
+uncontrolled compoenent
+1) when integrating with non react library
+2)controlled component are not possible
+
 
 Example of a Controlled Component:
 

@@ -4,7 +4,7 @@ Rest parameter --The rest parameter is used to COLLECT the remaining arguments i
 
 Spread operator –The spread operator is used to UNPACK the contents of an iterable into individual elements. It is typically used to pass an array or object as a single argument to a function
 
-      The main difference between the rest and spread operators is that the rest parameter collects the remaining arguments into an array, while the spread operator unpacks the contents of an iterable into individual elements
+ The main difference between the rest and spread operators is that the rest parameter collects the remaining arguments into an array, while the spread operator unpacks the contents of an iterable into individual elements
 
 
 

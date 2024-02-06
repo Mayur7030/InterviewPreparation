@@ -1,3 +1,16 @@
+DOM -->
+
+DOM stands for ‘Document Object Model’. it is a structured representation of the HTML elements that are present in a webpage or web app. DOM represents the entire UI of your application. The DOM is represented as a tree data structure. It contains a node for each UI element present in the web document. 
+
+DOm allows javascript to dynamically access & manipulate the content and structure of web page.
+
+document.body()
+
+
+Virtual Dom -
+problem with real dom -
+when user make  small change like changing name, it will re-render whole layout, that is time consuming.
+
 The Virtual DOM is a representation of the real DOM that is stored in memory. React uses the Virtual DOM to compare the current state of the UI with the desired state of the UI. If there is a difference, React will only update the parts of the real DOM that need to be updated. This makes React applications more efficient than other frameworks that update the entire DOM every time there is a change.
 
 React uses 2 virtual dom – preupdated dom and updated dom
@@ -11,8 +24,8 @@ Reconciliation: React applies only those necessary changes to the real DOM, mini
 
 Benefits:
 
-Performance: Faster updates and smoother user experiences, especially for complex apps.
-Developer experience: React handles DOM manipulations for you, allowing you to focus on components and state.
+Performance: 
+Developer experience:
 
 Reconciliation is the process through which React updates the Browser DOM and makes React work faster. React use a diffing algorithm so that component updates are predictable and faster. React would first calculate the difference between the real DOM and the copy of DOM (Virtual DOM) when there's an update of components. React stores a copy of Browser DOM which is called Virtual DOM. When we make changes or add data, React creates a new Virtual DOM and compares it with the previous one. This comparison is done by Diffing Algorithm. Now React compares the Virtual DOM with Real DOM. It finds out the changed nodes and updates only the changed nodes in Real DOM leaving the rest nodes as it is. This process is called Reconciliation.
 

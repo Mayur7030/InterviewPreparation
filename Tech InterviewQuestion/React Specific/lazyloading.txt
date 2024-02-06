@@ -18,6 +18,10 @@ It allows you to specify a fallback component or loading indicator to display wh
 This ensures that the user experience remains smooth and responsive during the loading process.
 Example of lazy loading a component in React:
 
+fallback property -
+it provides a loading indivator of UI while the dynamically imported component is being loaded.
+
+
 javascript
 Copy code
 import React, { Suspense } from 'react';

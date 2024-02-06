@@ -4,28 +4,27 @@ dynamic routing?
 how can we data between sibling component?
 
 
+Routing -
+Routing allows to create single page web application with navigation without refreshing full page
 
-previoulsy we use server side rendering where when we navigate to new page it is render whole page 
- but now we use React router for client side rendering
 
- 
 what is react router?
 
-React Router is a JavaScript framework that lets us handle client and server-side routing in React applications. It enables the creation of single-page web or mobile apps that allow navigating without refreshing the page. It also allows us to use browser history features while preserving the right application view.
+React Router is a JavaScript library that lets us handle client and server-side routing in React applications. It enables the creation of single-page web or mobile apps that allow navigating without refreshing the page. It also allows us to use browser history features while preserving the right application view.
+-----------------
+routes - container to multiple router
+route -<Route> compo is used to define a route and specify the compo that should render when route matched.
+route parameter -way to pass dynamic values to the compo as part of the URL path.
+switch - ensures that only the first matching <Route> is rendered and rest are ignored.
 
 https://www.freecodecamp.org/news/react-router-in-5-minutes/
 
 
 install npm i react-router-dom
-
 App Component -->
 import BrowserRouter from 'react-router-dom'
 
-
 Navbar compoenent
-
-code ->
-
 
 import React from "react";
 import Home from "./Home";

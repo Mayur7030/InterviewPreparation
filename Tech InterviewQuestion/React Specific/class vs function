@@ -1,3 +1,11 @@
+Class Component -
+
+
+how to maintain state in class -
+2 step process -
+1) this.setState() methods is used to update the state
+2) this.state property is used to render the update state in DOM. 
+
 When to use a Class Component over a Function Component?
 
 After the addition of Hooks(i.e. React 16.8 onwards) it is always recommended to use Function components over Class components in React. Because you could use state, lifecycle methods and other features that were only available in class component present in function component too.

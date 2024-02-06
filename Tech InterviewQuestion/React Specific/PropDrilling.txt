@@ -3,43 +3,15 @@ Prop drilling, also known as "props drilling" or "component chaining," is a situ
 Drawbacks of Prop Drilling:
 
 Readability and Maintainability:
-
 Code Verbosity:
-
-The code becomes more verbose due to the need to pass props through intermediary components that don't use the data themselves.
-
 Refactoring Challenges:
+Debugging
+ Complexity:
 
-Refactoring becomes more complex since changes in the data flow may require modifications in multiple components.
+5 ways to avoid prop drilling-
+1)context API
+2)Redux
+3)component Composition
+4)callback function
+5)custom hooks
 
-Debugging Complexity:
-
-Debugging can be more challenging, especially when trying to trace the source of a particular piece of data or a bug in the application.
-
-
-Real-Life Example in an E-commerce Project:
-
-
-Consider an e-commerce project where product information needs to be displayed in a deeply nested child component, such as a product details component.
-
-Top-Level Component:
-
-The top-level component (e.g., App) fetches product data from an API.
-
-Passing Data as Props:
-
-The product data is passed as props to an intermediary component, say ProductList.
-
-Intermediate Components:
-
-There might be additional components like ProductCategory or ProductCard between App and ProductDetails. These components don't use the product data but have to pass it through.
-
-Passing Props Down the Hierarchy:
-
-The product data is passed down through the hierarchy, even though some intermediate components do not use it.
-
-Consuming Data at the End:
-
-Finally, the ProductDetails component, which is deeply nested, consumes and displays the product information.
-
-In this example, prop drilling might make the code harder to manage and understand, especially if there are many intermediate components that do not use the product data but have to pass it through. Alternative solutions like using React context or state management libraries (Redux, Recoil) can be considered to address prop drilling issues in such scenarios.

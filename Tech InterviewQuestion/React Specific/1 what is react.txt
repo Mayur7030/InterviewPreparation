@@ -1,13 +1,77 @@
-
 what is React?
 
 React is a free and open-source front-end JavaScript library for building user interfaces based on components. 
- The library first appeared in May 2013 by facebook.
 
  why react?
+ provies ease of creation of spa with help of reusable components
+
+feature -
+
+ 1)virtual DOM
+ 2)compoenent based architecure
+ 3)reusablity of components
+ 4)JSX
+ 5)Declarative syntax-
+ developers focus on "what the ui should look like" rather than "how"
+ 6)community 
+ 7)hooks
+ 8)unidiarectional data flow
+ 9)
+ --------------------------
+
+advantage -
+1)spa
+2)cross platform & open source
+3)lightweight and very fast(vdom)
+4)large community
+5)testing is easy
+
+Disadvantage-
+1)react is not good for small application
+2)JSX complexity
+3)full feature framework
+4) flexibilty to learn
+5)
+-------------------------
+decalrative-
+function App(){
+    return <h1>Interview</>
+}
+implarative-
+function App(){
+    const ele = document.createElement("h1")
+    ele.textContent = "Intervie happy"
+    document.body.appendChild(ele)
+}
+-------------------
+flow of react app
+browser request to index.html
+1)index.HTML
+single page which loads index.js by react 
+2)index.js
+Replace root element of index.html file by app compoenent
+3)App.js
+root compoenent which is the container of all the child compoenent
+4) childcompo
+custom child compoenent palced over app compoenent
+---------------------------
+React vs Angular -
+Both uses component
+React - library
+ang - framework
+React - vdom
+ang- Real dom
+react-lightweight
+ang - bigger
+react - ext libraries
+ang - build in support for feature like routing
+----------------------
+Reusability -
+Composition -creation of new and big component from existing small compoenets .
+
 
  1 Easy creation of dynamic applications:--
-  React makes it easier to create dynamic web applications because it requires less coding and offers more functionality, as opposed to JavaScript, where coding often gets complex very quickly.
+
 
 2 Improved performance: 
 React uses Virtual DOM, thereby creating web applications faster. Virtual DOM compares the components’ previous states and updates only the items in the Real DOM that were changed, instead of updating all of the components again, as conventional web applications do. 

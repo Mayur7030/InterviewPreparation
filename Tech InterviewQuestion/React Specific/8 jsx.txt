@@ -1,0 +1,26 @@
+What is JSX?
+
+JSX, or JavaScript XML, is a syntax extension for JavaScript recommended by React for describing what the UI should look like. It looks similar to XML or HTML but ultimately gets transformed into JavaScript code. 
+
+ JSX allows you to write HTML-like syntax within JavaScript code. It is not a separate template language but a syntactic sugar for embedding XML-like code in JavaScript.
+
+Jsx is syntax extension to Javascript. It is used with react to describe how user interface should look like .By using jsx, we can write HTML in same file in which javascript is written.
+
+Advantage -
+1)code Reusability
+2)code redability
+3)javascript expression {}
+4)advanced error detection(type error)
+<h1>hello<h>
+5)improve performance
+
+-------------------------
+Bablel
+Babel is a JavaScript compiler that allows developers to write code using the latest ECMAScript standards (or even future proposals) and transform it into a version of JavaScript that is compatible with most browsers or environments. It is a tool used in the process of transpiling, which is the conversion of source code written in one programming language to another.
+
+---------------------
+conditional rendering
+1) if else 
+2)ternary operator
+3)&& operator
+4)switch statement

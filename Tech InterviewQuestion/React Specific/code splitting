@@ -1,0 +1,20 @@
+code splitting is a technique to split the javascript bundle into smaller chunks which are loaded on demand.
+
+3 steps for code splitting
+use React.lazy() to lazily import components
+wrap components with Suspense to handle loading
+configure your build tool (eg webpack)for dynamic imports
+
+pros -
+1)faster initial load time
+2)optimized bandwidth usage
+3)improved caching- 
+4)parallel loading-multiple small chunk
+5)easier maintainance
+
+cons-
+1)increased complexity
+2)toolling dependencies
+3)potential for runtime error
+4)increased number of request
+5) learning curve

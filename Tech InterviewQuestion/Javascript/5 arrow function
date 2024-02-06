@@ -4,6 +4,9 @@ tell me something about arrow function -
 features of arrow function -
 
 1)Concise Syntax:
+syntax diff -
+normal - functiona declaration
+arrow  - function expression
 
 2)Implicit Return:
 

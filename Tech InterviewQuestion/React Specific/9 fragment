@@ -1,0 +1,8 @@
+  Why fragments are better than container divs?
+<Fragment></>
+
+Fragment is a way to group multiple children's element
+Using a fragment prevents the addition of unneccesarry nodes of DOM
+
+Some CSS mechanisms like Flexbox and CSS Grid have a special parent-child relationships, and adding divs in the middle makes it hard to keep the desired layout.
+The DOM Inspector is less cluttered.

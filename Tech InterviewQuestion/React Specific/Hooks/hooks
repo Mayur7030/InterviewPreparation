@@ -1,0 +1,19 @@
+react hooks are inbuilt functions provided by react that allows fucntional compo to use state and lifecycle feature.
+before hooks class component lifecycle methods were used to maintain state in react
+
+useState - state
+useEffect - side effect
+useContext - context
+useReducer - complex state
+useCallback - memoization
+useMemo - performance
+useRef  - refs
+useLayouteffect - synchronous side effects
+
+Always Start with "use":
+
+Hooks Should Be Called at the Top Level: 
+
+Hooks Should Be Called in the Same Order:
+
+Avoid Using Hooks Inside Loops or Nested Functions:

@@ -1,8 +1,0 @@
-
-Always Start with "use":
-
-Hooks Should Be Called at the Top Level: 
-
-Hooks Should Be Called in the Same Order:
-
-Avoid Using Hooks Inside Loops or Nested Functions:

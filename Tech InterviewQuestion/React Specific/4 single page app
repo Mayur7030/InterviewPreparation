@@ -1,0 +1,3 @@
+spa is web application that have only one single web page
+
+whenever user do some action on the website then in response content is dynamically updated without refreshing or loading new page.

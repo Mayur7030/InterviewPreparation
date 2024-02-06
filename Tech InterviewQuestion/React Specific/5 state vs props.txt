@@ -1,0 +1,20 @@
+state - 
+It is internal data of component. It is used to store data that changes over time.It is current data of a component.
+
+stateful or state managements means when a user performs  some actions on the ui then the react app should be able to update and re-render that data or state on the UI.hooks/lifecycle methods helps to make react stateful.
+
+stateless -
+let count =0
+const handleClick =()=>{
+    count+= 1  //state updated but not shown in UI
+    console.log(count )
+}
+return(
+    {count}
+)
+
+----------------------------
+props -
+IT is external data of component .It is way to pass data from parent to child compoenent
+
+In React, props are short for "properties". Props are read-only, which means that the child component cannot change them. 

@@ -38,3 +38,7 @@ function fetchData(callback) {
 fetchData(function(result) {
   console.log(result);
 });
+--------------------
+function witout return statement
+yes possible, but in this case it will not return anything in UI
+the common use case is for logging purpose.

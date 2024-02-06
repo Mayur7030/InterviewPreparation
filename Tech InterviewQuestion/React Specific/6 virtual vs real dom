@@ -1,18 +1,22 @@
 Representation:
 
 Real DOM: It is the actual, physical representation of the HTML document structure. Every HTML element in the document is part of the Real DOM, and any changes directly affect the browser's rendering engine.
+
 Virtual DOM: It is a lightweight, in-memory representation of the Real DOM. React creates and maintains a Virtual DOM to optimize and streamline the process of updating the UI.
 Performance Impact:
 
 Real DOM: Direct manipulation of the Real DOM can be computationally expensive. Each update to the Real DOM triggers a reflow and repaint process, which can be slow, especially when dealing with frequent updates.
+
 Virtual DOM: React updates the Virtual DOM more efficiently. Instead of directly modifying the Real DOM for every change, React performs updates on the Virtual DOM first and then calculates the minimum number of changes needed to update the Real DOM.
 Updates and Reconciliation:
 
 Real DOM: Developers often need to manually manage updates to the Real DOM, including calculating the differences (diffing) and applying only the necessary changes.
+
 Virtual DOM: React automatically handles the process of comparing the current Virtual DOM with the previous one and efficiently updating the Real DOM. This process is known as reconciliation.
 Efficiency and Optimization:
 
 Real DOM: Direct updates to the Real DOM can be less optimized, leading to potential performance bottlenecks, especially in large and dynamic applications.
+
 Virtual DOM: The use of a Virtual DOM introduces an optimization layer. React's diffing algorithm compares the Virtual DOM efficiently, minimizing unnecessary updates to the Real DOM and improving overall performance.
 Implementation Details:
 
