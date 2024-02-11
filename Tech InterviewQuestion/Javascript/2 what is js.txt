@@ -23,7 +23,7 @@ Debugging can be more challenging.
 Examples: C, C++, Java, Rust.
 
 
-JavaScript
+
 Interpretation and Compilation in JavaScript:
 
 Initially, JavaScript was mainly interpreted by web browsers. The browser's JavaScript engine would read and execute the code line by line.

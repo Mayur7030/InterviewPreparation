@@ -1,0 +1,6 @@
+
+library                          framework
+used for building web interfaces  building for mobile application
+run on web browser                 run on ios and android
+html css used for UI              native Ui components eg view, text are used
+deployed on web applications      deployed through app stores

@@ -3,8 +3,6 @@ Optimization of react –
 Optimization of React is the process of making a React application run faster and more efficiently. There are many ways to optimize a React application, some of which are more effective than others.
 
 
-Here are some of the most common ways to optimize React applications:
-
 •	Use lazy loading:
  Lazy loading is a technique in web development that defers the loading of non-essential resources until they are actually needed. In React, lazy loading is often used for code-splitting, allowing you to load components or modules on demand, which can significantly improve the initial loading time of your application.
 
@@ -105,6 +103,8 @@ react dev tools
 * use Types
 using static typing with tools like Typescript can help catch errors early, improve code quality and provide better documentation for your component's expected data and props.
 ------------------------------
+oprtimizing renders with react.fragment
+--------------------
 *use helper/utils
 helper or utility functions can encapsulate ,common ,reusable logic in your code application making your compoenent cleaner and more focused ontheir core functionlity
 

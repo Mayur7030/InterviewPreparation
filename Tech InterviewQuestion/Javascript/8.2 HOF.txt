@@ -1,6 +1,7 @@
+A higher-order function (HOF) is a function that either takes one or more functions as arguments or returns a function as its result and adds extra features to another component.
 
+Hoc can be used for providing logging functionality to all the components in a reusable way.
 
-A higher-order function (HOF) is a function that either takes one or more functions as arguments or returns a function as its result.
 
 Reasons to Use Higher-Order Functions:
 

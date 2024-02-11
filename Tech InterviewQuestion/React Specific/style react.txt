@@ -1,0 +1,14 @@
+5 ways=
+1) inline css 
+2) css stylesheet-.css file
+Global Scope: CSS rules defined in a stylesheet apply globally to all elements in the document.
+Limited Isolation: By default, styles defined in a stylesheet can potentially affect other components in your application, leading to unintended styling conflicts.
+
+3)css module -
+CSS modules are a feature provided by build tools like webpack for managing CSS locally scoped to a component.
+Local Scope: CSS rules defined in a CSS module only apply to the component it is imported into, providing encapsulation and preventing unintended side effects.
+
+.module.css
+import styles from './mystyle.module.css'
+4)global stylesheet
+5)css framework

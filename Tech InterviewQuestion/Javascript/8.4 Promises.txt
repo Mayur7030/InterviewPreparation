@@ -144,7 +144,7 @@ const promise1 = new Promise((res, rej) => {
       rej(new Error("error"));
     });
     
-    Promise.all([promise1,promise2, promise3])
+    Promise.all([promise1(),promise2(), promise3()])
       .then((value) => {
         return console.log(value);
       })

@@ -1,0 +1,19 @@
+8 step process -
+
+Client-side Authentication:
+User sends username and password to the server.
+Server-side Authentication:
+Server authenticates the user credentials.
+Upon successful authentication, the server generates a JWT (JSON Web Token) containing information about the user and signs it with a secret key.
+Sending JWT to Client:
+The server sends the JWT token to the client as a response.
+Storing JWT Locally:
+The client stores the JWT token securely in local storage or a cookie for future use.
+Requesting Data with JWT:
+Whenever the client needs to access protected resources on the server, it includes the JWT token in the request headers.
+Server-side Validation:
+Upon receiving the request, the server verifies the JWT token's signature and authenticity using the secret key.
+Data Retrieval:
+If the token is valid, the server processes the request and returns the requested data.
+Displaying Data:
+The client receives the data from the server and displays it in the browser.
