@@ -23,6 +23,7 @@ Execution:
 
 The engine executes the compiled code, performing the actions specified by the JavaScript program.
 During execution, the engine interacts with other components of the browser, such as the Document Object Model (DOM) for handling HTML structure and the CSS Object Model (CSSOM) for handling styles.
+
 Memory Management:
 
 

@@ -2,6 +2,7 @@ freecode camp link--
 
 js engine scans file then this happens
 
+When the JavaScript engine scans a script file, it makes an environment called the Execution Context that handles the entire transformation and execution of the code.
 
 global execution context
 function execution context
@@ -11,6 +12,7 @@ two phases -
 2) execution phases
 
 two component-
+
 memory
 code
 

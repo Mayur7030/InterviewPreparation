@@ -30,6 +30,7 @@ In this example, the useEffect hook ensures that updating the document title hap
 Interview Questions--------------------------->
 empty array[]= effect function only run once after mounting
 no array - will run after every render
+
 Q) what is cleanUp function in useeffect?
 
 Ans --> Cleaning up is important to avoid memory leaks and unexpected behavior when components are unmounted or dependencies change.

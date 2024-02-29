@@ -8,6 +8,7 @@ Assigned to variables.
 Passed as arguments to other functions.
 Returned from other functions.
 Stored in data structures like arrays or objects.
+
 // Example of first-class functions
 const myFunction = function() {
   console.log("Hello, world!");
@@ -25,6 +26,7 @@ executeFunction(myFunction);
 Callback Functions:
 
 A callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. Callbacks are often used in asynchronous programming, event handling, and other scenarios where we want to specify what should happen after a certain task is finished.
+
 // Example of a callback function
 function fetchData(callback) {
   // Simulating an asynchronous operation

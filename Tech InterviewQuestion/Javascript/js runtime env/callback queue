@@ -8,6 +8,7 @@ To handle asynchronous tasks, JavaScript uses callbacks. A callback is a functio
 
 3. Callback Queue:
 When an asynchronous operation completes, its corresponding callback function is not immediately executed. Instead, it is placed in a queue, known as the callback queue.
+
 The callback queue is a data structure that holds these functions until the execution stack is empty.
 
 4. Execution Stack and Event Loop:

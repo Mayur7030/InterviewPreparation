@@ -19,3 +19,33 @@ console.log(gen.next().value); // undefined
 
 In this example, each call to gen.next() returns an object with a value property representing the yielded value. The generator function produces values in a sequential manner, and calling next() resumes the function until the next yield statement.
 
+function* generator() {
+  console.log("one")
+  yield 1;
+  console.log("two")
+  yield 2;
+  console.log("three")
+  yield 3;
+  console.log("four")
+  yield 4;
+  console.log("five")
+}
+const gen = generator()
+gen.next()
+gen.next()
+gen.next()
+gen.next()
+
+
+purpose -
+Lazy Evaluation: Generators allow for the creation of iterators with lazy evaluation. This means that instead of generating all values at once, they produce one value at a time on demand, which can be more memory-efficient for large datasets.
+
+Simplified Iterator Creation: Generators simplify the process of creating iterators by allowing developers to define iterator behavior using a more familiar function syntax with function* and yield statements. This makes it easier to create custom iterators without manually implementing the iterator protocol.
+
+Pausing and Resuming Execution: Generators enable pausing and resuming the execution of a function at any point using the yield keyword. When a generator encounters a yield statement, it pauses execution and returns the yielded value. Execution can later be resumed from the point where it was paused.
+
+Asynchronous Programming: Generators can be used to simplify asynchronous programming by encapsulating asynchronous operations within generator functions. By yielding promises and using async and await, developers can write asynchronous code in a synchronous-looking style, improving readability and maintainability.
+
+Cooperative Multitasking: Generators can be used for cooperative multitasking or concurrency, where control is explicitly yielded between different tasks. This can be useful in scenarios where you need to interleave multiple tasks without using native threads or web workers.
+
+Overall, generators provide a more intuitive and flexible approach to working with iterators, asynchronous operations, and multitasking in JavaScript, offering significant benefits in terms of readability, performance, and code organization.

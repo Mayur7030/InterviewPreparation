@@ -1,4 +1,4 @@
-Bouncing and throttling are techniques used to control the frequency of function execution in JavaScript, especially in scenarios where functions are triggered by events such as scrolling, resizing, or typing.
+deBouncing and throttling are techniques used to control the frequency of function execution in JavaScript, especially in scenarios where functions are triggered by events such as scrolling, resizing, or typing.
 
 
 Throttling:

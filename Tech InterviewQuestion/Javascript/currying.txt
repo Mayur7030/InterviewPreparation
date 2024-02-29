@@ -51,8 +51,8 @@ Benefit: Curried functions can be easily reused with different sets of arguments
 const multiply = curry((a, b, c) => a * b * c);
 const double = multiply(2);
 console.log(double(3)(4)); // Output: 24
-Function Composition:
 
+Function Composition:
 Benefit: Currying facilitates function composition, allowing you to combine simple functions to create more complex ones.
 
 const compose = (f, g) => (x) => f(g(x));
@@ -67,15 +67,17 @@ Benefit: Currying allows for the dynamic generation of functions based on varyin
 const greet = curry((greeting, name) => `${greeting}, ${name}!`);
 const greetHello = greet('Hello');
 console.log(greetHello('John')); // Output: 'Hello, John!'
-Readability and Conciseness:
 
+
+Readability and Conciseness:
 Benefit: Currying can enhance code readability by breaking down complex functions into a series of simpler, focused functions.
 
 const filter = curry((predicate, list) => list.filter(predicate));
 const isEven = (x) => x % 2 === 0;
 const filterEvenNumbers = filter(isEven);
-Error Handling:
 
+
+Error Handling:
 Benefit: Currying can facilitate more granular error handling by validating arguments at each step of the currying process.
 
 const validateArgs = curry((arg1, arg2) => {

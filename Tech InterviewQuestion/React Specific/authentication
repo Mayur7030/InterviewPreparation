@@ -1,7 +1,9 @@
 8 step process -
 
 Client-side Authentication:
+
 User sends username and password to the server.
+
 Server-side Authentication:
 Server authenticates the user credentials.
 Upon successful authentication, the server generates a JWT (JSON Web Token) containing information about the user and signs it with a secret key.

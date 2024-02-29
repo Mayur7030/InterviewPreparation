@@ -97,7 +97,3 @@ Allows setting width, height, margin, and padding like block-level elements.
 Does not start on a new line, and multiple inline-block elements can appear on the same line.
 Examples: <img>, <button>
 --------------*---------------*-------------*--------------*---------
-
-Immediate joiner | 2+ yrs of Work Experience in React JS, Node JS, Typescript, Javascript, Bootstrap, Restful, API, Git, and Redux | Expert in developing Responsive & Interactive websites | Open to work for Frontend Developer, React JS developer.
-
-Immediate joiner | Expert in developing Responsive & Interactive websites|Expert in React JS, Node JS, Typescript, Javascript, and Redux|Very good knowledge of Bootstrap, Restful, API, Git.

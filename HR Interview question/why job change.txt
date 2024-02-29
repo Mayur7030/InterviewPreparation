@@ -1,6 +1,7 @@
 Why do you want to change jobs?
 
 
+#full stack developer
 
  currently i am  working as a frontend developer at TCS, and I'm grateful for the opportunities that I've had here. 
  
@@ -8,5 +9,5 @@ Why do you want to change jobs?
 
 
 
-
+#frontend developer
  "I'm currently seeking a new opportunity as a frontend developer to explore fresh challenges and advance my professional growth. I'm looking for a role that aligns with my career aspirations, values innovation, and offers a collaborative work environment. The prospect of contributing to diverse projects and continuing my learning journey is something I'm particularly excited about. I believe this change will provide a positive and rewarding environment for both personal and professional development."
